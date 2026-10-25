@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{meta_description}}">
+<meta name="robots" content="{{robots}}">
+<link rel="canonical" href="{{canonical}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{meta_description}}">
+<meta property="og:type" content="product">
+<meta property="og:url" content="{{canonical}}">
+<meta name="theme-color" content="#0e0e0e">
+<link rel="preconnect" href="https://api.fontshare.com"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@600,700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap">
+<style>
+:root{--bg:#0e0e0e;--panel:#1a1a1a;--line:#2a2a2a;--text:#e5e2e1;--muted:#9a9a9a;--accent:#c3f400;--down:#ff003c;--up:#c3f400}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 "Ropa Sans",system-ui,sans-serif;padding-bottom:84px}
+a{color:var(--text)}h1,h2,h3{font-family:"Clash Grotesk","Ropa Sans",sans-serif;line-height:1.15;margin:0 0 .5rem}
+h1{font-size:1.6rem}h2{font-size:1.25rem;margin-top:2rem}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+header.site{border-bottom:1px solid var(--line);background:#000}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:"Clash Grotesk",sans-serif;font-weight:700;font-size:1.2rem;text-decoration:none;letter-spacing:.02em}
+nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:.95rem}nav a:hover{color:var(--text)}
+.crumbs{font-size:.85rem;color:var(--muted);margin:14px 0;overflow-x:auto;white-space:nowrap}.crumbs a{color:var(--muted);text-decoration:none}.crumbs span{margin:0 6px}
+.hero{display:grid;grid-template-columns:1fr;gap:16px;align-items:start}
+.card-img{aspect-ratio:63/88;width:120px;border-radius:10px;background:linear-gradient(160deg,#2a2a2a,#111);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-size:.8rem;color:var(--muted);padding:8px;flex:none}
+.hero-top{display:flex;gap:14px;align-items:flex-start}
+.sub{color:var(--muted);margin:0 0 .5rem;font-size:.95rem}
+.pricebox{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pricebox .big{font-family:"Clash Grotesk",sans-serif;font-weight:700;font-size:1.7rem;line-height:1.1}
+.pricebox .lbl{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.trend{font-size:.85rem}.trend.up{color:var(--up)}.trend.down{color:var(--down)}.trend.flat{color:var(--muted)}
+.pricebox .foot{grid-column:1/-1;font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);padding-top:8px}
+.sell{margin:12px 0 0;font-size:1rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;background:var(--accent);color:#000;font-family:"Clash Grotesk",sans-serif;font-weight:700;text-decoration:none;font-size:1.05rem;margin-top:12px}
+.btn small{font-weight:600;opacity:.75;margin-left:8px;font-family:"Ropa Sans",sans-serif;font-size:.85rem}
+.about{padding-left:1.1rem;margin:0}.about li{margin:.45rem 0}
+table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);font-size:.95rem}th{color:var(--muted);font-weight:normal;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em}
+tr:last-child td{border-bottom:0}td.num{text-align:right;font-variant-numeric:tabular-nums}th.num{text-align:right}
+.hl td:first-child{font-weight:bold}
+.chart{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}.chart svg{width:100%;height:auto;display:block}
+.legend{font-size:.8rem;color:var(--muted);margin-top:6px}.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:middle}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tile{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}.tile .v{font-family:"Clash Grotesk",sans-serif;font-weight:700;font-size:1.3rem}.tile .k{font-size:.8rem;color:var(--muted)}
+.badge{display:inline-block;font-size:.7rem;border:1px solid var(--line);color:var(--muted);border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:middle}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:8px 0;padding:0 14px}
+summary{cursor:pointer;padding:12px 0;font-weight:bold;list-style:none;min-height:44px;display:flex;align-items:center;justify-content:space-between}summary::after{content:"+";color:var(--accent);font-size:1.3rem}
+details[open] summary::after{content:"–"}details p{margin:0 0 12px;color:#cfcfcf}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.rel{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;text-decoration:none}
+.rel b{display:block;font-size:.95rem}.rel span{font-size:.8rem;color:var(--muted)}
+.links-up a{display:inline-block;margin:0 10px 8px 0;color:var(--accent)}
+.note{font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin-top:2rem}.note a{color:var(--muted)}
+.sticky{position:fixed;left:0;right:0;bottom:0;background:#000;border-top:1px solid var(--line);padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;z-index:9}
+.sticky .s{font-size:.85rem;color:var(--muted);line-height:1.2}.sticky .s b{color:var(--text);display:block;font-size:.95rem}.sticky .btn{margin:0;min-height:44px;padding:0 18px}
+@media(min-width:900px){h1{font-size:2.1rem}.hero{grid-template-columns:1.2fr 1fr}.card-img{width:220px}.tiles,.grid{grid-template-columns:repeat(4,1fr)}body{padding-bottom:0}.sticky{display:none}}
+</style>
+{{schema_scripts}}
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="https://www.cardoutpost.com/">CardOutpost</a><nav><a href="https://www.cardoutpost.com/select">Packs</a><a href="https://www.cardoutpost.com/marketplace">Marketplace</a><a href="https://www.cardoutpost.com/showroom">Showroom</a></nav></div></header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb">{{breadcrumbs}}</nav>
+<section class="hero">
+  <div>
+    <div class="hero-top">
+      <div class="card-img" role="img" aria-label="{{h1}}">{{card_name}}<br>{{num_label}}</div>
+      <div><h1>{{h1}}</h1><p class="sub">{{subline}}</p></div>
+    </div>
+  </div>
+  <div>
+    <div class="pricebox">
+      <div><div class="lbl">PSA 10</div><div class="big">{{psa10}}</div><div class="trend {{trend10_cls}}">{{trend10}}</div></div>
+      <div><div class="lbl">Ungraded</div><div class="big">{{raw}}</div><div class="trend {{trendraw_cls}}">{{trendraw}}</div></div>
+      <div class="foot">Market prices from eBay and TCGplayer sales. Updated {{updated}}.{{few_sales}}</div>
+    </div>
+    <p class="sell">{{selling_line}}</p>
+    <a class="btn" href="{{cta_url}}">{{cta_text}}<small>{{cta_price}} · {{cta_odds}}</small></a>
+  </div>
+</section>
+
+<h2>About this card</h2>
+<ul class="about">{{about}}</ul>
+
+<h2>Price by grade</h2>
+<table><thead><tr><th>Grade</th><th class="num">Price</th><th class="num">{{pop_source}} graded</th></tr></thead><tbody>{{ladder}}</tbody></table>
+
+{{history_section}}
+
+<h2>On CardOutpost <span class="badge">{{data_badge}}</span></h2>
+<div class="tiles">
+  <div class="tile"><div class="v">{{odds}}</div><div class="k">Pull odds, {{pack}} pack ({{pack_price}})</div></div>
+  <div class="tile"><div class="v">{{pulls}}</div><div class="k">Pulled in the last 90 days</div></div>
+  <div class="tile"><div class="v">{{vault}}</div><div class="k">Copies in the vault ({{grade_in_stock}})</div></div>
+  <div class="tile"><div class="v">{{sellback}}</div><div class="k">Instant sell-back value, no fee</div></div>
+</div>
+
+<h2>Questions about {{card_name}}</h2>
+{{faqs}}
+
+{{related_section}}
+
+<p class="note">Prices are market averages of completed sales on eBay and TCGplayer, via <a href="{{source_url}}" rel="nofollow">PriceCharting</a>, fetched {{updated}}. Population counts are published by PSA and CGC. CardOutpost is not affiliated with or endorsed by The Pokémon Company or Nintendo. Pack odds are shown before every purchase. Please play responsibly: <a href="https://www.cardoutpost.com/responsible-play">deposit limits and self-exclusion</a> · <a href="https://www.cardoutpost.com/faq">how pack odds work</a>.</p>
+</main>
+<div class="sticky"><div class="s"><b>{{pack}} pack · {{pack_price}}</b>{{odds}} odds for this card</div><a class="btn" href="{{cta_url}}">Rip a pack</a></div>
+</body>
+</html>

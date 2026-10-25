@@ -1,0 +1,5 @@
+data/raw/
+data/sheet_ids.json
+data/*.log
+__pycache__/
+.DS_Store

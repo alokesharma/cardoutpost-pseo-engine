@@ -1,0 +1,5 @@
+# Steps 1 to 6 need only the Python standard library (Python 3.9+).
+# Step 7 (Google Sheet) needs:
+google-api-python-client
+google-auth
+google-auth-oauthlib
