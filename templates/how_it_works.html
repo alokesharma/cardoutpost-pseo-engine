@@ -1,0 +1,216 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
+<title>How the CardOutpost pSEO engine works</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;600;700;800&display=swap">
+<style>
+/* Layout: a single column "walk" down seven stations, each a card with chips and its rules; two reference tables at the end. */
+:root{
+  --bg:#eef2f7; --surface:#ffffff; --ink:#172033; --muted:#5a6678; --line:#d5dce6;
+  --accent:#1f5fa8; --accent-ink:#ffffff; --good:#1f8a4c; --good-bg:#e3f5ea; --bad:#c43d3d; --bad-bg:#fbe7e7;
+  --s1:#e6e6e6; --s2:#d9e8ff; --s3:#d9f2d9; --s4:#e9dffa; --s5:#ffe5cc; --s6:#ffe5cc; --s7:#fff3b0;
+  --display:'Fraunces',Georgia,serif; --body:'Nunito','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+  --bg:#121722; --surface:#1b2230; --ink:#eaeef5; --muted:#a3adbd; --line:#2e3848;
+  --accent:#7fb3ff; --accent-ink:#0d1522; --good:#5fd08c; --good-bg:#17311f; --bad:#ff8a8a; --bad-bg:#3a1c1c;
+  --s1:#3a3f47; --s2:#223a5e; --s3:#20402a; --s4:#3a2d58; --s5:#5a3a1a; --s6:#5a3a1a; --s7:#5a4d14; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#121722; --surface:#1b2230; --ink:#eaeef5; --muted:#a3adbd; --line:#2e3848;
+  --accent:#7fb3ff; --accent-ink:#0d1522; --good:#5fd08c; --good-bg:#17311f; --bad:#ff8a8a; --bad-bg:#3a1c1c;
+  --s1:#3a3f47; --s2:#223a5e; --s3:#20402a; --s4:#3a2d58; --s5:#5a3a1a; --s6:#5a3a1a; --s7:#5a4d14; color-scheme:dark }
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;padding-inline:16px;padding-block:0 80px}
+.wrap{max-width:860px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(34px,6vw,54px);font-weight:800;line-height:1.05}
+h2{font-size:clamp(22px,3.5vw,30px);font-weight:800}
+h3{font-size:19px;font-weight:700}
+p{margin:0}
+.lede{font-size:19px;color:var(--muted);max-width:62ch}
+header.top{padding-block:40px 24px;display:grid;gap:14px}
+.card-tag{display:inline-flex;align-items:center;gap:8px;background:var(--s7);color:var(--ink);padding:6px 12px;border-radius:999px;font-weight:700;font-size:14px;width:max-content}
+.stars{letter-spacing:2px;color:#d19a00}
+.walk{display:grid;gap:28px;padding-block:28px}
+.station{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;display:grid;gap:18px;min-width:0}
+.st-head{display:flex;gap:14px;align-items:flex-start}
+.st-num{flex:none;width:46px;height:46px;border-radius:12px;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:22px;border:2px solid var(--ink)}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.pill{font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.pill.mock{background:var(--bad-bg);color:var(--bad);border-color:transparent}
+.pill.real{background:var(--good-bg);color:var(--good);border-color:transparent}
+.what{max-width:66ch}
+.label{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;font-size:14px;font-weight:600;padding:7px 12px;border-radius:10px;cursor:pointer;text-align:left;min-height:44px}
+.chip:hover,.chip:focus-visible{border-color:var(--accent);outline:none}
+.chip[aria-expanded="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.peek{border-left:4px solid var(--accent);background:var(--bg);padding:12px 14px;border-radius:0 12px 12px 0;display:grid;gap:6px;min-width:0}
+.peek .val{font-weight:700;word-break:break-word}
+.peek ul{margin:0;padding-left:18px}
+ details{border:1px solid var(--line);border-radius:12px;padding:0 14px;background:var(--surface)}
+summary{cursor:pointer;font-weight:800;padding:12px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;min-height:44px}
+summary::after{content:"+";font-size:22px;color:var(--muted)}
+details[open] summary::after{content:"−"}
+.rules{display:grid;gap:10px;padding-bottom:14px}
+.rule{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.rule .n{font-family:var(--display);font-weight:800;color:var(--accent);font-size:18px;min-width:34px;font-variant-numeric:tabular-nums}
+.rule .why{color:var(--muted);font-size:15px}
+.rule .why::before{content:"Why: ";font-weight:800;color:var(--ink)}
+section.ref{padding-block:20px;display:grid;gap:16px}
+.legend{display:flex;gap:8px;flex-wrap:wrap}
+.legend span{padding:4px 10px;border-radius:8px;font-size:14px;font-weight:700;border:1px solid var(--line)}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:15px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--bg)}
+td.h{font-weight:700;white-space:nowrap}
+td.n{font-family:var(--display);font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+.search{font:inherit;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);width:100%;max-width:420px;min-height:44px}
+.tip{background:var(--s7);color:#172033;border-radius:14px;padding:16px 18px;display:grid;gap:8px}
+.tip ol{margin:0;padding-left:20px}
+a{color:var(--accent)}
+img{max-width:100%}[hidden]{display:none!important}</style></head><body>
+<div class="wrap">
+<header class="top">
+  <span class="card-tag">Example card: Charizard ex #199, Scarlet &amp; Violet 151</span>
+  <h1>How the engine works: one card, seven steps</h1>
+  <p class="lede">The engine sheet has two tabs. <b>Cards</b> is one row per card and one column per fact. <b>Rules</b> is the recipe that fills those columns. This page follows one real card through the seven steps that build its page. At each step: what we do, the columns it fills (tap one to see the real value), and the rules behind it.</p>
+</header>
+
+  <span class="stars" id="stars"></span>
+</div>
+
+<div class="walk" id="walk"></div>
+
+<section class="ref">
+  <h2>The Cards tab at a glance</h2>
+  <p class="lede">78 columns, coloured by step, exactly as in the sheet. Every header in the sheet has a note. Hover over it to read the same text as the "What it means" column here.</p>
+  <div class="legend" id="legend"></div>
+  <div class="tbl"><table id="coltable"><thead><tr><th>Station</th><th>Column</th><th>What it means</th><th>Charizard ex #199</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<section class="ref">
+  <h2>The Rules tab at a glance</h2>
+  <p class="lede">All 30 rules, each with what we do and why. Type a word to filter, for example "title", "pack" or "noindex".</p>
+  <input class="search" id="rsearch" type="search" placeholder="Filter rules" aria-label="Filter rules">
+  <div class="tbl"><table id="ruletable"><thead><tr><th>#</th><th>Area</th><th>What we do</th><th>Why</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<section class="ref">
+  <div class="tip">
+    <h3>How to read the sheet in three steps</h3>
+    <ol>
+      <li>Pick any row in the <b>Cards</b> tab. Read it left to right. The colours go in step order: grey (pick), blue (value), green (Google), purple (CardOutpost), orange (page).</li>
+      <li>Any column you do not understand: hover over the header for its note, or find it in the table above.</li>
+      <li>Any value you want to question: find the rule that made it in the <b>Rules</b> tab. Every orange column comes from a numbered rule.</li>
+    </ol>
+  </div>
+</section>
+</div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(function(){
+  var D = JSON.parse(document.getElementById('data').textContent);
+  var NAMES = {s1:'1 Pick', s2:'2 Value', s3:'3 Google', s4:'4 CardOutpost', s5:'5 Page', s6:'6 Check', s7:'7 Sheet'};
+  var byStation = {};
+  D.cols.forEach(function(c){ (byStation[c.st] = byStation[c.st] || []).push(c); });
+  var rulesByN = {}; D.rules.forEach(function(r){ rulesByN[r.n] = r; });
+  var answered = {}, correct = 0;
+
+  function el(tag, cls, text){ var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+
+  function valueNode(v){
+    if (Array.isArray(v)) { var ul = el('ul'); v.forEach(function(x){ ul.appendChild(el('li', null, x)); }); return ul; }
+    return el('div', 'val', v);
+  }
+
+  function buildStation(s){
+    var box = el('article', 'station'); box.id = s.id;
+    var head = el('div', 'st-head');
+    var num = el('div', 'st-num', s.icon); num.style.background = 'var(--' + s.id + ')';
+    var hwrap = el('div');
+    hwrap.appendChild(el('h2', null, s.name));
+    var meta = el('div', 'meta');
+    if (s.source) meta.appendChild(el('span', 'pill', 'Source: ' + s.source));
+    if (s.real) meta.appendChild(el('span', 'pill ' + (s.real === 'Mock' ? 'mock' : 'real'), s.real === 'Mock' ? 'Mock data, labelled in the sheet' : s.real));
+    hwrap.appendChild(meta);
+    head.appendChild(num); head.appendChild(hwrap); box.appendChild(head);
+    box.appendChild(el('p', 'what', s.what));
+
+    var cols = byStation[s.id] || [];
+    if (cols.length) {
+      box.appendChild(el('div', 'label', 'Columns this step fills (' + cols.length + '). Tap one.'));
+      var chips = el('div', 'chips'); var peek = el('div', 'peek'); peek.hidden = true;
+      cols.forEach(function(c){
+        var b = el('button', 'chip', c.h); b.type = 'button'; b.setAttribute('aria-expanded', 'false');
+        b.addEventListener('click', function(){
+          var open = b.getAttribute('aria-expanded') === 'true';
+          chips.querySelectorAll('.chip').forEach(function(x){ x.setAttribute('aria-expanded', 'false'); });
+          if (open) { peek.hidden = true; return; }
+          b.setAttribute('aria-expanded', 'true');
+          peek.innerHTML = '';
+          peek.appendChild(el('div', 'label', c.h));
+          peek.appendChild(el('p', null, c.note));
+          peek.appendChild(el('div', 'label', 'Charizard ex #199'));
+          peek.appendChild(valueNode(c.value));
+          peek.hidden = false;
+        });
+        chips.appendChild(b);
+      });
+      box.appendChild(chips); box.appendChild(peek);
+    } else {
+      box.appendChild(el('p', 'what', 'This step fills no new columns. It writes all 78 columns from the steps above into the sheet.'));
+    }
+
+
+    var rn = D.rmap[s.id] || [];
+    if (rn.length) {
+      var det = el('details'); det.appendChild(el('summary', null, 'Rules behind this step (' + rn.length + ')'));
+      var list = el('div', 'rules');
+      rn.forEach(function(n){
+        var r = rulesByN[n], row = el('div', 'rule');
+        row.appendChild(el('div', 'n', String(r.n)));
+        var body = el('div');
+        body.appendChild(el('div', null, r.area + ': ' + r.rule));
+        body.appendChild(el('div', 'why', r.why));
+        row.appendChild(body); list.appendChild(row);
+      });
+      det.appendChild(list); box.appendChild(det);
+    }
+    return box;
+  }
+
+
+  var walk = document.getElementById('walk');
+  D.stations.forEach(function(s){ walk.appendChild(buildStation(s)); });
+
+  var legend = document.getElementById('legend');
+  Object.keys(NAMES).forEach(function(k){ if (k === 's7') return; var sp = el('span', null, NAMES[k]); sp.style.background = 'var(--' + k + ')'; legend.appendChild(sp); });
+
+  var tb = document.querySelector('#coltable tbody');
+  D.cols.forEach(function(c){
+    var tr = el('tr');
+    var td1 = el('td', null, NAMES[c.st]); td1.style.background = 'var(--' + c.st + ')'; td1.style.whiteSpace = 'nowrap';
+    var td4 = el('td'); td4.appendChild(valueNode(c.value));
+    tr.appendChild(td1); tr.appendChild(el('td', 'h', c.h)); tr.appendChild(el('td', null, c.note)); tr.appendChild(td4);
+    tb.appendChild(tr);
+  });
+
+  var rb = document.querySelector('#ruletable tbody');
+  function renderRules(filter){
+    rb.innerHTML = '';
+    var f = (filter || '').toLowerCase();
+    D.rules.forEach(function(r){
+      var hay = (r.area + ' ' + r.rule + ' ' + r.why).toLowerCase();
+      if (f && hay.indexOf(f) < 0) return;
+      var tr = el('tr');
+      tr.appendChild(el('td', 'n', String(r.n))); tr.appendChild(el('td', 'h', r.area));
+      tr.appendChild(el('td', null, r.rule)); tr.appendChild(el('td', null, r.why));
+      rb.appendChild(tr);
+    });
+  }
+  renderRules('');
+  document.getElementById('rsearch').addEventListener('input', function(e){ renderRules(e.target.value); });
+})();
+</script>
+</body></html>

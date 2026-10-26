@@ -108,8 +108,23 @@ def columns():
      ('Page: links up', ORANGE, 'Links to the set page and the Pokémon page, if they exist in our page plan.', lambda r: [x for x in (r['page']['set_url'], r['page']['pokemon_url']) if x], 1),
      ('Page: breadcrumb', ORANGE, 'The path shown at the top of the page: Home > Cards > Set > Card.', lambda r: ' > '.join(b['name'] for b in r['page']['breadcrumbs']), 0),
      ('Page: call to action', ORANGE, 'The button that turns a price search into a pack opening. Links to the real CardOutpost packs page (/select).', lambda r: f"{r['page']['cta']['text']} ({r['page']['cta']['odds']} odds) → {r['page']['cta']['url']}", 0),
-     ('Page: schema (JSON-LD)', ORANGE, 'Structured data for Google: Product, FAQPage and BreadcrumbList. Pasted into the page as code.', lambda r: json.dumps(r['page']['schema'], ensure_ascii=False, indent=1), 0),
+     ('Page: schema (JSON-LD)', ORANGE, 'Structured data for Google, one line per block. The full code sits inside the HTML page (view source), not here, so the sheet stays readable.', lambda r: schema_summary(r['page']['schema']), 1),
     ]
+
+def schema_summary(blocks):
+    out = []
+    for b in blocks:
+        t = b.get('@type')
+        if t == 'Product':
+            o = b.get('offers', {})
+            out.append(f"Product: {b.get('name')}, offers ${o.get('lowPrice', 0):,.0f} to ${o.get('highPrice', 0):,.0f}")
+        elif t == 'FAQPage':
+            out.append(f"FAQPage: {len(b.get('mainEntity', []))} questions")
+        elif t == 'BreadcrumbList':
+            out.append("BreadcrumbList: " + ' > '.join(x.get('name', '') for x in b.get('itemListElement', [])))
+        else:
+            out.append(str(t))
+    return out
 
 def num(v):
     if isinstance(v, (int, float)): return v
@@ -142,6 +157,8 @@ def main():
         wide = b or h in ('Google: AI Overview text', 'Page: selling line', 'Page: meta description', 'Page: schema (JSON-LD)')
         if wide: reqs.append({'repeatCell': {'range': {'sheetId': gid, 'startRowIndex': 1, 'endRowIndex': len(values), 'startColumnIndex': i, 'endColumnIndex': i + 1}, 'cell': {'userEnteredFormat': {'wrapStrategy': 'WRAP'}}, 'fields': 'userEnteredFormat.wrapStrategy'}})
         reqs.append({'updateDimensionProperties': {'range': {'sheetId': gid, 'dimension': 'COLUMNS', 'startIndex': i, 'endIndex': i + 1}, 'properties': {'pixelSize': 320 if wide else 150}, 'fields': 'pixelSize'}})
+    # Fixed row height so every row looks the same; long cells show their full text on click.
+    reqs.append({'updateDimensionProperties': {'range': {'sheetId': gid, 'dimension': 'ROWS', 'startIndex': 1, 'endIndex': len(values)}, 'properties': {'pixelSize': 120}, 'fields': 'pixelSize'}})
     reqs.append({'updateSheetProperties': {'properties': {'sheetId': gid, 'gridProperties': {'frozenRowCount': 1, 'frozenColumnCount': 3}}, 'fields': 'gridProperties.frozenRowCount,gridProperties.frozenColumnCount'}})
     s.batchUpdate(spreadsheetId=SID, body={'requests': reqs}).execute()
     # Rules tab

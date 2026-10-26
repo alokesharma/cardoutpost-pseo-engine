@@ -5,7 +5,15 @@ Add a card to the input list and its page appears, with zero manual work.
 
 - **Input:** 1,376 card keywords from the keyword research (120 card pages, 1.95M US searches a month)
 - **Output:** 120 HTML pages in `out/`, a sitemap, a robots.txt, and a Google Sheet that shows every number behind every page
-- **Live demo list:** `out/index.html`
+
+## Start here: three links
+
+| What | Link | Notes |
+|---|---|---|
+| **Priority page**, finished: Charizard ex #199 (Scarlet & Violet 151) | [out/priority/cards/151/charizard-ex](https://alokesharma.github.io/cardoutpost-pseo-engine/out/priority/cards/151/charizard-ex/) | Built inside CardOutpost's own header, sidebar, footer and stylesheet (saved from the live site on 26 Oct 2026). Official card image. Interactive price chart. Open it on a phone too. |
+| **Sample of generated pages**: 120 cards, plain template | [out/index.html](https://alokesharma.github.io/cardoutpost-pseo-engine/out/) | One row per page with its index / noindex decision. These are the engine's raw output; the priority page shows the same data in CardOutpost's shell. |
+| **How the engine works**, one card through the seven steps | [out/how-it-works](https://alokesharma.github.io/cardoutpost-pseo-engine/out/how-it-works/) | Every column with its meaning and Charizard's real value, every rule with its why. Companion to the sheet. |
+
 - **Sheet:** [CardOutpost pSEO engine](https://docs.google.com/spreadsheets/d/1cyzwuAlbC5ezEbEe1_3ee1JmEnBvBzam4b52K63QAnM/edit) (Cards tab = one row per page, Rules tab = every rule in plain English)
 
 ## How it works: 7 steps, one script each
@@ -19,8 +27,12 @@ Add a card to the input list and its page appears, with zero manual work.
 | 5 Rules | `engine/phase5_page_elements.py` | Title, H1, meta, selling line, "About this card" bullets, grade ladder, FAQ, links, schema, quality gate (index or noindex). | Steps 1 to 4 |
 | 6 Build | `engine/phase6_build.py` | Renders `templates/card.html` into 120 pages + `sitemap.xml` + `robots.txt`. No JavaScript needed to show content. | Step 5 |
 | 7 Sheet | `engine/push_sheet.py` | Writes every column and every rule to the Google Sheet, with a note on each header. | Steps 1 to 5 |
+| Priority page | `engine/priority_page.py` | Renders one card from `data/pages.json` inside CardOutpost's real page shell (`templates/cop_shell/`), with the official card image and an interactive chart. | Step 5 |
+| Walkthrough | `engine/how_it_works.py` | Builds the "how it works" page from the same data and rules. | Steps 1 to 5 |
 
 Run everything: `./run_all.sh`. Each step reads the previous step's CSV, so any step can be rerun alone.
+
+Links inside the built pages are root-relative (`/cards/...`). For GitHub Pages the build sets `PAGES_BASE=/cardoutpost-pseo-engine/out`; for a local server (`cd out && python3 -m http.server 8765`) leave it empty.
 
 ## What is on a page, top to bottom
 
@@ -105,10 +117,10 @@ Mock numbers are generated from a fixed seed per card, so they never change betw
 ## Folder layout
 
 ```
-engine/      the 7 scripts
-templates/   card.html
+engine/      the 7 scripts, plus priority_page.py and how_it_works.py
+templates/   card.html (plain template), cop_shell/ (CardOutpost's header, sidebar, footer, stylesheet, logo), how_it_works.html
 data/        cards.csv, market.csv + .json, serp.csv + .json, cop.csv, pages.csv + .json, aliases.csv
-out/         120 built pages, sitemap.xml, robots.txt, index.html
+out/         120 built pages, sitemap.xml, robots.txt, index.html, priority/ (the finished page), how-it-works/
 ```
 
 Raw page caches (`data/raw/`) are not in the repo. Rerun steps 2 and 3 to rebuild them.

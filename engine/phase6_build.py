@@ -6,10 +6,12 @@ Output: out/cards/<url>/index.html for every card, out/sitemap.xml, out/robots.t
 The template is plain HTML with {{placeholders}}. No JavaScript is needed to show any content.
 The price chart is an inline SVG drawn here, so it needs no library and no script.
 """
-import json, html, pathlib, datetime, re
+import json, html, pathlib, datetime, re, os
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / 'out'; SITE = 'https://www.cardoutpost.com'
+BASE = os.environ.get('PAGES_BASE', '')   # e.g. /cardoutpost-pseo-engine/out when hosted on GitHub Pages; empty for a local server at out/
+def rebase(h): return re.sub(r'href="/(?!/)', f'href="{BASE}/', h) if BASE else h
 TPL = (ROOT / 'templates/card.html').read_text()
 E = lambda s: html.escape(str(s if s is not None else ''), quote=True)
 def usd(x): return '' if x is None else (f'${x:,.0f}' if x >= 100 or x == int(x) else f'${x:,.2f}')
@@ -55,7 +57,7 @@ def render(p):
         'pulls': E(cp['cop_pulls_90d']), 'vault': E(cp['cop_vault_copies']), 'grade_in_stock': E(cp['cop_grade_in_stock']), 'sellback': usd(float(cp['cop_sellback_value'])),
         'faqs': faqs, 'related_section': rel, 'source_url': E(p['source_url']),
     }
-    return re.sub(r'\{\{(\w+)\}\}', lambda m: vals.get(m.group(1), ''), TPL)
+    return rebase(re.sub(r'\{\{(\w+)\}\}', lambda m: vals.get(m.group(1), ''), TPL))
 
 def main():
     pages = json.load(open(ROOT / 'data/pages.json'))['pages']
