@@ -37,13 +37,14 @@ def ptype(u):
 
 def saved_index():
     idx = {}
-    for f in RESEARCH.glob('*.json'):
+    for f in (RESEARCH.glob('*.json') if RESEARCH.exists() else []):
         try: q = json.load(open(f)).get('search_parameters', {}).get('q')
         except Exception: continue
         if q: idx[q] = f
     return idx
 
 def get(kw, key, idx):
+    CACHE.mkdir(parents=True, exist_ok=True)
     f = CACHE / f'{key}.json'
     if not f.exists() and kw in idx: shutil.copy(idx[kw], f)          # copy the saved result into the repo
     if f.exists():

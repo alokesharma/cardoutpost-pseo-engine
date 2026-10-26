@@ -30,7 +30,21 @@ Add a card to the input list and its page appears, with zero manual work.
 | Priority page | `engine/priority_page.py` | Renders one card from `data/pages.json` inside CardOutpost's real page shell (`templates/cop_shell/`), with the official card image and an interactive chart. | Step 5 |
 | Walkthrough | `engine/how_it_works.py` | Builds the "how it works" page from the same data and rules. | Steps 1 to 5 |
 
-Run everything: `./run_all.sh`. Each step reads the previous step's CSV, so any step can be rerun alone.
+## Run it yourself
+
+```
+git clone https://github.com/alokesharma/cardoutpost-pseo-engine.git
+cd cardoutpost-pseo-engine
+./run_all.sh
+open out/index.html
+```
+
+- Needs Python 3.9 or newer. Nothing to install for steps 1 to 6.
+- The only input is `data/keywords_cards.csv`: one row per keyword with its card page URL and US search volume, from the keyword research. Change the `120` in `run_all.sh` to build more or fewer pages.
+- No API keys are in the repo and none are needed. Steps 2 and 3 read public pages; their outputs (`data/market.csv`, `data/serp.csv`) and the 120 saved Google results are committed, so the run uses them. `REFRESH=1 ./run_all.sh` fetches prices again (about 30 minutes, free reader, 20 requests a minute). New keywords without a saved Google result need `SERPAPI_KEY` in the environment.
+- Step 7, the Google Sheet, is skipped unless you add your own Google OAuth token and `data/sheet_ids.json`.
+
+Each step reads the previous step's CSV, so any step can be rerun alone.
 
 Links inside the built pages are root-relative (`/cards/...`). For GitHub Pages the build sets `PAGES_BASE=/cardoutpost-pseo-engine/out`; for a local server (`cd out && python3 -m http.server 8765`) leave it empty.
 
