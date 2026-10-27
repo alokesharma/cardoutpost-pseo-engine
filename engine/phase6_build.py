@@ -65,11 +65,34 @@ def render(p):
     }
     return rebase(re.sub(r'\{\{(\w+)\}\}', lambda m: vals.get(m.group(1), ''), TPL))
 
+HUB_CSS = "body{margin:0;background:#0e0e0e;color:#e5e2e1;font-family:system-ui,sans-serif;line-height:1.45}main{max-width:960px;margin:0 auto;padding:20px 16px 60px}h1{font-size:1.8rem;margin:10px 0 4px}.sub{color:#9a9a9a;margin:0 0 20px}.crumbs{font-size:.85rem;color:#9a9a9a}.crumbs a{color:#c3f400;text-decoration:none}.grid{display:grid;grid-template-columns:1fr;gap:10px}@media(min-width:700px){.grid{grid-template-columns:1fr 1fr 1fr}}.c{display:flex;justify-content:space-between;gap:10px;background:#1a1a1a;border:1px solid #2a2a2a;border-radius:12px;padding:12px 14px;text-decoration:none;color:#fff;font-weight:700}.c span{color:#c3f400;white-space:nowrap}.note{color:#9a9a9a;font-size:.85rem;margin-top:24px}"
+
+def hubs(pages):
+    """Set and Pokemon hub pages: one page per set or Pokemon that any card page links up to, listing its card pages.
+    Sample pages for the demo. In production they list every card of the set, server-built, and are how Google finds the card pages."""
+    groups = {}
+    for p in pages:
+        if not p['index']: continue
+        for url, name in ((p['set_url'], f"{p['set_name']} cards"), (p['pokemon_url'], f"All {p['pokemon'].title()} cards")):
+            if url: groups.setdefault(url, [name, []])[1].append(p)
+    for url, (name, cards) in groups.items():
+        cards.sort(key=lambda q: -q['search_volume_us'])
+        links = ''.join(f'<a class="c" href="{E(q["url"])}">{E(q["h1"])}<span>PSA 10 {usd(q["price_box"]["psa10"]) or "–"}</span></a>' for q in cards)
+        kind = 'Sets' if url.startswith('/sets/') else 'Pokémon'
+        doc = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{E(name)} | CardOutpost</title>'
+               f'<link rel="canonical" href="{SITE}{E(url)}"><style>{HUB_CSS}</style></head><body><main>'
+               f'<p class="crumbs"><a href="/">Home</a> › <a href="/cards">Cards</a> › {E(kind)}</p><h1>{E(name)}</h1><p class="sub">{len(cards)} card {"page" if len(cards) == 1 else "pages"} in this demo build, most searched first.</p>'
+               f'<div class="grid">{links}</div><p class="note">Sample hub page. In production this page lists every card of the {"set" if kind == "Sets" else "Pokémon"}, built on the server, and is how Google reaches the card pages.</p></main></body></html>')
+        d = OUT / url.strip('/'); d.mkdir(parents=True, exist_ok=True)
+        (d / 'index.html').write_text(rebase(doc))
+    print(f'built {len(groups)} hub pages (sets and Pokémon)')
+
 def main():
     pages = json.load(open(ROOT / 'data/pages.json'))['pages']
     for p in pages:
         d = OUT / p['url'].strip('/'); d.mkdir(parents=True, exist_ok=True)
         (d / 'index.html').write_text(render(p))
+    hubs(pages)
     live = [p for p in pages if p['in_sitemap']]
     (OUT / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         ''.join(f'  <url><loc>{SITE}{p["url"]}</loc><lastmod>{p["fetched_at"]}</lastmod><changefreq>weekly</changefreq></url>\n' for p in live) + '</urlset>\n')

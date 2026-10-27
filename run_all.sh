@@ -8,7 +8,7 @@ if [ "$REFRESH" = "1" ] || [ ! -f data/market.csv ]; then python3 engine/phase2_
 if [ "$REFRESH" = "1" ] || [ ! -f data/serp.csv ]; then python3 engine/phase3_search_data.py; else echo "step 3: using data/serp.csv (the 120 saved Google results are in data/raw/serp/)"; fi
 python3 engine/phase4_cop_data.py
 python3 engine/phase5_page_elements.py
-python3 engine/phase6_build.py
+python3 engine/phase6_build.py   # set PAGES_BASE=/cardoutpost-pseo-engine/out before this script when building for GitHub Pages
 python3 engine/priority_page.py /cards/151/charizard-ex
 python3 engine/how_it_works.py
 [ -f data/sheet_ids.json ] && python3 engine/push_sheet.py || echo "sheet push skipped (no data/sheet_ids.json)"
