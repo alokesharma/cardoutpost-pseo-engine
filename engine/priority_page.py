@@ -253,7 +253,7 @@ def render(p):
       <div class="stat"><div class="lbl">Lowest listing price</div><div class="val">{usd(float(cp['cop_min_list_price']))}</div></div>
       <div class="stat"><div class="lbl">Last pulled</div><div class="val">{E(cp['cop_last_pulled'])}</div></div>
     </div>
-    <div class="cta-row">{cosmic(cta['text'], SITE + cta['url'])}<a class="note" href="{SITE}/responsible-play" style="text-decoration:underline">Odds are shown before every pack. Responsible play.</a></div>
+    <div class="cta-row">{cosmic(cta['text'], SITE + cta['url'])}<a class="note" href="{SITE}/responsible-play" style="text-decoration:underline">Odds are shown before every pack. 18+. Play responsibly.</a></div>
   </section>
 
   <section class="{PANEL} section faq"><h2 class="{H2}">Questions about {E(p['card_name'])} #{E(p['card_number'])}</h2><div>{faqs}</div></section>
