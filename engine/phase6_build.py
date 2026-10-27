@@ -85,7 +85,15 @@ def hubs(pages):
                f'<div class="grid">{links}</div><p class="note">Sample hub page. In production this page lists every card of the {"set" if kind == "Sets" else "Pokémon"}, built on the server, and is how Google reaches the card pages.</p></main></body></html>')
         d = OUT / url.strip('/'); d.mkdir(parents=True, exist_ok=True)
         (d / 'index.html').write_text(rebase(doc))
-    print(f'built {len(groups)} hub pages (sets and Pokémon)')
+    # /cards: the top hub, listing every set and Pokémon hub
+    sets_ = sorted((u, n) for u, (n, c) in groups.items() if u.startswith('/sets/')); poks = sorted((u, n) for u, (n, c) in groups.items() if u.startswith('/pokemon/'))
+    sec = lambda t, items: f'<h2>{t}</h2><div class="grid">' + ''.join(f'<a class="c" href="{E(u)}">{E(n)}<span>{len(groups[u][1])}</span></a>' for u, n in items) + '</div>'
+    doc = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pokémon card prices by set and Pokémon | CardOutpost</title>'
+           f'<link rel="canonical" href="{SITE}/cards"><style>{HUB_CSS}h2{{margin:24px 0 10px;font-size:1.1rem;color:#9a9a9a;text-transform:uppercase;letter-spacing:.06em}}</style></head><body><main>'
+           f'<p class="crumbs"><a href="/">Home</a> › Cards</p><h1>Card prices</h1><p class="sub">Every card page in this demo build, grouped by set and by Pokémon. The number is how many card pages each hub holds.</p>'
+           f'{sec("By set", sets_)}{sec("By Pokémon", poks)}<p class="note">Sample hub page. In production this page lists every set and every Pokémon, built on the server.</p></main></body></html>')
+    (OUT / 'cards').mkdir(parents=True, exist_ok=True); (OUT / 'cards/index.html').write_text(rebase(doc))
+    print(f'built {len(groups)} hub pages (sets and Pokémon) + /cards')
 
 def main():
     pages = json.load(open(ROOT / 'data/pages.json'))['pages']
