@@ -46,6 +46,21 @@ open out/index.html
 
 Each step reads the previous step's CSV, so any step can be rerun alone.
 
+### Adding more keywords
+
+Open `data/keywords_cards.csv` in Excel and add one row per keyword. Five columns matter:
+
+| Column | Example | Where it comes from |
+|---|---|---|
+| keyword | umbreon vmax alt art | Ahrefs or any keyword tool |
+| search_volume_us | 12000 | same tool |
+| page_url | /cards/evolving-skies/umbreon-vmax | the page this keyword belongs to |
+| page_name | Umbreon VMAX card | the card's name |
+| pokemon | umbreon | the Pokémon, lowercase |
+
+`intent` and `pattern` are research notes and can be left blank. Several keywords can share one `page_url`; the engine adds their volumes together and builds one page per URL. Save as CSV and run `./run_all.sh` again. A new card fetches its prices online, about 15 seconds each, no key needed. A new keyword without a saved Google result needs `SERPAPI_KEY` in the environment; without it the page is still built, just without the "People also ask" and AI Overview columns.
+
+
 Links inside the built pages are root-relative (`/cards/...`). For GitHub Pages the build sets `PAGES_BASE=/cardoutpost-pseo-engine/out`; for a local server (`cd out && python3 -m http.server 8765`) leave it empty.
 
 ## What is on a page, top to bottom
