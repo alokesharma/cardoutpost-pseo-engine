@@ -86,6 +86,10 @@ table.ladder{width:100%;border-collapse:collapse;font-size:15px}
 .stat .lbl{font-size:12px;color:#a5a5a5}
 .stat .val{font-weight:800;color:#fff;font-size:20px;margin-top:2px;font-variant-numeric:tabular-nums}
 .badge{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#111;background:#ffe014;border-radius:6px;padding:2px 7px;font-weight:800}
+.ladder td.g{color:#fff;font-weight:700}
+.ladder td.mu{color:#a5a5a5;font-size:13px}
+.lk{color:#cee64d;font-weight:800;white-space:nowrap;text-decoration:underline;text-underline-offset:3px}
+.lk:hover{color:#fff}
 .faq details{border-top:1px solid rgba(255,255,255,.08)}
 .faq details:last-child{border-bottom:1px solid rgba(255,255,255,.08)}
 .faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 4px;font-weight:700;color:#fff;min-height:44px}
@@ -205,6 +209,13 @@ def render(p):
     hist_rows = ''.join(f'<tr><td>{m}</td><td class="n">{usd(v) or "–"}</td><td class="n">{usd(dict(hist["raw"]).get(m)) or "–"}</td></tr>' for m, v in hist['psa10'])
     about = ''.join(f'<li>{E(b)}</li>' for b in p['about'])
     mock = cp['data_type'] == 'MOCK'
+    ls = p.get('listings', [])
+    if ls:
+        lrows = ''.join(f'<tr><td class="g">{E(l["grade"])}</td><td class="mu">{E(l["seller"])}</td><td class="mu">Listed {E(l["listed"])}</td><td class="n">{usd(l["price"])}</td><td style="text-align:right"><a class="lk" href="{SITE}{E(l["url"])}">View listing</a></td></tr>' for l in ls)
+        listings_html = (f'<div style="overflow-x:auto"><table class="ladder"><thead><tr><th>Grade</th><th>Seller</th><th>Listed</th><th class="n">Price</th><th></th></tr></thead><tbody>{lrows}</tbody></table></div>'
+                         f'<p class="note">{len(ls)} vaulted {"copy" if len(ls) == 1 else "copies"} listed by CardOutpost members, lowest price first. Buy one outright, or rip the {E(cp["cop_pack"])} pack at {E(cp["cop_pull_odds"])} odds. Listing pages are noindex and point back to this page; a sold copy redirects here.</p>')
+    else:
+        listings_html = f'<p class="note">No copies listed right now. The fastest way to get one is the {E(cp["cop_pack"])} pack, at {E(cp["cop_pull_odds"])} odds.</p>'
     schema = ''.join(f'<script type="application/ld+json">{json.dumps(s, ensure_ascii=False)}</script>' for s in p['schema'])
 
     main = f'''
@@ -254,6 +265,11 @@ def render(p):
       <div class="stat"><div class="lbl">Last pulled</div><div class="val">{E(cp['cop_last_pulled'])}</div></div>
     </div>
     <div class="cta-row">{cosmic(cta['text'], SITE + cta['url'])}<a class="note" href="{SITE}/responsible-play" style="text-decoration:underline">Odds are shown before every pack. 18+. Play responsibly.</a></div>
+  </section>
+
+  <section class="{PANEL} section">
+    <div class="chart-head"><h2 class="{H2}">Copies for sale now</h2>{'<span class="badge">Sample data</span>' if mock else ''}</div>
+    {listings_html}
   </section>
 
   <section class="{PANEL} section faq"><h2 class="{H2}">Questions about {E(p['card_name'])} #{E(p['card_number'])}</h2><div>{faqs}</div></section>

@@ -44,6 +44,12 @@ def render(p):
         ups = ''.join(f'<a href="{E(u)}">{E(t)}</a>' for u, t in ((p['set_url'], f"All {p['set_name']} cards"), (p['pokemon_url'], f"All {p['pokemon'].title()} cards")) if u)
         cards = ''.join(f'<a class="rel" href="{E(r["url"])}"><b>{E(r["name"])}</b><span>PSA 10 {usd(r["psa10"])} · {E(r["why"])}</span></a>' for r in p['related'])
         rel = f'<h2>Related cards</h2><div class="links-up">{ups}</div><div class="grid">{cards}</div>'
+    if p['listings']:
+        lrows = ''.join(f'<tr><td>{E(l["grade"])}</td><td>{E(l["seller"])}</td><td>{E(l["listed"])}</td><td class="num">{usd(l["price"])}</td><td><a href="{SITE}{E(l["url"])}">View listing</a></td></tr>' for l in p['listings'])
+        listings = (f'<table><thead><tr><th>Grade</th><th>Seller</th><th>Listed</th><th class="num">Price</th><th></th></tr></thead><tbody>{lrows}</tbody></table>'
+                    f'<p class="note">{len(p["listings"])} vaulted {"copy" if len(p["listings"]) == 1 else "copies"} listed by CardOutpost members. Listing pages are noindex and point here. A sold copy redirects back to this page.</p>')
+    else:
+        listings = f'<p class="note">No copies listed right now. The fastest way to get one is the {E(cp["cop_pack"])} pack, at {E(cp["cop_pull_odds"])} odds.</p>'
     sub = ' · '.join(x for x in (p['rarity'], f"Released {p['release_date']}" if p['release_date'] else '', f"{p['pop_source']} graded: {p['pop_total']:,.0f}" if p['pop_total'] else '') if x)
     vals = {
         'title': E(p['title']), 'meta_description': E(p['meta_description']), 'robots': p['robots'], 'canonical': E(p['canonical']),
@@ -55,7 +61,7 @@ def render(p):
         'about': about, 'ladder': ladder, 'pop_source': E(p['pop_source'] or 'PSA'), 'history_section': chart(p),
         'data_badge': 'sample data' if cp['data_type'] == 'MOCK' else 'live', 'odds': E(cp['cop_pull_odds']), 'pack': E(cp['cop_pack']), 'pack_price': usd(float(cp['cop_pack_price'])),
         'pulls': E(cp['cop_pulls_90d']), 'vault': E(cp['cop_vault_copies']), 'grade_in_stock': E(cp['cop_grade_in_stock']), 'sellback': usd(float(cp['cop_sellback_value'])),
-        'faqs': faqs, 'related_section': rel, 'source_url': E(p['source_url']),
+        'faqs': faqs, 'related_section': rel, 'source_url': E(p['source_url']), 'listings_section': listings,
     }
     return rebase(re.sub(r'\{\{(\w+)\}\}', lambda m: vals.get(m.group(1), ''), TPL))
 

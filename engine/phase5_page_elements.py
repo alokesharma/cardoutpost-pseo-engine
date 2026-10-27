@@ -32,7 +32,7 @@ RULES = [
  ('H1', '"[Card] #[No.] ([Set])".', 'Names the exact printing. Clear for the reader and for Google.'),
  ('Meta description', 'Raw price, PSA 10 price, number of 10s, and CardOutpost pull odds. Under 155 characters.', 'Shows numbers no other result shows: the odds.'),
  ('URL', 'Keep the URL from the keyword research: /cards/[set]/[card] or /cards/[card].', 'Already planned and mapped to keywords in Part 2.'),
- ('Page order', '1 H1 and image. 2 Price box (PSA 10, raw, 12-month trend, date). 3 One selling line and the pack button. 4 "About this card" bullets. 5 Grade ladder. 6 Price history chart. 7 CardOutpost data. 8 FAQ. 9 Related cards and links up. 10 Source and disclaimer note.', 'Price sites and retailers all keep the top for the price and the buy button. Text goes right under it, as bullets, never at the bottom only. No competitor has 3, 7 or 8.'),
+ ('Page order', '1 H1 and image. 2 Price box (PSA 10, raw, 12-month trend, date). 3 One selling line and the pack button. 4 "About this card" bullets. 5 Grade ladder. 6 Price history chart. 7 CardOutpost data. 8 Copies for sale now. 9 FAQ. 10 Related cards and links up. 11 Source and disclaimer note.', 'Price sites and retailers all keep the top for the price and the buy button. Text goes right under it, as bullets, never at the bottom only. No competitor has 3, 7 or 8.'),
  ('Selling line', 'One line, never a paragraph: pack, pack price, odds, "shown before you open", vaulted and insured, sell back at 100%.', 'Fits the first phone screen next to the button. Odds next to the claim keeps it honest and matches the responsible-play page.'),
  ('About this card', '6 to 8 bullets, each one fact from the data: set and release, rarity, price now and 12-month trend, grade 10 count and share, sales speed, CardOutpost odds and pulls. 120 to 180 words.', 'Amazon, Target and Walmart put the first text right under the buy box as bullets. Each bullet is a different number per card, so no two pages read the same.'),
  ('Grade ladder', 'Table of prices for ungraded, grade 7, 8, 9, 9.5 and PSA 10, each with the PSA population for that grade. Stacked rows on phones.', 'The main thing people look for on a card price search. PriceCharting, the biggest ranker, leads with it.'),
@@ -44,6 +44,7 @@ RULES = [
  ('Links', 'Breadcrumb: Home > Cards > [Set] > [Card]. Link up to the set page and the Pokemon page if they exist in our page plan.', 'Set and Pokemon pages are how Google finds card pages.'),
  ('Links', 'Related cards: up to 4 other cards of the same Pokemon, then up to 4 from the same set, most searched first. Only pages that pass the quality gate.', 'Spreads authority to the cards people search most. Never links to a noindex page.'),
  ('Links', 'Call to action: "Rip the [pack] pack" to /select, shown with the odds. Also a sticky bottom bar on phones.', 'Turns a price search into a pack opening. The button is always one tap away.'),
+ ('Copies for sale', 'Under the CardOutpost section, list every live marketplace listing of this card: grade, price, seller, date, with a link to its /marketplace/listing/[id] page. Listing pages carry noindex and a canonical to this card page, and a sold listing redirects here. If none is live, say so and keep the pack button.', 'One indexed page per card. Buyers reach every copy in one click, but the listing pages never compete with the card page in Google (Part 1, fix 2).'),
  ('Quality gate', 'Index only if ALL pass: a real market price, CardOutpost odds present, not a duplicate, "About this card" text under 80% the same as any other page.', 'Thin or duplicate pages never ship. A rare card that sells once a month is not thin, so sales speed and grade counts are not gate rules: those sections are simply hidden when the data is missing.'),
  ('Quality gate', 'A page that fails gets noindex, stays out of the sitemap, and gets no internal links. It is rechecked every refresh.', 'It can pass later when data arrives.'),
  ('Sitemap', 'Only indexable pages, with lastmod = the date the prices were fetched.', 'Tells Google which pages matter and when they changed.'),
@@ -232,7 +233,7 @@ def main():
             'grade_ladder': ladder, 'price_history_psa10': h.get('psa_10', [])[-24:], 'price_history_ungraded': h.get('ungraded', [])[-24:],
             'volume_ungraded': m.get('volume_ungraded'), 'volume_psa_10': m.get('volume_psa_10'),
             'pop_source': g, 'pop_total': tot, 'pop_10': ten, 'gem_rate_pct': gem, 'worth_grading': worth_grading(m),
-            'cop': cp, 'faqs': fq, 'faq_log': fq_log,
+            'cop': cp, 'listings': json.loads(cp.get('cop_listings_json') or '[]'), 'faqs': fq, 'faq_log': fq_log,
             'source_url': m.get('pc_url'), 'fetched_at': m.get('fetched_at'),
             'cta': {'text': f"Rip the {cp['cop_pack']} pack", 'url': PACKS_URL, 'odds': cp['cop_pull_odds'], 'price': f(cp['cop_pack_price'])},
         }
@@ -264,8 +265,9 @@ def main():
                    'description': p['meta_description'], 'url': SITE + p['url'],
                    'additionalProperty': [{'@type': 'PropertyValue', 'name': k, 'value': v} for k, v in
                                           (('Set', p['set_name']), ('Card number', p['card_number']), ('Release date', p['release_date']), ('Grade in stock', cp['cop_grade_in_stock']))],
-                   'offers': {'@type': 'AggregateOffer', 'priceCurrency': 'USD', 'lowPrice': f(cp['cop_min_list_price']), 'highPrice': val, 'offerCount': int(cp['cop_vault_copies']),
-                              'availability': 'https://schema.org/InStock' if int(cp['cop_vault_copies']) else 'https://schema.org/OutOfStock'}}
+                   'offers': {'@type': 'AggregateOffer', 'priceCurrency': 'USD', 'offerCount': len(p['listings']),
+                              'lowPrice': p['listings'][0]['price'] if p['listings'] else f(cp['cop_min_list_price']), 'highPrice': p['listings'][-1]['price'] if p['listings'] else val,
+                              'availability': 'https://schema.org/InStock' if p['listings'] else 'https://schema.org/OutOfStock'}}
         faq = {'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': q['q'], 'acceptedAnswer': {'@type': 'Answer', 'text': q['a']}} for q in p['faqs']]}
         bc = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': b['name'], 'item': SITE + b['url']} for i, b in enumerate(p['breadcrumbs'])]}
         p['schema'] = [product, faq, bc]

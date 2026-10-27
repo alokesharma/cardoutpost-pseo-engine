@@ -16,7 +16,7 @@ import push_sheet as ps
 CARD = '/cards/151/charizard-ex'
 P1 = {'Rank', 'Card ID', 'Card name', 'Set', 'Set slug', 'URL', 'Main keyword', 'Searches / month (US)', 'Keywords', 'All keywords'}
 GATE = {'Page: index or noindex', 'Page: why noindex', 'Page: canonical URL', 'Page: in sitemap?'}
-RULES_BY_STEP = {'s1': [1, 13], 's2': [2, 3, 4, 5], 's3': [6], 's4': [7, 8], 's5': [9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25], 's6': [26, 27, 28, 29, 30], 's7': []}
+RULES_BY_STEP = {'s1': [1, 13], 's2': [2, 3, 4, 5], 's3': [6], 's4': [7, 8], 's5': [9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26], 's6': [27, 28, 29, 30, 31], 's7': []}
 
 STEPS = [
     {'id': 's1', 'name': 'Pick the cards', 'icon': '1', 'source': 'Keyword research sheet (Ahrefs volumes)', 'real': 'Real',
@@ -26,13 +26,13 @@ STEPS = [
     {'id': 's3', 'name': 'See what Google shows', 'icon': '3', 'source': 'Saved Google results (SerpAPI)', 'real': 'Real',
      'what': 'We open the Google result for the main keyword and note what is there: the AI Overview text and its sources, the "People also ask" questions, the top 10 sites, and the related searches. We saved these results during the keyword research, so no new searches are paid for.'},
     {'id': 's4', 'name': "Add CardOutpost's own numbers", 'icon': '4', 'source': 'CardOutpost (mock until the database is connected)', 'real': 'Mock',
-     'what': 'This is the part no competitor has: which pack holds the card, the pull odds, pulls in the last 90 days, copies in the vault, and the sell-back value. We do not have access to CardOutpost\'s database, so these numbers are MOCK and labelled as such. The pack names and the Premium pack price ($25, max pull $250) are real. When the tech team connects the database, the columns keep the same names.'},
+     'what': 'This is the part no competitor has: which pack holds the card, the pull odds, pulls in the last 90 days, copies in the vault, the copies members are selling right now, and the sell-back value. We do not have access to CardOutpost\'s database, so these numbers are MOCK and labelled as such. The pack names and the Premium pack price ($25, max pull $250) are real. When the tech team connects the database, the columns keep the same names.'},
     {'id': 's5', 'name': 'Write the page', 'icon': '5', 'source': 'Steps 1 to 4', 'real': 'Built from the data',
-     'what': 'Now we have all the facts. The rules turn them into every element of the page: title, H1, meta description, the selling line, the "About this card" bullets, the grade table, the "worth grading?" answer, the FAQs, the links and the schema. Every sentence comes from a number in an earlier column. Nothing is written by hand.'},
+     'what': 'Now we have all the facts. The rules turn them into every element of the page: title, H1, meta description, the selling line, the "About this card" bullets, the grade table, the "worth grading?" answer, the copies for sale, the FAQs, the links and the schema. Every sentence comes from a number in an earlier column. Nothing is written by hand.'},
     {'id': 's6', 'name': 'Check and build', 'icon': '6', 'source': 'Step 5', 'real': 'Built from the data',
      'what': 'Before a page goes live it must pass four checks: a real market price, CardOutpost odds, not a duplicate of another page, and text under 80% the same as any other page. Pages that pass are INDEX and go in the sitemap. Pages that fail are built anyway but marked noindex, so Google ignores them until the data arrives. Then every page is rendered into HTML from one template.'},
     {'id': 's7', 'name': 'Fill the sheet', 'icon': '7', 'source': 'Steps 1 to 5', 'real': '',
-     'what': 'Everything above is written into the Google Sheet. The Cards tab has one row per card and one column per fact, in step colours. Hover over any header to read what the column means. The Rules tab is the recipe: 30 lines, each with what we do and why.'},
+     'what': 'Everything above is written into the Google Sheet. The Cards tab has one row per card and one column per fact, in step colours. Hover over any header to read what the column means. The Rules tab is the recipe: 31 lines, each with what we do and why.'},
 ]
 
 def step_of(h):
@@ -62,7 +62,8 @@ def main():
     rules = [{'n': i + 1, 'area': a, 'rule': ru, 'why': w} for i, (a, ru, w) in enumerate(pj['rules'])]
     data = json.dumps({'cols': cols, 'rules': rules, 'stations': STEPS, 'rmap': RULES_BY_STEP}, ensure_ascii=False).replace('</', '<\\/')
     out = ROOT / 'out/how-it-works'; out.mkdir(parents=True, exist_ok=True)
-    (out / 'index.html').write_text((ROOT / 'templates/how_it_works.html').read_text().replace('__DATA__', data))
+    html = (ROOT / 'templates/how_it_works.html').read_text().replace('__DATA__', data).replace('78 columns', f'{len(cols)} columns').replace('All 30 rules', f'All {len(rules)} rules')
+    (out / 'index.html').write_text(html)
     print('built', out / 'index.html', f'({len(cols)} columns, {len(rules)} rules)')
 
 if __name__ == '__main__':
