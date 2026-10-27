@@ -4,7 +4,7 @@ Builds one SEO page per Pokémon card from public data plus CardOutpost's own da
 Add a card to the input list and its page appears, with zero manual work.
 
 - **Input:** 1,376 card keywords from the keyword research (120 card pages, 1.95M US searches a month)
-- **Output:** 120 HTML pages in `out/`, a sitemap, a robots.txt, and a Google Sheet that shows every number behind every page
+- **Output:** 120 card pages plus 74 set, Pokémon and `/cards` hub pages in `out/`, a sitemap, a robots.txt, and a Google Sheet that shows every number behind every page
 
 ## Start here: three links
 
@@ -25,7 +25,7 @@ Add a card to the input list and its page appears, with zero manual work.
 | 3 Search data | `engine/phase3_search_data.py` | What Google shows for the main keyword: AI Overview text, People Also Ask, top 10 sites, related searches. | Saved SerpAPI results |
 | 4 CardOutpost data | `engine/phase4_cop_data.py` | Pack, odds, pulls, vault copies, sell-back value. **Mock** until CardOutpost's database is connected. | CardOutpost (mock) |
 | 5 Rules | `engine/phase5_page_elements.py` | Title, H1, meta, selling line, "About this card" bullets, grade ladder, FAQ, links, schema, quality gate (index or noindex). | Steps 1 to 4 |
-| 6 Build | `engine/phase6_build.py` | Renders `templates/card.html` into 120 pages + `sitemap.xml` + `robots.txt`. No JavaScript needed to show content. | Step 5 |
+| 6 Build | `engine/phase6_build.py` | Renders `templates/card.html` into 120 pages, builds the set, Pokémon and `/cards` hub pages that link down to them, + `sitemap.xml` + `robots.txt`. No JavaScript needed to show content. | Step 5 |
 | 7 Sheet | `engine/push_sheet.py` | Writes every column and every rule to the Google Sheet, with a note on each header. | Steps 1 to 5 |
 | Priority page | `engine/priority_page.py` | Renders one card from `data/pages.json` inside CardOutpost's real page shell (`templates/cop_shell/`), with the official card image and an interactive chart. | Step 5 |
 | Walkthrough | `engine/how_it_works.py` | Builds the "how it works" page from the same data and rules. | Steps 1 to 5 |
@@ -134,7 +134,7 @@ Mock numbers are generated from a fixed seed per card, so they never change betw
 engine/      the 7 scripts, plus priority_page.py and how_it_works.py
 templates/   card.html (plain template), cop_shell/ (CardOutpost's header, sidebar, footer, stylesheet, logo), how_it_works.html
 data/        cards.csv, market.csv + .json, serp.csv + .json, cop.csv, pages.csv + .json, aliases.csv
-out/         120 built pages, sitemap.xml, robots.txt, index.html, priority/ (the finished page), how-it-works/
+out/         120 built card pages, sets/ and pokemon/ hub pages, cards/ (top hub), sitemap.xml, robots.txt, index.html, priority/ (the finished page), how-it-works/
 ```
 
 Raw page caches (`data/raw/`) are not in the repo. Rerun steps 2 and 3 to rebuild them.
