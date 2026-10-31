@@ -40,8 +40,8 @@ def render(p):
     faqs = ''.join(f'<details><summary>{E(q["q"])}</summary><p>{E(q["a"])}</p></details>' for q in p['faqs'])
     crumbs = ' <span>›</span> '.join(f'<a href="{E(b["url"])}">{E(b["name"])}</a>' if i < len(p['breadcrumbs']) - 1 else E(b['name']) for i, b in enumerate(p['breadcrumbs']))
     rel = ''
-    if p['related'] or p['set_url'] or p['pokemon_url']:
-        ups = ''.join(f'<a href="{E(u)}">{E(t)}</a>' for u, t in ((p['set_url'], f"All {p['set_name']} cards"), (p['pokemon_url'], f"All {p['pokemon'].title()} cards")) if u)
+    if p['related'] or p['set_url'] or p['pokemon_url'] or p.get('versions_url'):
+        ups = ''.join(f'<a href="{E(u)}">{E(t)}</a>' for u, t in ((p.get('versions_url'), f"Every version of {p['card_name']}"), (p['set_url'], f"All {p['set_name']} cards"), (p['pokemon_url'], f"All {p['pokemon'].title()} cards")) if u)
         cards = ''.join(f'<a class="rel" href="{E(r["url"])}"><b>{E(r["name"])}</b><span>PSA 10 {usd(r["psa10"])} · {E(r["why"])}</span></a>' for r in p['related'])
         rel = f'<h2>Related cards</h2><div class="links-up">{ups}</div><div class="grid">{cards}</div>'
     if p['listings']:
@@ -65,6 +65,31 @@ def render(p):
     }
     return rebase(re.sub(r'\{\{(\w+)\}\}', lambda m: vals.get(m.group(1), ''), TPL))
 
+def render_versions(p):
+    """A set-less URL for a card printed more than once: one list of every English printing, linking down to our card pages."""
+    def cell(v): return f'<a href="{E(v["url"])}">{E(v["name"])}</a>' if v['url'] else E(v['name'])
+    rows = ''.join(f'<tr><td>{cell(v)}</td><td>{E(v["set"])}</td><td class="num">#{E(v["number"])}</td><td class="num">{usd(v["ungraded"])}</td></tr>' for v in p['versions'])
+    linked = sum(1 for v in p['versions'] if v['url'])
+    ups = ''.join(f'<a class="c" href="{E(u)}">{E(t)}<span>›</span></a>' for u, t in ((p['pokemon_url'], f"All {p['pokemon'].title()} cards"),) if u)
+    crumbs = ' › '.join(f'<a href="{E(b["url"])}">{E(b["name"])}</a>' if i < len(p['breadcrumbs']) - 1 else E(b['name']) for i, b in enumerate(p['breadcrumbs']))
+    schema = ''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in p['schema'])
+    top = p['versions'][0]
+    doc = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{E(p["title"])}</title>'
+           f'<meta name="description" content="{E(p["meta_description"])}"><meta name="robots" content="{p["robots"]}"><link rel="canonical" href="{E(p["canonical"])}">{schema}'
+           f'<style>{HUB_CSS}table{{width:100%;border-collapse:collapse;margin-top:8px}}th,td{{text-align:left;padding:10px 8px;border-bottom:1px solid #2a2a2a}}th{{color:#9a9a9a;font-weight:600;font-size:.85rem}}td.num,th.num{{text-align:right;font-variant-numeric:tabular-nums}}td a{{color:#c3f400}}.wrap{{overflow-x:auto}}</style></head><body><main>'
+           f'<p class="crumbs">{crumbs}</p><h1>{E(p["h1"])}</h1>'
+           f'<p class="sub">{len(p["versions"])} English printings of {E(p["card_name"])}, most valuable first. The top one is #{E(top["number"])} from {E(top["set"])} at {usd(top["ungraded"])} ungraded. Pick a version to see its PSA 10 price, population and pull odds.</p>'
+           f'<div class="wrap"><table><thead><tr><th>Card</th><th>Set</th><th class="num">No.</th><th class="num">Ungraded</th></tr></thead><tbody>{rows}</tbody></table></div>'
+           f'<div class="grid" style="margin-top:20px">{ups}</div>'
+           f'<p class="note">Prices: PriceCharting, {E(p["fetched_at"])}. {linked} of these versions have a card page in this demo build; in production every version links to its own page. Not affiliated with Nintendo, The Pokémon Company or Creatures.</p></main></body></html>')
+    return rebase(doc)
+
+def render_redirect(p):
+    """A set-less URL for a card printed only once. On the live site this is a 301; GitHub Pages cannot send one, so the demo uses a refresh."""
+    to = p['redirect_to']
+    return rebase(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><meta name="robots" content="noindex"><link rel="canonical" href="{SITE}{E(to)}">'
+                  f'<meta http-equiv="refresh" content="0; url={E(BASE + to)}/"></head><body><p>This card has one version. <a href="{E(to)}">Go to its page</a>.</p></body></html>')
+
 HUB_CSS = "body{margin:0;background:#0e0e0e;color:#e5e2e1;font-family:system-ui,sans-serif;line-height:1.45}main{max-width:960px;margin:0 auto;padding:20px 16px 60px}h1{font-size:1.8rem;margin:10px 0 4px}.sub{color:#9a9a9a;margin:0 0 20px}.crumbs{font-size:.85rem;color:#9a9a9a}.crumbs a{color:#c3f400;text-decoration:none}.grid{display:grid;grid-template-columns:1fr;gap:10px}@media(min-width:700px){.grid{grid-template-columns:1fr 1fr 1fr}}.c{display:flex;justify-content:space-between;gap:10px;background:#1a1a1a;border:1px solid #2a2a2a;border-radius:12px;padding:12px 14px;text-decoration:none;color:#fff;font-weight:700}.c span{color:#c3f400;white-space:nowrap}.note{color:#9a9a9a;font-size:.85rem;margin-top:24px}"
 
 def hubs(pages):
@@ -77,7 +102,7 @@ def hubs(pages):
             if url: groups.setdefault(url, [name, []])[1].append(p)
     for url, (name, cards) in groups.items():
         cards.sort(key=lambda q: -q['search_volume_us'])
-        links = ''.join(f'<a class="c" href="{E(q["url"])}">{E(q["h1"])}<span>PSA 10 {usd(q["price_box"]["psa10"]) or "–"}</span></a>' for q in cards)
+        links = ''.join(f'<a class="c" href="{E(q["url"])}">{E(q["h1"])}<span>{(str(len(q["versions"])) + " versions") if q.get("page_type") == "versions" else "PSA 10 " + (usd(q["price_box"]["psa10"]) or "–")}</span></a>' for q in cards)
         kind = 'Sets' if url.startswith('/sets/') else 'Pokémon'
         doc = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{E(name)} | CardOutpost</title>'
                f'<link rel="canonical" href="{SITE}{E(url)}"><style>{HUB_CSS}</style></head><body><main>'
@@ -99,13 +124,13 @@ def main():
     pages = json.load(open(ROOT / 'data/pages.json'))['pages']
     for p in pages:
         d = OUT / p['url'].strip('/'); d.mkdir(parents=True, exist_ok=True)
-        (d / 'index.html').write_text(render(p))
+        (d / 'index.html').write_text(render_versions(p) if p.get('page_type') == 'versions' else render_redirect(p) if p.get('page_type') == 'redirect' else render(p))
     hubs(pages)
     live = [p for p in pages if p['in_sitemap']]
     (OUT / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         ''.join(f'  <url><loc>{SITE}{p["url"]}</loc><lastmod>{p["fetched_at"]}</lastmod><changefreq>weekly</changefreq></url>\n' for p in live) + '</urlset>\n')
     (OUT / 'robots.txt').write_text(f'User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n')
-    rows = ''.join(f'<tr><td><a href="{p["url"].strip("/")}/index.html">{html.escape(p["h1"])}</a></td><td>{p["search_volume_us"]:,}</td><td>{"INDEX" if p["index"] else "noindex: " + "; ".join(p["gate_fails"])}</td></tr>' for p in pages)
+    rows = ''.join(f'<tr><td><a href="{p["url"].strip("/")}/index.html">{html.escape(p["h1"])}</a></td><td>{p["search_volume_us"]:,}</td><td>{("INDEX: list of every version" if p.get("page_type") == "versions" else "INDEX") if p["index"] else ("301 redirect to " + p["redirect_to"] if p.get("page_type") == "redirect" else "noindex: " + "; ".join(p["gate_fails"]))}</td></tr>' for p in pages)
     (OUT / 'index.html').write_text(f'<!doctype html><meta charset="utf-8"><title>CardOutpost pSEO demo: {len(pages)} card pages</title><style>body{{font-family:system-ui;max-width:900px;margin:30px auto;padding:0 16px}}table{{border-collapse:collapse;width:100%}}td,th{{border-bottom:1px solid #ddd;padding:6px;text-align:left;font-size:14px}}</style>'
         f'<h1>CardOutpost pSEO demo</h1><p>{len(pages)} card pages generated. {len(live)} are indexable and listed in <a href="sitemap.xml">sitemap.xml</a>. The rest carry noindex (see reason).</p><table><tr><th>Page</th><th>Searches/mo</th><th>Status</th></tr>{rows}</table>')
     print(f'built {len(pages)} pages -> out/ | sitemap: {len(live)} urls')

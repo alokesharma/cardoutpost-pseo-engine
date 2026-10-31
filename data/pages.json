@@ -46,6 +46,11 @@
    "Two pages about the same card compete with each other. Google picks one anyway. We decide which."
   ],
   [
+   "Versions page",
+   "A URL with no set (/cards/charizard-ex) is for people who have not picked a version yet. If the card was printed more than once, that URL becomes a list of every English printing: set, number, ungraded price, and a link to the card page where we have one. If it was printed only once, the URL redirects to that card page.",
+   "\"charizard ex\" is 9 different cards on PriceCharting. One version cannot answer that search, and a copy of one version is a duplicate. A list of every version answers it and links down to the card pages."
+  ],
+  [
    "Title",
    "\"[Card] [Set] #[No.] Price: PSA 10 $[price] | CardOutpost\". If over 60 characters, drop the price, then the set.",
    "Google cuts titles near 60 characters. The price in the title answers the search before the click."
@@ -160,11 +165,11 @@
   {
    "card_id": "mega-charizard-x-ex",
    "url": "/cards/mega-charizard-x-ex",
-   "canonical": "https://www.cardoutpost.com/cards/phantasmal-flames/mega-charizard-x-ex",
-   "duplicate_of": "/cards/phantasmal-flames/mega-charizard-x-ex",
-   "title": "Mega Charizard X ex #125 Price & PSA 10 Value | CardOutpost",
-   "h1": "Mega Charizard X ex #125 (Phantasmal Flames)",
-   "meta_description": "Mega Charizard X ex #125 sells for $620 raw and $1,338 in PSA 10. 28,534 PSA 10s exist. Pull it on CardOutpost at 1 in 300 odds.",
+   "canonical": "https://www.cardoutpost.com/cards/mega-charizard-x-ex",
+   "duplicate_of": "",
+   "title": "Mega Charizard X ex: All 6 Versions & Prices | CardOutpost",
+   "h1": "Mega Charizard X ex: every version",
+   "meta_description": "All 6 English printings of Mega Charizard X ex, with the ungraded price of each. The most valuable is #125 from Phantasmal Flames at $620.",
    "card_name": "Mega Charizard X ex",
    "set_name": "Phantasmal Flames",
    "set_url": "/sets/phantasmal-flames",
@@ -185,16 +190,8 @@
     "trend_psa10_pct": null,
     "updated": "25 Oct 2026"
    },
-   "selling_line": "Pull a real graded copy from the $250 Grail pack. Odds 1 in 300, shown before you open. Vaulted and insured. Ship it home in its slab, or sell it back at 100% of market value.",
-   "about": [
-    "Mega Charizard X ex #125 is from the Phantasmal Flames set, released November 14, 2025. Rarity: Special Illustration Rare.",
-    "An ungraded copy sells for about $620. A PSA 10 sells for $1,338.",
-    "High grades are common: 28,534 of the 47,654 copies PSA graded got a 10 (59.9%).",
-    "Worth grading? Yes. A graded copy is worth about $1,022 on average after the $25 fee, against $620 raw.",
-    "Sales speed: ungraded 1 sale per day, PSA 10 9 sales per day on eBay and TCGplayer.",
-    "On CardOutpost it is a Grail pack chase card at 1 in 300 odds, pulled 16 times in the last 90 days.",
-    "Sell it back to CardOutpost any time at 100% of market value, $1,338 today, with no fee."
-   ],
+   "selling_line": "",
+   "about": [],
    "grade_ladder": [
     {
      "grade": "Ungraded",
@@ -358,59 +355,9 @@
     "cop_lowest_live_listing": "645.25",
     "cop_listings_json": "[{\"id\": \"9410e1bf-3753-7236-ad5a-ae3cc5177b48\", \"url\": \"/marketplace/listing/9410e1bf-3753-7236-ad5a-ae3cc5177b48\", \"grade\": \"PSA 9\", \"price\": 645.25, \"seller\": \"cardcollector93\", \"listed\": \"2026-10-25\"}, {\"id\": \"833b98e7-2d9c-7647-ebf3-19a616bdffdc\", \"url\": \"/marketplace/listing/833b98e7-2d9c-7647-ebf3-19a616bdffdc\", \"grade\": \"PSA 10\", \"price\": 1240.67, \"seller\": \"holofoil57\", \"listed\": \"2026-10-15\"}]"
    },
-   "listings": [
-    {
-     "id": "9410e1bf-3753-7236-ad5a-ae3cc5177b48",
-     "url": "/marketplace/listing/9410e1bf-3753-7236-ad5a-ae3cc5177b48",
-     "grade": "PSA 9",
-     "price": 645.25,
-     "seller": "cardcollector93",
-     "listed": "2026-10-25"
-    },
-    {
-     "id": "833b98e7-2d9c-7647-ebf3-19a616bdffdc",
-     "url": "/marketplace/listing/833b98e7-2d9c-7647-ebf3-19a616bdffdc",
-     "grade": "PSA 10",
-     "price": 1240.67,
-     "seller": "holofoil57",
-     "listed": "2026-10-15"
-    }
-   ],
-   "faqs": [
-    {
-     "q": "How much is Mega Charizard X ex #125 worth?",
-     "a": "As of 25 Oct 2026, Mega Charizard X ex #125 sells for about $620 ungraded and $1,338 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $612.",
-     "from": "fixed"
-    },
-    {
-     "q": "How many PSA 10 copies of Mega Charizard X ex #125 exist?",
-     "a": "PSA has graded 47,654 copies of Mega Charizard X ex #125, and 28,534 of them received a 10. That is 59.9% of all graded copies.",
-     "from": "fixed"
-    },
-    {
-     "q": "What are the odds of pulling Mega Charizard X ex on CardOutpost?",
-     "a": "The odds are 1 in 300 packs. Mega Charizard X ex sits in the Grail pack, which costs $250. CardOutpost shows the odds on every pack before you open it.",
-     "from": "fixed"
-    }
-   ],
-   "faq_log": [
-    [
-     "How much is the Mega Charizard X EX going for?",
-     "merged into the worth question"
-    ],
-    [
-     "What Pok\u00e9mon card is worth $1,000,000?",
-     "dropped: not about this card"
-    ],
-    [
-     "How hard is it to pull Charizard X EX?",
-     "merged into the odds question"
-    ],
-    [
-     "Is there a fake Mega Charizard EX?",
-     "dropped: junk or another product"
-    ]
-   ],
+   "listings": [],
+   "faqs": [],
+   "faq_log": [],
    "source_url": "https://www.pricecharting.com/game/pokemon-phantasmal-flames/mega-charizard-x-ex-125",
    "fetched_at": "2026-10-25",
    "cta": {
@@ -419,52 +366,65 @@
     "odds": "1 in 300",
     "price": 250.0
    },
-   "about_max_overlap_pct": 94,
-   "index": false,
-   "gate_fails": [
-    "duplicate of /cards/phantasmal-flames/mega-charizard-x-ex",
-    "text 94% same as another page"
-   ],
-   "robots": "noindex, follow",
-   "in_sitemap": false,
-   "related": [
+   "page_type": "versions",
+   "versions": [
     {
-     "name": "Charizard ex #199 (Scarlet & Violet 151)",
-     "url": "/cards/151/charizard-ex",
-     "why": "same Pok\u00e9mon",
-     "psa10": 1288.33
-    },
-    {
-     "name": "Mega Charizard X ex #125 (Phantasmal Flames)",
+     "name": "Mega Charizard X ex",
+     "number": "125",
+     "set": "Phantasmal Flames",
+     "ungraded": 620.06,
      "url": "/cards/phantasmal-flames/mega-charizard-x-ex",
-     "why": "same Pok\u00e9mon",
-     "psa10": 1338.09
+     "source": "https://www.pricecharting.com/game/pokemon-phantasmal-flames/mega-charizard-x-ex-125"
     },
     {
-     "name": "Charizard VMAX #74 (Champion's Path)",
-     "url": "/cards/charizard-vmax",
-     "why": "same Pok\u00e9mon",
-     "psa10": 294.5
+     "name": "Mega Charizard X ex",
+     "number": "130",
+     "set": "Phantasmal Flames",
+     "ungraded": 206.2,
+     "url": "/cards/gold-charizard",
+     "source": "https://www.pricecharting.com/game/pokemon-phantasmal-flames/mega-charizard-x-ex-130"
     },
     {
-     "name": "Charizard #4 (Base Set)",
-     "url": "/cards/base-set/charizard",
-     "why": "same Pok\u00e9mon",
-     "psa10": 26603.23
+     "name": "Mega Charizard X EX",
+     "number": "23",
+     "set": "Promo",
+     "ungraded": 30.15,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/mega-charizard-x-ex-23"
     },
     {
-     "name": "Mega Lopunny ex #128 (Phantasmal Flames)",
-     "url": "/cards/mega-lopunny-ex",
-     "why": "same set",
-     "psa10": 52.5
+     "name": "Mega Charizard X ex",
+     "number": "109",
+     "set": "Phantasmal Flames",
+     "ungraded": 22.63,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-phantasmal-flames/mega-charizard-x-ex-109"
     },
     {
-     "name": "Meowth #106 (Phantasmal Flames)",
-     "url": "/cards/phantasmal-flames/meowth",
-     "why": "same set",
-     "psa10": 101.88
+     "name": "Mega Charizard X Ex",
+     "number": "29",
+     "set": "Promo",
+     "ungraded": 6.65,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/mega-charizard-x-ex-29"
+    },
+    {
+     "name": "Mega Charizard X ex",
+     "number": "13",
+     "set": "Phantasmal Flames",
+     "ungraded": 5.56,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-phantasmal-flames/mega-charizard-x-ex-13"
     }
    ],
+   "same_printing_as": "/cards/phantasmal-flames/mega-charizard-x-ex",
+   "about_max_overlap_pct": 0,
+   "index": true,
+   "gate_fails": [],
+   "robots": "index, follow",
+   "in_sitemap": true,
+   "related": [],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -475,83 +435,55 @@
      "url": "/cards"
     },
     {
-     "name": "Phantasmal Flames",
-     "url": "/sets/phantasmal-flames"
-    },
-    {
-     "name": "Mega Charizard X ex #125",
+     "name": "Mega Charizard X ex: every version",
      "url": "/cards/mega-charizard-x-ex"
     }
    ],
    "schema": [
     {
      "@context": "https://schema.org",
-     "@type": "Product",
-     "name": "Mega Charizard X ex #125 (Phantasmal Flames)",
-     "sku": "125",
-     "category": "Graded trading card",
-     "description": "Mega Charizard X ex #125 sells for $620 raw and $1,338 in PSA 10. 28,534 PSA 10s exist. Pull it on CardOutpost at 1 in 300 odds.",
+     "@type": "CollectionPage",
+     "name": "Mega Charizard X ex: every version",
      "url": "https://www.cardoutpost.com/cards/mega-charizard-x-ex",
-     "additionalProperty": [
-      {
-       "@type": "PropertyValue",
-       "name": "Set",
-       "value": "Phantasmal Flames"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Card number",
-       "value": "125"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Release date",
-       "value": "November 14, 2025"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Grade in stock",
-       "value": "PSA 10"
-      }
-     ],
-     "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "USD",
-      "offerCount": 2,
-      "lowPrice": 645.25,
-      "highPrice": 1240.67,
-      "availability": "https://schema.org/InStock"
+     "description": "All 6 English printings of Mega Charizard X ex, with the ungraded price of each. The most valuable is #125 from Phantasmal Flames at $620.",
+     "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 6,
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Mega Charizard X ex #125 (Phantasmal Flames)",
+        "url": "https://www.cardoutpost.com/cards/phantasmal-flames/mega-charizard-x-ex"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Mega Charizard X ex #130 (Phantasmal Flames)",
+        "url": "https://www.cardoutpost.com/cards/gold-charizard"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Mega Charizard X EX #23 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Mega Charizard X ex #109 (Phantasmal Flames)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Mega Charizard X Ex #29 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Mega Charizard X ex #13 (Phantasmal Flames)"
+       }
+      ]
      }
-    },
-    {
-     "@context": "https://schema.org",
-     "@type": "FAQPage",
-     "mainEntity": [
-      {
-       "@type": "Question",
-       "name": "How much is Mega Charizard X ex #125 worth?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "As of 25 Oct 2026, Mega Charizard X ex #125 sells for about $620 ungraded and $1,338 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $612."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "How many PSA 10 copies of Mega Charizard X ex #125 exist?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "PSA has graded 47,654 copies of Mega Charizard X ex #125, and 28,534 of them received a 10. That is 59.9% of all graded copies."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "What are the odds of pulling Mega Charizard X ex on CardOutpost?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The odds are 1 in 300 packs. Mega Charizard X ex sits in the Grail pack, which costs $250. CardOutpost shows the odds on every pack before you open it."
-       }
-      }
-     ]
     },
     {
      "@context": "https://schema.org",
@@ -572,13 +504,7 @@
       {
        "@type": "ListItem",
        "position": 3,
-       "name": "Phantasmal Flames",
-       "item": "https://www.cardoutpost.com/sets/phantasmal-flames"
-      },
-      {
-       "@type": "ListItem",
-       "position": 4,
-       "name": "Mega Charizard X ex #125",
+       "name": "Mega Charizard X ex: every version",
        "item": "https://www.cardoutpost.com/cards/mega-charizard-x-ex"
       }
      ]
@@ -588,11 +514,11 @@
   {
    "card_id": "charizard-ex",
    "url": "/cards/charizard-ex",
-   "canonical": "https://www.cardoutpost.com/cards/151/charizard-ex",
-   "duplicate_of": "/cards/151/charizard-ex",
-   "title": "Charizard ex #199 Price & PSA 10 Value | CardOutpost",
-   "h1": "Charizard ex #199 (Scarlet & Violet 151)",
-   "meta_description": "Charizard ex #199 sells for $298 raw and $1,288 in PSA 10. 27,631 PSA 10s exist. Pull it on CardOutpost at 1 in 368 odds.",
+   "canonical": "https://www.cardoutpost.com/cards/charizard-ex",
+   "duplicate_of": "",
+   "title": "Charizard ex: All 22 Versions & Prices | CardOutpost",
+   "h1": "Charizard ex: every version",
+   "meta_description": "All 22 English printings of Charizard ex, with the ungraded price of each. The most valuable is #105 from Fire Red & Leaf Green at $505.",
    "card_name": "Charizard ex",
    "set_name": "Scarlet & Violet 151",
    "set_url": "/sets/151",
@@ -613,16 +539,8 @@
     "trend_psa10_pct": 8.0,
     "updated": "25 Oct 2026"
    },
-   "selling_line": "Pull a real graded copy from the $50.00 Elite pack. Odds 1 in 368, shown before you open. Vaulted and insured. Ship it home in its slab, or sell it back at 100% of market value.",
-   "about": [
-    "Charizard ex #199 is from the Scarlet & Violet 151 set, released September 22, 2023. Rarity: Special Illustration Rare.",
-    "An ungraded copy sells for about $298, flat over 12 months. A PSA 10 sells for $1,288, up 8% in 12 months.",
-    "PSA has graded 97,426 copies. 27,631 came back a 10, about 1 in 4.",
-    "Worth grading? Yes. A graded copy is worth about $599 on average after the $25 fee, against $298 raw.",
-    "Sales speed: ungraded 1 sale per day, PSA 10 3 sales per day on eBay and TCGplayer.",
-    "On CardOutpost it is a Elite pack chase card at 1 in 368 odds, pulled 66 times in the last 90 days.",
-    "Sell it back to CardOutpost any time at 100% of market value, $360 today, with no fee."
-   ],
+   "selling_line": "",
+   "about": [],
    "grade_ladder": [
     {
      "grade": "Ungraded",
@@ -882,67 +800,9 @@
     "cop_lowest_live_listing": "332.35",
     "cop_listings_json": "[{\"id\": \"a5b28d2d-7ebf-7352-92f6-6e33241e682e\", \"url\": \"/marketplace/listing/a5b28d2d-7ebf-7352-92f6-6e33241e682e\", \"grade\": \"PSA 9\", \"price\": 332.35, \"seller\": \"gemmint17\", \"listed\": \"2026-10-16\"}, {\"id\": \"a4a366dd-118e-7868-3014-afccaf5f1ace\", \"url\": \"/marketplace/listing/a4a366dd-118e-7868-3014-afccaf5f1ace\", \"grade\": \"PSA 9\", \"price\": 371.74, \"seller\": \"cardcollector59\", \"listed\": \"2026-10-21\"}, {\"id\": \"2bc08cbc-52a5-79ed-85d9-abd60b9f2d38\", \"url\": \"/marketplace/listing/2bc08cbc-52a5-79ed-85d9-abd60b9f2d38\", \"grade\": \"PSA 9\", \"price\": 379.86, \"seller\": \"gemmint32\", \"listed\": \"2026-10-20\"}]"
    },
-   "listings": [
-    {
-     "id": "a5b28d2d-7ebf-7352-92f6-6e33241e682e",
-     "url": "/marketplace/listing/a5b28d2d-7ebf-7352-92f6-6e33241e682e",
-     "grade": "PSA 9",
-     "price": 332.35,
-     "seller": "gemmint17",
-     "listed": "2026-10-16"
-    },
-    {
-     "id": "a4a366dd-118e-7868-3014-afccaf5f1ace",
-     "url": "/marketplace/listing/a4a366dd-118e-7868-3014-afccaf5f1ace",
-     "grade": "PSA 9",
-     "price": 371.74,
-     "seller": "cardcollector59",
-     "listed": "2026-10-21"
-    },
-    {
-     "id": "2bc08cbc-52a5-79ed-85d9-abd60b9f2d38",
-     "url": "/marketplace/listing/2bc08cbc-52a5-79ed-85d9-abd60b9f2d38",
-     "grade": "PSA 9",
-     "price": 379.86,
-     "seller": "gemmint32",
-     "listed": "2026-10-20"
-    }
-   ],
-   "faqs": [
-    {
-     "q": "How much is Charizard ex #199 worth?",
-     "a": "As of 25 Oct 2026, Charizard ex #199 sells for about $298 ungraded and $1,288 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $360.",
-     "from": "fixed"
-    },
-    {
-     "q": "How many PSA 10 copies of Charizard ex #199 exist?",
-     "a": "PSA has graded 97,426 copies of Charizard ex #199, and 27,631 of them received a 10. That is 28.4% of all graded copies.",
-     "from": "fixed"
-    },
-    {
-     "q": "What are the odds of pulling Charizard ex on CardOutpost?",
-     "a": "The odds are 1 in 368 packs. Charizard ex sits in the Elite pack, which costs $50.00. CardOutpost shows the odds on every pack before you open it.",
-     "from": "fixed"
-    }
-   ],
-   "faq_log": [
-    [
-     "How much is Charizard EX 199 165 worth?",
-     "merged into the worth question"
-    ],
-    [
-     "What Pok\u00e9mon card is worth $1,000,000?",
-     "dropped: not about this card"
-    ],
-    [
-     "What is the rarest Charizard card?",
-     "dropped: no topic we can answer"
-    ],
-    [
-     "Is there a fake Mega Charizard EX?",
-     "dropped: junk or another product"
-    ]
-   ],
+   "listings": [],
+   "faqs": [],
+   "faq_log": [],
    "source_url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-151/charizard-ex-199",
    "fetched_at": "2026-10-25",
    "cta": {
@@ -951,64 +811,193 @@
     "odds": "1 in 368",
     "price": 50.0
    },
-   "about_max_overlap_pct": 92,
-   "index": false,
-   "gate_fails": [
-    "duplicate of /cards/151/charizard-ex",
-    "text 92% same as another page"
-   ],
-   "robots": "noindex, follow",
-   "in_sitemap": false,
-   "related": [
+   "page_type": "versions",
+   "versions": [
     {
-     "name": "Charizard ex #199 (Scarlet & Violet 151)",
+     "name": "Charizard EX",
+     "number": "105",
+     "set": "Fire Red & Leaf Green",
+     "ungraded": 505.0,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-fire-red-&-leaf-green/charizard-ex-105"
+    },
+    {
+     "name": "Charizard ex",
+     "number": "199",
+     "set": "Scarlet & Violet 151",
+     "ungraded": 298.19,
      "url": "/cards/151/charizard-ex",
-     "why": "same Pok\u00e9mon",
-     "psa10": 1288.33
+     "source": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-151/charizard-ex-199"
     },
     {
-     "name": "Mega Charizard X ex #125 (Phantasmal Flames)",
-     "url": "/cards/phantasmal-flames/mega-charizard-x-ex",
-     "why": "same Pok\u00e9mon",
-     "psa10": 1338.09
+     "name": "Charizard ex",
+     "number": "234",
+     "set": "Paldean Fates",
+     "ungraded": 254.67,
+     "url": "/cards/paldean-fates/charizard-ex",
+     "source": "https://www.pricecharting.com/game/pokemon-paldean-fates/charizard-ex-234"
     },
     {
-     "name": "Charizard VMAX #74 (Champion's Path)",
-     "url": "/cards/charizard-vmax",
-     "why": "same Pok\u00e9mon",
-     "psa10": 294.5
+     "name": "Charizard EX",
+     "number": "100",
+     "set": "Flashfire",
+     "ungraded": 175.75,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-flashfire/charizard-ex-100"
     },
     {
-     "name": "Charizard #4 (Base Set)",
-     "url": "/cards/base-set/charizard",
-     "why": "same Pok\u00e9mon",
-     "psa10": 26603.23
+     "name": "Charizard EX",
+     "number": "XY121",
+     "set": "Promo",
+     "ungraded": 153.75,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/charizard-ex-xy121"
     },
     {
-     "name": "Bubble Mew #205 (Scarlet & Violet 151)",
-     "url": "/cards/bubble-mew",
-     "why": "same set",
-     "psa10": 224.5
+     "name": "Charizard ex",
+     "number": "223",
+     "set": "Obsidian Flames",
+     "ungraded": 93.9,
+     "url": "/cards/obsidian-flames/charizard-ex",
+     "source": "https://www.pricecharting.com/game/pokemon-obsidian-flames/charizard-ex-223"
     },
     {
-     "name": "Mew ex #193 (Scarlet & Violet 151)",
-     "url": "/cards/151/mew-ex",
-     "why": "same set",
-     "psa10": 203.48
+     "name": "Charizard ex",
+     "number": "183",
+     "set": "Scarlet & Violet 151",
+     "ungraded": 35.95,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-151/charizard-ex-183"
     },
     {
-     "name": "Blastoise ex #200 (Scarlet & Violet 151)",
-     "url": "/cards/151/blastoise-ex",
-     "why": "same set",
-     "psa10": 502.0
+     "name": "Charizard ex",
+     "number": "228",
+     "set": "Obsidian Flames",
+     "ungraded": 32.9,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-obsidian-flames/charizard-ex-228"
     },
     {
-     "name": "Squirtle #170 (Scarlet & Violet 151)",
-     "url": "/cards/151/squirtle",
-     "why": "same set",
-     "psa10": 453.88
+     "name": "Charizard EX",
+     "number": "XY17",
+     "set": "Promo",
+     "ungraded": 24.99,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/charizard-ex-xy17"
+    },
+    {
+     "name": "Charizard EX",
+     "number": "11",
+     "set": "Generations",
+     "ungraded": 23.0,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-generations/charizard-ex-11"
+    },
+    {
+     "name": "Charizard ex",
+     "number": "215",
+     "set": "Obsidian Flames",
+     "ungraded": 21.68,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-obsidian-flames/charizard-ex-215"
+    },
+    {
+     "name": "Charizard ex",
+     "number": "74",
+     "set": "Promo",
+     "ungraded": 20.0,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/charizard-ex-74"
+    },
+    {
+     "name": "Charizard EX",
+     "number": "12",
+     "set": "Flashfire",
+     "ungraded": 16.36,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-flashfire/charizard-ex-12"
+    },
+    {
+     "name": "Charizard ex",
+     "number": "56",
+     "set": "Promo",
+     "ungraded": 15.99,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/charizard-ex-56"
+    },
+    {
+     "name": "Charizard EX",
+     "number": "12",
+     "set": "Evolutions",
+     "ungraded": 15.99,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-evolutions/charizard-ex-12"
+    },
+    {
+     "name": "Charizard EX",
+     "number": "XY29",
+     "set": "Promo",
+     "ungraded": 13.69,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/charizard-ex-xy29"
+    },
+    {
+     "name": "Charizard EX",
+     "number": "11",
+     "set": "Flashfire",
+     "ungraded": 12.16,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-flashfire/charizard-ex-11"
+    },
+    {
+     "name": "Charizard ex",
+     "number": "6",
+     "set": "Scarlet & Violet 151",
+     "ungraded": 8.0,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-151/charizard-ex-6"
+    },
+    {
+     "name": "Charizard ex",
+     "number": "161",
+     "set": "Promo",
+     "ungraded": 7.49,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/charizard-ex-161"
+    },
+    {
+     "name": "Charizard ex",
+     "number": "125",
+     "set": "Obsidian Flames",
+     "ungraded": 6.9,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-obsidian-flames/charizard-ex-125"
+    },
+    {
+     "name": "Charizard Ex",
+     "number": "196",
+     "set": "Promo",
+     "ungraded": 5.39,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/charizard-ex-196"
+    },
+    {
+     "name": "Charizard ex",
+     "number": "54",
+     "set": "Paldean Fates",
+     "ungraded": 5.04,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-paldean-fates/charizard-ex-54"
     }
    ],
+   "same_printing_as": "/cards/151/charizard-ex",
+   "about_max_overlap_pct": 0,
+   "index": true,
+   "gate_fails": [],
+   "robots": "index, follow",
+   "in_sitemap": true,
+   "related": [],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -1019,83 +1008,136 @@
      "url": "/cards"
     },
     {
-     "name": "Scarlet & Violet 151",
-     "url": "/sets/151"
-    },
-    {
-     "name": "Charizard ex #199",
+     "name": "Charizard ex: every version",
      "url": "/cards/charizard-ex"
     }
    ],
    "schema": [
     {
      "@context": "https://schema.org",
-     "@type": "Product",
-     "name": "Charizard ex #199 (Scarlet & Violet 151)",
-     "sku": "199",
-     "category": "Graded trading card",
-     "description": "Charizard ex #199 sells for $298 raw and $1,288 in PSA 10. 27,631 PSA 10s exist. Pull it on CardOutpost at 1 in 368 odds.",
+     "@type": "CollectionPage",
+     "name": "Charizard ex: every version",
      "url": "https://www.cardoutpost.com/cards/charizard-ex",
-     "additionalProperty": [
-      {
-       "@type": "PropertyValue",
-       "name": "Set",
-       "value": "Scarlet & Violet 151"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Card number",
-       "value": "199"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Release date",
-       "value": "September 22, 2023"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Grade in stock",
-       "value": "PSA 9"
-      }
-     ],
-     "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "USD",
-      "offerCount": 3,
-      "lowPrice": 332.35,
-      "highPrice": 379.86,
-      "availability": "https://schema.org/InStock"
+     "description": "All 22 English printings of Charizard ex, with the ungraded price of each. The most valuable is #105 from Fire Red & Leaf Green at $505.",
+     "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 22,
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Charizard EX #105 (Fire Red & Leaf Green)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Charizard ex #199 (Scarlet & Violet 151)",
+        "url": "https://www.cardoutpost.com/cards/151/charizard-ex"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Charizard ex #234 (Paldean Fates)",
+        "url": "https://www.cardoutpost.com/cards/paldean-fates/charizard-ex"
+       },
+       {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Charizard EX #100 (Flashfire)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Charizard EX #XY121 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Charizard ex #223 (Obsidian Flames)",
+        "url": "https://www.cardoutpost.com/cards/obsidian-flames/charizard-ex"
+       },
+       {
+        "@type": "ListItem",
+        "position": 7,
+        "name": "Charizard ex #183 (Scarlet & Violet 151)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 8,
+        "name": "Charizard ex #228 (Obsidian Flames)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 9,
+        "name": "Charizard EX #XY17 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 10,
+        "name": "Charizard EX #11 (Generations)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 11,
+        "name": "Charizard ex #215 (Obsidian Flames)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 12,
+        "name": "Charizard ex #74 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 13,
+        "name": "Charizard EX #12 (Flashfire)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 14,
+        "name": "Charizard ex #56 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 15,
+        "name": "Charizard EX #12 (Evolutions)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 16,
+        "name": "Charizard EX #XY29 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 17,
+        "name": "Charizard EX #11 (Flashfire)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 18,
+        "name": "Charizard ex #6 (Scarlet & Violet 151)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 19,
+        "name": "Charizard ex #161 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 20,
+        "name": "Charizard ex #125 (Obsidian Flames)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 21,
+        "name": "Charizard Ex #196 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 22,
+        "name": "Charizard ex #54 (Paldean Fates)"
+       }
+      ]
      }
-    },
-    {
-     "@context": "https://schema.org",
-     "@type": "FAQPage",
-     "mainEntity": [
-      {
-       "@type": "Question",
-       "name": "How much is Charizard ex #199 worth?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "As of 25 Oct 2026, Charizard ex #199 sells for about $298 ungraded and $1,288 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $360."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "How many PSA 10 copies of Charizard ex #199 exist?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "PSA has graded 97,426 copies of Charizard ex #199, and 27,631 of them received a 10. That is 28.4% of all graded copies."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "What are the odds of pulling Charizard ex on CardOutpost?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The odds are 1 in 368 packs. Charizard ex sits in the Elite pack, which costs $50.00. CardOutpost shows the odds on every pack before you open it."
-       }
-      }
-     ]
     },
     {
      "@context": "https://schema.org",
@@ -1116,13 +1158,7 @@
       {
        "@type": "ListItem",
        "position": 3,
-       "name": "Scarlet & Violet 151",
-       "item": "https://www.cardoutpost.com/sets/151"
-      },
-      {
-       "@type": "ListItem",
-       "position": 4,
-       "name": "Charizard ex #199",
+       "name": "Charizard ex: every version",
        "item": "https://www.cardoutpost.com/cards/charizard-ex"
       }
      ]
@@ -1470,6 +1506,7 @@
     "odds": "1 in 300",
     "price": 250.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 73,
    "index": true,
    "gate_fails": [],
@@ -1525,6 +1562,7 @@
      "psa10": 453.88
     }
    ],
+   "versions_url": "/cards/charizard-ex",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -2024,6 +2062,7 @@
     "odds": "1 in 472",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -2079,6 +2118,7 @@
      "psa10": 294.45
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -2444,6 +2484,7 @@
     "odds": "1 in 300",
     "price": 100.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 71,
    "index": true,
    "gate_fails": [],
@@ -2487,6 +2528,7 @@
      "psa10": 101.88
     }
    ],
+   "versions_url": "/cards/mega-charizard-x-ex",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -2610,11 +2652,11 @@
   {
    "card_id": "mega-greninja-ex",
    "url": "/cards/mega-greninja-ex",
-   "canonical": "https://www.cardoutpost.com/cards/chaos-rising/mega-greninja-ex",
-   "duplicate_of": "/cards/chaos-rising/mega-greninja-ex",
-   "title": "Mega Greninja ex #116 Price & PSA 10 Value | CardOutpost",
-   "h1": "Mega Greninja ex #116 (Chaos Rising)",
-   "meta_description": "Mega Greninja ex #116 sells for $125 raw and $310 in PSA 10. 390 CGC 10s exist. Pull it on CardOutpost at 1 in 300 odds.",
+   "canonical": "https://www.cardoutpost.com/cards/mega-greninja-ex",
+   "duplicate_of": "",
+   "title": "Mega Greninja ex: All 5 Versions & Prices | CardOutpost",
+   "h1": "Mega Greninja ex: every version",
+   "meta_description": "All 5 English printings of Mega Greninja ex, with the ungraded price of each. The most valuable is #116 from Chaos Rising at $155.",
    "card_name": "Mega Greninja ex",
    "set_name": "Chaos Rising",
    "set_url": "/sets/chaos-rising",
@@ -2635,15 +2677,8 @@
     "trend_psa10_pct": null,
     "updated": "25 Oct 2026"
    },
-   "selling_line": "Pull a real graded copy from the $25.00 Premium pack. Odds 1 in 300, shown before you open. Vaulted and insured. Ship it home in its slab, or sell it back at 100% of market value.",
-   "about": [
-    "Mega Greninja ex #116 is from the Chaos Rising set, released May 22, 2026. Rarity: Holo.",
-    "An ungraded copy sells for about $125. A PSA 10 sells for $310.",
-    "High grades are common: 390 of the 493 copies CGC graded got a 10 (79.1%).",
-    "Sales speed: ungraded 1 sale per day, PSA 10 9 sales per day on eBay and TCGplayer.",
-    "On CardOutpost it is a Premium pack chase card at 1 in 300 odds, pulled 248 times in the last 90 days.",
-    "Sell it back to CardOutpost any time at 100% of market value, $137 today, with no fee."
-   ],
+   "selling_line": "",
+   "about": [],
    "grade_ladder": [
     {
      "grade": "Ungraded",
@@ -2754,57 +2789,8 @@
     "cop_lowest_live_listing": "121.36",
     "cop_listings_json": "[{\"id\": \"1da89bc2-32cd-7dcc-9e36-1a2f3498b37b\", \"url\": \"/marketplace/listing/1da89bc2-32cd-7dcc-9e36-1a2f3498b37b\", \"grade\": \"Ungraded\", \"price\": 121.36, \"seller\": \"vaultking41\", \"listed\": \"2026-10-25\"}, {\"id\": \"1e5db4e0-0e36-7ed8-433d-353220f39e50\", \"url\": \"/marketplace/listing/1e5db4e0-0e36-7ed8-433d-353220f39e50\", \"grade\": \"PSA 9\", \"price\": 134.88, \"seller\": \"gemmint97\", \"listed\": \"2026-09-26\"}, {\"id\": \"27ff3f5d-f3ac-7e40-e53d-55ea7197ab2e\", \"url\": \"/marketplace/listing/27ff3f5d-f3ac-7e40-e53d-55ea7197ab2e\", \"grade\": \"PSA 9\", \"price\": 142.79, \"seller\": \"pokepulls64\", \"listed\": \"2026-09-30\"}, {\"id\": \"8348d7f5-5f39-72c9-4ce6-d06c5abf828d\", \"url\": \"/marketplace/listing/8348d7f5-5f39-72c9-4ce6-d06c5abf828d\", \"grade\": \"PSA 10\", \"price\": 345.28, \"seller\": \"tcgdad29\", \"listed\": \"2026-10-10\"}]"
    },
-   "listings": [
-    {
-     "id": "1da89bc2-32cd-7dcc-9e36-1a2f3498b37b",
-     "url": "/marketplace/listing/1da89bc2-32cd-7dcc-9e36-1a2f3498b37b",
-     "grade": "Ungraded",
-     "price": 121.36,
-     "seller": "vaultking41",
-     "listed": "2026-10-25"
-    },
-    {
-     "id": "1e5db4e0-0e36-7ed8-433d-353220f39e50",
-     "url": "/marketplace/listing/1e5db4e0-0e36-7ed8-433d-353220f39e50",
-     "grade": "PSA 9",
-     "price": 134.88,
-     "seller": "gemmint97",
-     "listed": "2026-09-26"
-    },
-    {
-     "id": "27ff3f5d-f3ac-7e40-e53d-55ea7197ab2e",
-     "url": "/marketplace/listing/27ff3f5d-f3ac-7e40-e53d-55ea7197ab2e",
-     "grade": "PSA 9",
-     "price": 142.79,
-     "seller": "pokepulls64",
-     "listed": "2026-09-30"
-    },
-    {
-     "id": "8348d7f5-5f39-72c9-4ce6-d06c5abf828d",
-     "url": "/marketplace/listing/8348d7f5-5f39-72c9-4ce6-d06c5abf828d",
-     "grade": "PSA 10",
-     "price": 345.28,
-     "seller": "tcgdad29",
-     "listed": "2026-10-10"
-    }
-   ],
-   "faqs": [
-    {
-     "q": "How much is Mega Greninja ex #116 worth?",
-     "a": "As of 25 Oct 2026, Mega Greninja ex #116 sells for about $125 ungraded and $310 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $137.",
-     "from": "fixed"
-    },
-    {
-     "q": "How many CGC 10 copies of Mega Greninja ex #116 exist?",
-     "a": "CGC has graded 493 copies of Mega Greninja ex #116, and 390 of them received a 10. That is 79.1% of all graded copies. PSA has not published a count for this card yet.",
-     "from": "fixed"
-    },
-    {
-     "q": "What are the odds of pulling Mega Greninja ex on CardOutpost?",
-     "a": "The odds are 1 in 300 packs. Mega Greninja ex sits in the Premium pack, which costs $25.00. CardOutpost shows the odds on every pack before you open it.",
-     "from": "fixed"
-    }
-   ],
+   "listings": [],
+   "faqs": [],
    "faq_log": [],
    "source_url": "https://www.pricecharting.com/game/pokemon-chaos-rising/mega-greninja-ex-116",
    "fetched_at": "2026-10-25",
@@ -2814,52 +2800,57 @@
     "odds": "1 in 300",
     "price": 25.0
    },
-   "about_max_overlap_pct": 91,
-   "index": false,
-   "gate_fails": [
-    "duplicate of /cards/chaos-rising/mega-greninja-ex",
-    "text 91% same as another page"
-   ],
-   "robots": "noindex, follow",
-   "in_sitemap": false,
-   "related": [
+   "page_type": "versions",
+   "versions": [
     {
-     "name": "Mega Greninja ex #116 (Chaos Rising)",
+     "name": "Mega Greninja ex",
+     "number": "116",
+     "set": "Chaos Rising",
+     "ungraded": 154.54,
      "url": "/cards/chaos-rising/mega-greninja-ex",
-     "why": "same Pok\u00e9mon",
-     "psa10": 310.26
+     "source": "https://www.pricecharting.com/game/pokemon-chaos-rising/mega-greninja-ex-116"
     },
     {
-     "name": "Greninja ex #214 (Twilight Masquerade)",
-     "url": "/cards/twilight-masquerade/greninja-ex",
-     "why": "same Pok\u00e9mon",
-     "psa10": 631.5
+     "name": "Mega Greninja ex",
+     "number": "122",
+     "set": "Chaos Rising",
+     "ungraded": 129.0,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-chaos-rising/mega-greninja-ex-122"
     },
     {
-     "name": "Radiant Greninja #46 (Astral Radiance)",
-     "url": "/cards/radiant-greninja",
-     "why": "same Pok\u00e9mon",
-     "psa10": 99.5
+     "name": "Mega Greninja ex",
+     "number": "100",
+     "set": "Chaos Rising",
+     "ungraded": 9.99,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-chaos-rising/mega-greninja-ex-100"
     },
     {
-     "name": "Mega Floette ex #117 (Chaos Rising)",
-     "url": "/cards/mega-floette-ex",
-     "why": "same set",
-     "psa10": 90.5
+     "name": "Mega Greninja ex",
+     "number": "22",
+     "set": "Chaos Rising",
+     "ungraded": 1.99,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-chaos-rising/mega-greninja-ex-22"
     },
     {
-     "name": "Cinccino ex #119 (Chaos Rising)",
-     "url": "/cards/cinccino-ex",
-     "why": "same set",
-     "psa10": 108.75
-    },
-    {
-     "name": "Xerneas #91 (Chaos Rising)",
-     "url": "/cards/chaos-rising/xerneas",
-     "why": "same set",
-     "psa10": 77.9
+     "name": "Mega Greninja EX",
+     "number": "81",
+     "set": "Promo",
+     "ungraded": 1.5,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/mega-greninja-ex-81"
     }
    ],
+   "same_printing_as": "/cards/chaos-rising/mega-greninja-ex",
+   "about_max_overlap_pct": 0,
+   "index": true,
+   "gate_fails": [],
+   "robots": "index, follow",
+   "in_sitemap": true,
+   "related": [],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -2870,83 +2861,49 @@
      "url": "/cards"
     },
     {
-     "name": "Chaos Rising",
-     "url": "/sets/chaos-rising"
-    },
-    {
-     "name": "Mega Greninja ex #116",
+     "name": "Mega Greninja ex: every version",
      "url": "/cards/mega-greninja-ex"
     }
    ],
    "schema": [
     {
      "@context": "https://schema.org",
-     "@type": "Product",
-     "name": "Mega Greninja ex #116 (Chaos Rising)",
-     "sku": "116",
-     "category": "Graded trading card",
-     "description": "Mega Greninja ex #116 sells for $125 raw and $310 in PSA 10. 390 CGC 10s exist. Pull it on CardOutpost at 1 in 300 odds.",
+     "@type": "CollectionPage",
+     "name": "Mega Greninja ex: every version",
      "url": "https://www.cardoutpost.com/cards/mega-greninja-ex",
-     "additionalProperty": [
-      {
-       "@type": "PropertyValue",
-       "name": "Set",
-       "value": "Chaos Rising"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Card number",
-       "value": "116"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Release date",
-       "value": "May 22, 2026"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Grade in stock",
-       "value": "PSA 9"
-      }
-     ],
-     "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "USD",
-      "offerCount": 4,
-      "lowPrice": 121.36,
-      "highPrice": 345.28,
-      "availability": "https://schema.org/InStock"
+     "description": "All 5 English printings of Mega Greninja ex, with the ungraded price of each. The most valuable is #116 from Chaos Rising at $155.",
+     "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 5,
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Mega Greninja ex #116 (Chaos Rising)",
+        "url": "https://www.cardoutpost.com/cards/chaos-rising/mega-greninja-ex"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Mega Greninja ex #122 (Chaos Rising)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Mega Greninja ex #100 (Chaos Rising)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Mega Greninja ex #22 (Chaos Rising)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Mega Greninja EX #81 (Promo)"
+       }
+      ]
      }
-    },
-    {
-     "@context": "https://schema.org",
-     "@type": "FAQPage",
-     "mainEntity": [
-      {
-       "@type": "Question",
-       "name": "How much is Mega Greninja ex #116 worth?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "As of 25 Oct 2026, Mega Greninja ex #116 sells for about $125 ungraded and $310 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $137."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "How many CGC 10 copies of Mega Greninja ex #116 exist?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "CGC has graded 493 copies of Mega Greninja ex #116, and 390 of them received a 10. That is 79.1% of all graded copies. PSA has not published a count for this card yet."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "What are the odds of pulling Mega Greninja ex on CardOutpost?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The odds are 1 in 300 packs. Mega Greninja ex sits in the Premium pack, which costs $25.00. CardOutpost shows the odds on every pack before you open it."
-       }
-      }
-     ]
     },
     {
      "@context": "https://schema.org",
@@ -2967,13 +2924,7 @@
       {
        "@type": "ListItem",
        "position": 3,
-       "name": "Chaos Rising",
-       "item": "https://www.cardoutpost.com/sets/chaos-rising"
-      },
-      {
-       "@type": "ListItem",
-       "position": 4,
-       "name": "Mega Greninja ex #116",
+       "name": "Mega Greninja ex: every version",
        "item": "https://www.cardoutpost.com/cards/mega-greninja-ex"
       }
      ]
@@ -3323,6 +3274,7 @@
     "odds": "1 in 14,106",
     "price": 2500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 55,
    "index": true,
    "gate_fails": [],
@@ -3354,6 +3306,7 @@
      "psa10": 286.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -3813,6 +3766,7 @@
     "odds": "1 in 300",
     "price": 50.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 67,
    "index": true,
    "gate_fails": [],
@@ -3844,6 +3798,7 @@
      "psa10": 335000.48
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -4309,6 +4264,7 @@
     "odds": "1 in 419",
     "price": 500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 71,
    "index": true,
    "gate_fails": [],
@@ -4334,6 +4290,7 @@
      "psa10": 1910.28
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -4803,6 +4760,7 @@
     "odds": "1 in 420",
     "price": 2500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 72,
    "index": true,
    "gate_fails": [],
@@ -4840,6 +4798,7 @@
      "psa10": 6057.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -5246,6 +5205,7 @@
     "odds": "1 in 300",
     "price": 100.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 65,
    "index": true,
    "gate_fails": [],
@@ -5283,6 +5243,7 @@
      "psa10": 271.25
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -5761,6 +5722,7 @@
     "odds": "1 in 300",
     "price": 250.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 64,
    "index": true,
    "gate_fails": [],
@@ -5780,6 +5742,7 @@
      "psa10": 860.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -5893,11 +5856,11 @@
   {
    "card_id": "mega-gengar-ex",
    "url": "/cards/mega-gengar-ex",
-   "canonical": "https://www.cardoutpost.com/cards/ascended-heroes/mega-gengar-ex",
-   "duplicate_of": "/cards/ascended-heroes/mega-gengar-ex",
-   "title": "Mega Gengar ex #284 Price & PSA 10 Value | CardOutpost",
-   "h1": "Mega Gengar ex #284 (Ascended Heroes)",
-   "meta_description": "Mega Gengar ex #284 sells for $666 raw and $1,475 in PSA 10. 8,434 PSA 10s exist. Pull it on CardOutpost at 1 in 300 odds.",
+   "canonical": "https://www.cardoutpost.com/cards/mega-gengar-ex",
+   "duplicate_of": "",
+   "title": "Mega Gengar ex: All 6 Versions & Prices | CardOutpost",
+   "h1": "Mega Gengar ex: every version",
+   "meta_description": "All 6 English printings of Mega Gengar ex, with the ungraded price of each. The most valuable is #284 from Ascended Heroes at $666.",
    "card_name": "Mega Gengar ex",
    "set_name": "Ascended Heroes",
    "set_url": "/sets/ascended-heroes",
@@ -5918,16 +5881,8 @@
     "trend_psa10_pct": null,
     "updated": "25 Oct 2026"
    },
-   "selling_line": "Pull a real graded copy from the $250 Grail pack. Odds 1 in 300, shown before you open. Vaulted and insured. Ship it home in its slab, or sell it back at 100% of market value.",
-   "about": [
-    "Mega Gengar ex #284 is from the Ascended Heroes set, released January 30, 2026.",
-    "An ungraded copy sells for about $666. A PSA 10 sells for $1,475.",
-    "High grades are common: 8,434 of the 13,289 copies PSA graded got a 10 (63.5%).",
-    "Worth grading? Yes. A graded copy is worth about $1,235 on average after the $25 fee, against $666 raw.",
-    "Sales speed: ungraded 1 sale per day, PSA 10 5 sales per day on eBay and TCGplayer.",
-    "On CardOutpost it is a Grail pack chase card at 1 in 300 odds, pulled 15 times in the last 90 days.",
-    "Sell it back to CardOutpost any time at 100% of market value, $1,475 today, with no fee."
-   ],
+   "selling_line": "",
+   "about": [],
    "grade_ladder": [
     {
      "grade": "Ungraded",
@@ -6075,67 +6030,9 @@
     "cop_lowest_live_listing": "687.83",
     "cop_listings_json": "[{\"id\": \"81e615e2-ccc8-7107-9cd5-27ba3b6727b9\", \"url\": \"/marketplace/listing/81e615e2-ccc8-7107-9cd5-27ba3b6727b9\", \"grade\": \"Ungraded\", \"price\": 687.83, \"seller\": \"cardcollector31\", \"listed\": \"2026-10-02\"}, {\"id\": \"231d1431-4f64-71d7-ea3c-6103df6ad253\", \"url\": \"/marketplace/listing/231d1431-4f64-71d7-ea3c-6103df6ad253\", \"grade\": \"PSA 10\", \"price\": 1390.56, \"seller\": \"vaultking92\", \"listed\": \"2026-09-29\"}, {\"id\": \"775658a7-8fa3-7945-0fbe-238f366d9543\", \"url\": \"/marketplace/listing/775658a7-8fa3-7945-0fbe-238f366d9543\", \"grade\": \"PSA 10\", \"price\": 1406.34, \"seller\": \"vaultking52\", \"listed\": \"2026-10-25\"}]"
    },
-   "listings": [
-    {
-     "id": "81e615e2-ccc8-7107-9cd5-27ba3b6727b9",
-     "url": "/marketplace/listing/81e615e2-ccc8-7107-9cd5-27ba3b6727b9",
-     "grade": "Ungraded",
-     "price": 687.83,
-     "seller": "cardcollector31",
-     "listed": "2026-10-02"
-    },
-    {
-     "id": "231d1431-4f64-71d7-ea3c-6103df6ad253",
-     "url": "/marketplace/listing/231d1431-4f64-71d7-ea3c-6103df6ad253",
-     "grade": "PSA 10",
-     "price": 1390.56,
-     "seller": "vaultking92",
-     "listed": "2026-09-29"
-    },
-    {
-     "id": "775658a7-8fa3-7945-0fbe-238f366d9543",
-     "url": "/marketplace/listing/775658a7-8fa3-7945-0fbe-238f366d9543",
-     "grade": "PSA 10",
-     "price": 1406.34,
-     "seller": "vaultking52",
-     "listed": "2026-10-25"
-    }
-   ],
-   "faqs": [
-    {
-     "q": "How much is Mega Gengar ex #284 worth?",
-     "a": "As of 25 Oct 2026, Mega Gengar ex #284 sells for about $666 ungraded and $1,475 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $886.",
-     "from": "fixed"
-    },
-    {
-     "q": "How many PSA 10 copies of Mega Gengar ex #284 exist?",
-     "a": "PSA has graded 13,289 copies of Mega Gengar ex #284, and 8,434 of them received a 10. That is 63.5% of all graded copies.",
-     "from": "fixed"
-    },
-    {
-     "q": "What are the odds of pulling Mega Gengar ex on CardOutpost?",
-     "a": "The odds are 1 in 300 packs. Mega Gengar ex sits in the Grail pack, which costs $250. CardOutpost shows the odds on every pack before you open it.",
-     "from": "fixed"
-    }
-   ],
-   "faq_log": [
-    [
-     "Why did Mega Gengar get banned?",
-     "dropped: no topic we can answer"
-    ],
-    [
-     "How much is Mega Gengar worth?",
-     "merged into the worth question"
-    ],
-    [
-     "What is Gengar's signature move?",
-     "dropped: no topic we can answer"
-    ],
-    [
-     "What type is Mega Gengar weak to?",
-     "dropped: no topic we can answer"
-    ]
-   ],
+   "listings": [],
+   "faqs": [],
+   "faq_log": [],
    "source_url": "https://www.pricecharting.com/game/pokemon-ascended-heroes/mega-gengar-ex-284",
    "fetched_at": "2026-10-25",
    "cta": {
@@ -6144,64 +6041,65 @@
     "odds": "1 in 300",
     "price": 250.0
    },
-   "about_max_overlap_pct": 98,
-   "index": false,
-   "gate_fails": [
-    "duplicate of /cards/ascended-heroes/mega-gengar-ex",
-    "text 98% same as another page"
-   ],
-   "robots": "noindex, follow",
-   "in_sitemap": false,
-   "related": [
+   "page_type": "versions",
+   "versions": [
     {
-     "name": "Mega Gengar ex #284 (Ascended Heroes)",
+     "name": "Mega Gengar ex",
+     "number": "284",
+     "set": "Ascended Heroes",
+     "ungraded": 665.87,
      "url": "/cards/ascended-heroes/mega-gengar-ex",
-     "why": "same Pok\u00e9mon",
-     "psa10": 1475.0
+     "source": "https://www.pricecharting.com/game/pokemon-ascended-heroes/mega-gengar-ex-284"
     },
     {
-     "name": "Gengar ex #108 (Fire Red & Leaf Green)",
-     "url": "/cards/gengar-ex",
-     "why": "same Pok\u00e9mon",
-     "psa10": 91282.43
+     "name": "Mega Gengar EX",
+     "number": "XY166",
+     "set": "Promo",
+     "ungraded": 178.38,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/mega-gengar-ex-xy166"
     },
     {
-     "name": "Sabrina's Gengar #14 (Gym Heroes)",
-     "url": "/cards/sabrinas-gengar",
-     "why": "same Pok\u00e9mon",
-     "psa10": 17169.72
+     "name": "Mega Gengar ex",
+     "number": "269",
+     "set": "Ascended Heroes",
+     "ungraded": 38.14,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-ascended-heroes/mega-gengar-ex-269"
     },
     {
-     "name": "Gengar Full Art #TG06 (Lost Origin)",
-     "url": "/cards/gengar-full-art",
-     "why": "same Pok\u00e9mon",
-     "psa10": 680.0
+     "name": "Mega Gengar EX",
+     "number": "73",
+     "set": "Promo",
+     "ungraded": 4.74,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/mega-gengar-ex-73"
     },
     {
-     "name": "Psyduck #226 (Ascended Heroes)",
-     "url": "/cards/ascended-heroes/psyduck",
-     "why": "same set",
-     "psa10": 188.04
+     "name": "Mega Gengar ex",
+     "number": "56",
+     "set": "Phantasmal Flames",
+     "ungraded": 3.6,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-phantasmal-flames/mega-gengar-ex-56"
     },
     {
-     "name": "Mega Dragonite ex #290 (Ascended Heroes)",
-     "url": "/cards/ascended-heroes/mega-dragonite-ex",
-     "why": "same set",
-     "psa10": 804.98
-    },
-    {
-     "name": "Pikachu ex #276 (Ascended Heroes)",
-     "url": "/cards/ascended-heroes/pikachu-ex",
-     "why": "same set",
-     "psa10": 1546.0
-    },
-    {
-     "name": "Lillie's Clefairy ex #280 (Ascended Heroes)",
-     "url": "/cards/lillies-clefairy-ex",
-     "why": "same set",
-     "psa10": 229.71
+     "name": "Mega Gengar ex",
+     "number": "125",
+     "set": "Ascended Heroes",
+     "ungraded": 3.51,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-ascended-heroes/mega-gengar-ex-125"
     }
    ],
+   "same_printing_as": "/cards/ascended-heroes/mega-gengar-ex",
+   "about_max_overlap_pct": 0,
+   "index": true,
+   "gate_fails": [],
+   "robots": "index, follow",
+   "in_sitemap": true,
+   "related": [],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -6212,83 +6110,54 @@
      "url": "/cards"
     },
     {
-     "name": "Ascended Heroes",
-     "url": "/sets/ascended-heroes"
-    },
-    {
-     "name": "Mega Gengar ex #284",
+     "name": "Mega Gengar ex: every version",
      "url": "/cards/mega-gengar-ex"
     }
    ],
    "schema": [
     {
      "@context": "https://schema.org",
-     "@type": "Product",
-     "name": "Mega Gengar ex #284 (Ascended Heroes)",
-     "sku": "284",
-     "category": "Graded trading card",
-     "description": "Mega Gengar ex #284 sells for $666 raw and $1,475 in PSA 10. 8,434 PSA 10s exist. Pull it on CardOutpost at 1 in 300 odds.",
+     "@type": "CollectionPage",
+     "name": "Mega Gengar ex: every version",
      "url": "https://www.cardoutpost.com/cards/mega-gengar-ex",
-     "additionalProperty": [
-      {
-       "@type": "PropertyValue",
-       "name": "Set",
-       "value": "Ascended Heroes"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Card number",
-       "value": "284"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Release date",
-       "value": "January 30, 2026"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Grade in stock",
-       "value": "PSA 10"
-      }
-     ],
-     "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "USD",
-      "offerCount": 3,
-      "lowPrice": 687.83,
-      "highPrice": 1406.34,
-      "availability": "https://schema.org/InStock"
+     "description": "All 6 English printings of Mega Gengar ex, with the ungraded price of each. The most valuable is #284 from Ascended Heroes at $666.",
+     "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 6,
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Mega Gengar ex #284 (Ascended Heroes)",
+        "url": "https://www.cardoutpost.com/cards/ascended-heroes/mega-gengar-ex"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Mega Gengar EX #XY166 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Mega Gengar ex #269 (Ascended Heroes)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Mega Gengar EX #73 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Mega Gengar ex #56 (Phantasmal Flames)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Mega Gengar ex #125 (Ascended Heroes)"
+       }
+      ]
      }
-    },
-    {
-     "@context": "https://schema.org",
-     "@type": "FAQPage",
-     "mainEntity": [
-      {
-       "@type": "Question",
-       "name": "How much is Mega Gengar ex #284 worth?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "As of 25 Oct 2026, Mega Gengar ex #284 sells for about $666 ungraded and $1,475 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $886."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "How many PSA 10 copies of Mega Gengar ex #284 exist?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "PSA has graded 13,289 copies of Mega Gengar ex #284, and 8,434 of them received a 10. That is 63.5% of all graded copies."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "What are the odds of pulling Mega Gengar ex on CardOutpost?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The odds are 1 in 300 packs. Mega Gengar ex sits in the Grail pack, which costs $250. CardOutpost shows the odds on every pack before you open it."
-       }
-      }
-     ]
     },
     {
      "@context": "https://schema.org",
@@ -6309,13 +6178,7 @@
       {
        "@type": "ListItem",
        "position": 3,
-       "name": "Ascended Heroes",
-       "item": "https://www.cardoutpost.com/sets/ascended-heroes"
-      },
-      {
-       "@type": "ListItem",
-       "position": 4,
-       "name": "Mega Gengar ex #284",
+       "name": "Mega Gengar ex: every version",
        "item": "https://www.cardoutpost.com/cards/mega-gengar-ex"
       }
      ]
@@ -6672,6 +6535,7 @@
     "odds": "1 in 405",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 74,
    "index": true,
    "gate_fails": [],
@@ -6727,6 +6591,7 @@
      "psa10": 294.45
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -7197,6 +7062,7 @@
     "odds": "1 in 4,301",
     "price": 2500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 72,
    "index": true,
    "gate_fails": [],
@@ -7234,6 +7100,7 @@
      "psa10": 6057.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -7704,6 +7571,7 @@
     "odds": "1 in 300",
     "price": 500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 64,
    "index": true,
    "gate_fails": [],
@@ -7759,6 +7627,7 @@
      "psa10": 1400.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -8130,6 +7999,7 @@
     "odds": "1 in 360",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 74,
    "index": true,
    "gate_fails": [],
@@ -8167,6 +8037,7 @@
      "psa10": 271.25
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -8628,6 +8499,7 @@
     "odds": "1 in 300",
     "price": 2500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 69,
    "index": true,
    "gate_fails": [],
@@ -8659,6 +8531,7 @@
      "psa10": 26603.23
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -8772,11 +8645,11 @@
   {
    "card_id": "gengar-vmax",
    "url": "/cards/gengar-vmax",
-   "canonical": "https://www.cardoutpost.com/cards/fusion-strike/gengar-vmax",
-   "duplicate_of": "/cards/fusion-strike/gengar-vmax",
-   "title": "Gengar VMAX #271 Price & PSA 10 Value | CardOutpost",
-   "h1": "Gengar VMAX #271 (Fusion Strike)",
-   "meta_description": "Gengar VMAX #271 sells for $850 raw and $2,215 in PSA 10. 14,068 PSA 10s exist. Pull it on CardOutpost at 1 in 477 odds.",
+   "canonical": "https://www.cardoutpost.com/cards/gengar-vmax",
+   "duplicate_of": "",
+   "title": "Gengar VMAX: All 2 Versions & Prices | CardOutpost",
+   "h1": "Gengar VMAX: every version",
+   "meta_description": "All 2 English printings of Gengar VMAX, with the ungraded price of each. The most valuable is #271 from Fusion Strike at $835.",
    "card_name": "Gengar VMAX",
    "set_name": "Fusion Strike",
    "set_url": "/sets/fusion-strike",
@@ -8797,16 +8670,8 @@
     "trend_psa10_pct": 3.0,
     "updated": "25 Oct 2026"
    },
-   "selling_line": "Pull a real graded copy from the $250 Grail pack. Odds 1 in 477, shown before you open. Vaulted and insured. Ship it home in its slab, or sell it back at 100% of market value.",
-   "about": [
-    "Gengar VMAX #271 is from the Fusion Strike set, released November 12, 2021. Rarity: Alternate Art.",
-    "An ungraded copy sells for about $850, up 16% in 12 months. A PSA 10 sells for $2,215, up 3% in 12 months.",
-    "High grades are common: 14,068 of the 26,197 copies PSA graded got a 10 (53.7%).",
-    "Worth grading? Yes. A graded copy is worth about $1,578 on average after the $25 fee, against $850 raw.",
-    "Sales speed: ungraded 1 sale per day, PSA 10 3 sales per day on eBay and TCGplayer.",
-    "On CardOutpost it is a Grail pack chase card at 1 in 477 odds, pulled 9 times in the last 90 days.",
-    "Sell it back to CardOutpost any time at 100% of market value, $2,215 today, with no fee."
-   ],
+   "selling_line": "",
+   "about": [],
    "grade_ladder": [
     {
      "grade": "Ungraded",
@@ -9066,64 +8931,9 @@
     "cop_lowest_live_listing": "2264.66",
     "cop_listings_json": "[{\"id\": \"755a819d-d4b1-74cd-ed56-9c76716e1cea\", \"url\": \"/marketplace/listing/755a819d-d4b1-74cd-ed56-9c76716e1cea\", \"grade\": \"PSA 10\", \"price\": 2264.66, \"seller\": \"shinyhunter33\", \"listed\": \"2026-10-01\"}, {\"id\": \"57d8b66d-6e0e-708c-e7f8-4fe47e0a04f6\", \"url\": \"/marketplace/listing/57d8b66d-6e0e-708c-e7f8-4fe47e0a04f6\", \"grade\": \"PSA 10\", \"price\": 2452.26, \"seller\": \"cardcollector78\", \"listed\": \"2026-10-05\"}]"
    },
-   "listings": [
-    {
-     "id": "755a819d-d4b1-74cd-ed56-9c76716e1cea",
-     "url": "/marketplace/listing/755a819d-d4b1-74cd-ed56-9c76716e1cea",
-     "grade": "PSA 10",
-     "price": 2264.66,
-     "seller": "shinyhunter33",
-     "listed": "2026-10-01"
-    },
-    {
-     "id": "57d8b66d-6e0e-708c-e7f8-4fe47e0a04f6",
-     "url": "/marketplace/listing/57d8b66d-6e0e-708c-e7f8-4fe47e0a04f6",
-     "grade": "PSA 10",
-     "price": 2452.26,
-     "seller": "cardcollector78",
-     "listed": "2026-10-05"
-    }
-   ],
-   "faqs": [
-    {
-     "q": "How much is Gengar VMAX #271 worth?",
-     "a": "As of 25 Oct 2026, Gengar VMAX #271 sells for about $850 ungraded and $2,215 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $892.",
-     "from": "fixed"
-    },
-    {
-     "q": "How many PSA 10 copies of Gengar VMAX #271 exist?",
-     "a": "PSA has graded 26,197 copies of Gengar VMAX #271, and 14,068 of them received a 10. That is 53.7% of all graded copies.",
-     "from": "fixed"
-    },
-    {
-     "q": "What are the odds of pulling Gengar VMAX on CardOutpost?",
-     "a": "The odds are 1 in 477 packs. Gengar VMAX sits in the Grail pack, which costs $250. CardOutpost shows the odds on every pack before you open it.",
-     "from": "fixed"
-    },
-    {
-     "q": "Why is Gengar VMAX #271 so expensive?",
-     "a": "Two reasons. Supply: PSA has given a 10 to only 14,068 of 26,197 graded copies (53.7%). Demand: it sells 3 sales per day on eBay and TCGplayer, at $2,215 in PSA 10 and $850 raw as of 25 Oct 2026.",
-     "from": "Google: \"Why is Gengar Vmax so expensive?\""
-    }
-   ],
-   "faq_log": [
-    [
-     "How much is a Gengar Vmax worth?",
-     "merged into the worth question"
-    ],
-    [
-     "Why is Gengar Vmax so expensive?",
-     "kept as \"Why is Gengar VMAX #271 so expensive?\""
-    ],
-    [
-     "What is the rarest Vmax ever?",
-     "dropped: not about this card"
-    ],
-    [
-     "What are the odds of pulling a Gengar Vmax?",
-     "merged into the odds question"
-    ]
-   ],
+   "listings": [],
+   "faqs": [],
+   "faq_log": [],
    "source_url": "https://www.pricecharting.com/game/pokemon-fusion-strike/gengar-vmax-271",
    "fetched_at": "2026-10-25",
    "cta": {
@@ -9132,46 +8942,33 @@
     "odds": "1 in 477",
     "price": 250.0
    },
-   "about_max_overlap_pct": 96,
-   "index": false,
-   "gate_fails": [
-    "duplicate of /cards/fusion-strike/gengar-vmax",
-    "text 96% same as another page"
-   ],
-   "robots": "noindex, follow",
-   "in_sitemap": false,
-   "related": [
+   "page_type": "versions",
+   "versions": [
     {
-     "name": "Mega Gengar ex #284 (Ascended Heroes)",
-     "url": "/cards/ascended-heroes/mega-gengar-ex",
-     "why": "same Pok\u00e9mon",
-     "psa10": 1475.0
+     "name": "Gengar VMAX",
+     "number": "271",
+     "set": "Fusion Strike",
+     "ungraded": 834.56,
+     "url": "/cards/fusion-strike/gengar-vmax",
+     "source": "https://www.pricecharting.com/game/pokemon-fusion-strike/gengar-vmax-271"
     },
     {
-     "name": "Gengar ex #108 (Fire Red & Leaf Green)",
-     "url": "/cards/gengar-ex",
-     "why": "same Pok\u00e9mon",
-     "psa10": 91282.43
-    },
-    {
-     "name": "Sabrina's Gengar #14 (Gym Heroes)",
-     "url": "/cards/sabrinas-gengar",
-     "why": "same Pok\u00e9mon",
-     "psa10": 17169.72
-    },
-    {
-     "name": "Gengar Full Art #TG06 (Lost Origin)",
-     "url": "/cards/gengar-full-art",
-     "why": "same Pok\u00e9mon",
-     "psa10": 680.0
-    },
-    {
-     "name": "Mew VMAX #269 (Fusion Strike)",
-     "url": "/cards/mew-vmax",
-     "why": "same set",
-     "psa10": 481.46
+     "name": "Gengar VMAX",
+     "number": "157",
+     "set": "Fusion Strike",
+     "ungraded": 37.65,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-fusion-strike/gengar-vmax-157"
     }
    ],
+   "same_printing_as": "/cards/fusion-strike/gengar-vmax",
+   "about_max_overlap_pct": 0,
+   "index": true,
+   "gate_fails": [],
+   "robots": "index, follow",
+   "in_sitemap": true,
+   "related": [],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -9182,91 +8979,34 @@
      "url": "/cards"
     },
     {
-     "name": "Fusion Strike",
-     "url": "/sets/fusion-strike"
-    },
-    {
-     "name": "Gengar VMAX #271",
+     "name": "Gengar VMAX: every version",
      "url": "/cards/gengar-vmax"
     }
    ],
    "schema": [
     {
      "@context": "https://schema.org",
-     "@type": "Product",
-     "name": "Gengar VMAX #271 (Fusion Strike)",
-     "sku": "271",
-     "category": "Graded trading card",
-     "description": "Gengar VMAX #271 sells for $850 raw and $2,215 in PSA 10. 14,068 PSA 10s exist. Pull it on CardOutpost at 1 in 477 odds.",
+     "@type": "CollectionPage",
+     "name": "Gengar VMAX: every version",
      "url": "https://www.cardoutpost.com/cards/gengar-vmax",
-     "additionalProperty": [
-      {
-       "@type": "PropertyValue",
-       "name": "Set",
-       "value": "Fusion Strike"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Card number",
-       "value": "271"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Release date",
-       "value": "November 12, 2021"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Grade in stock",
-       "value": "PSA 10"
-      }
-     ],
-     "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "USD",
-      "offerCount": 2,
-      "lowPrice": 2264.66,
-      "highPrice": 2452.26,
-      "availability": "https://schema.org/InStock"
+     "description": "All 2 English printings of Gengar VMAX, with the ungraded price of each. The most valuable is #271 from Fusion Strike at $835.",
+     "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 2,
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Gengar VMAX #271 (Fusion Strike)",
+        "url": "https://www.cardoutpost.com/cards/fusion-strike/gengar-vmax"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Gengar VMAX #157 (Fusion Strike)"
+       }
+      ]
      }
-    },
-    {
-     "@context": "https://schema.org",
-     "@type": "FAQPage",
-     "mainEntity": [
-      {
-       "@type": "Question",
-       "name": "How much is Gengar VMAX #271 worth?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "As of 25 Oct 2026, Gengar VMAX #271 sells for about $850 ungraded and $2,215 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $892."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "How many PSA 10 copies of Gengar VMAX #271 exist?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "PSA has graded 26,197 copies of Gengar VMAX #271, and 14,068 of them received a 10. That is 53.7% of all graded copies."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "What are the odds of pulling Gengar VMAX on CardOutpost?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The odds are 1 in 477 packs. Gengar VMAX sits in the Grail pack, which costs $250. CardOutpost shows the odds on every pack before you open it."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "Why is Gengar VMAX #271 so expensive?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Two reasons. Supply: PSA has given a 10 to only 14,068 of 26,197 graded copies (53.7%). Demand: it sells 3 sales per day on eBay and TCGplayer, at $2,215 in PSA 10 and $850 raw as of 25 Oct 2026."
-       }
-      }
-     ]
     },
     {
      "@context": "https://schema.org",
@@ -9287,13 +9027,7 @@
       {
        "@type": "ListItem",
        "position": 3,
-       "name": "Fusion Strike",
-       "item": "https://www.cardoutpost.com/sets/fusion-strike"
-      },
-      {
-       "@type": "ListItem",
-       "position": 4,
-       "name": "Gengar VMAX #271",
+       "name": "Gengar VMAX: every version",
        "item": "https://www.cardoutpost.com/cards/gengar-vmax"
       }
      ]
@@ -9655,6 +9389,7 @@
     "odds": "1 in 300",
     "price": 500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 66,
    "index": true,
    "gate_fails": [],
@@ -9710,6 +9445,7 @@
      "psa10": 110.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -10027,6 +9763,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 78,
    "index": true,
    "gate_fails": [],
@@ -10058,6 +9795,7 @@
      "psa10": 111.39
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -10386,6 +10124,7 @@
     "odds": "1 in 323",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 74,
    "index": true,
    "gate_fails": [],
@@ -10399,6 +10138,7 @@
      "psa10": 599.99
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -10852,6 +10592,7 @@
     "odds": "1 in 300",
     "price": 100.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 72,
    "index": true,
    "gate_fails": [],
@@ -10883,6 +10624,7 @@
      "psa10": 453.88
     }
    ],
+   "versions_url": "/cards/blastoise-ex",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -11360,6 +11102,7 @@
     "odds": "1 in 300",
     "price": 50.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -11385,6 +11128,7 @@
      "psa10": 727.5
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -11862,6 +11606,7 @@
     "odds": "1 in 300",
     "price": 250.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 71,
    "index": true,
    "gate_fails": [],
@@ -11881,6 +11626,7 @@
      "psa10": 3711.2
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -12372,6 +12118,7 @@
     "odds": "1 in 300",
     "price": 100.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 67,
    "index": true,
    "gate_fails": [],
@@ -12415,6 +12162,7 @@
      "psa10": 727.5
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -12788,6 +12536,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 70,
    "index": true,
    "gate_fails": [],
@@ -12825,6 +12574,7 @@
      "psa10": 229.71
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -13166,6 +12916,7 @@
     "odds": "1 in 300",
     "price": 250.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -13221,6 +12972,7 @@
      "psa10": 229.71
     }
    ],
+   "versions_url": "/cards/mega-gengar-ex",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -13687,6 +13439,7 @@
     "odds": "1 in 935",
     "price": 2500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 64,
    "index": true,
    "gate_fails": [],
@@ -13718,6 +13471,7 @@
      "psa10": 3406.54
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -14113,6 +13867,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -14150,6 +13905,7 @@
      "psa10": 271.25
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -14633,6 +14389,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 70,
    "index": true,
    "gate_fails": [],
@@ -14664,6 +14421,7 @@
      "psa10": 26603.23
     }
    ],
+   "versions_url": "/cards/charizard-ex",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -14795,11 +14553,11 @@
   {
    "card_id": "giratina-v",
    "url": "/cards/giratina-v",
-   "canonical": "https://www.cardoutpost.com/cards/lost-origin/giratina-v",
-   "duplicate_of": "/cards/lost-origin/giratina-v",
-   "title": "Giratina V #186 Price & PSA 10 Value | CardOutpost",
-   "h1": "Giratina V #186 (Lost Origin)",
-   "meta_description": "Giratina V #186 sells for $793 raw and $3,094 in PSA 10. 9,458 PSA 10s exist. Pull it on CardOutpost at 1 in 480 odds.",
+   "canonical": "https://www.cardoutpost.com/cards/giratina-v",
+   "duplicate_of": "",
+   "title": "Giratina V: All 4 Versions & Prices | CardOutpost",
+   "h1": "Giratina V: every version",
+   "meta_description": "All 4 English printings of Giratina V, with the ungraded price of each. The most valuable is #186 from Lost Origin at $793.",
    "card_name": "Giratina V",
    "set_name": "Lost Origin",
    "set_url": "/sets/lost-origin",
@@ -14820,16 +14578,8 @@
     "trend_psa10_pct": 36.0,
     "updated": "25 Oct 2026"
    },
-   "selling_line": "Pull a real graded copy from the $100 Master pack. Odds 1 in 480, shown before you open. Vaulted and insured. Ship it home in its slab, or sell it back at 100% of market value.",
-   "about": [
-    "Giratina V #186 is from the Lost Origin set, released September 9, 2022.",
-    "An ungraded copy sells for about $793, up 23% in 12 months. A PSA 10 sells for $3,094, up 36% in 12 months.",
-    "High grades are common: 9,458 of the 22,851 copies PSA graded got a 10 (41.4%).",
-    "Worth grading? Yes. A graded copy is worth about $1,770 on average after the $25 fee, against $793 raw.",
-    "Sales speed: ungraded 1 sale per day, PSA 10 2 sales per day on eBay and TCGplayer.",
-    "On CardOutpost it is a Master pack chase card at 1 in 480 odds, pulled 34 times in the last 90 days.",
-    "Sell it back to CardOutpost any time at 100% of market value, $877 today, with no fee."
-   ],
+   "selling_line": "",
+   "about": [],
    "grade_ladder": [
     {
      "grade": "Ungraded",
@@ -15089,41 +14839,8 @@
     "cop_lowest_live_listing": "825.65",
     "cop_listings_json": "[{\"id\": \"8a1bfdd5-9a0e-7bbc-5372-f0481a56e475\", \"url\": \"/marketplace/listing/8a1bfdd5-9a0e-7bbc-5372-f0481a56e475\", \"grade\": \"PSA 9\", \"price\": 825.65, \"seller\": \"vaultking58\", \"listed\": \"2026-10-16\"}, {\"id\": \"13b0ac98-1ee7-7674-117f-a5d0e697fa53\", \"url\": \"/marketplace/listing/13b0ac98-1ee7-7674-117f-a5d0e697fa53\", \"grade\": \"PSA 9\", \"price\": 836.84, \"seller\": \"cardcollector34\", \"listed\": \"2026-10-02\"}]"
    },
-   "listings": [
-    {
-     "id": "8a1bfdd5-9a0e-7bbc-5372-f0481a56e475",
-     "url": "/marketplace/listing/8a1bfdd5-9a0e-7bbc-5372-f0481a56e475",
-     "grade": "PSA 9",
-     "price": 825.65,
-     "seller": "vaultking58",
-     "listed": "2026-10-16"
-    },
-    {
-     "id": "13b0ac98-1ee7-7674-117f-a5d0e697fa53",
-     "url": "/marketplace/listing/13b0ac98-1ee7-7674-117f-a5d0e697fa53",
-     "grade": "PSA 9",
-     "price": 836.84,
-     "seller": "cardcollector34",
-     "listed": "2026-10-02"
-    }
-   ],
-   "faqs": [
-    {
-     "q": "How much is Giratina V #186 worth?",
-     "a": "As of 25 Oct 2026, Giratina V #186 sells for about $793 ungraded and $3,094 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $877.",
-     "from": "fixed"
-    },
-    {
-     "q": "How many PSA 10 copies of Giratina V #186 exist?",
-     "a": "PSA has graded 22,851 copies of Giratina V #186, and 9,458 of them received a 10. That is 41.4% of all graded copies.",
-     "from": "fixed"
-    },
-    {
-     "q": "What are the odds of pulling Giratina V on CardOutpost?",
-     "a": "The odds are 1 in 480 packs. Giratina V sits in the Master pack, which costs $100. CardOutpost shows the odds on every pack before you open it.",
-     "from": "fixed"
-    }
-   ],
+   "listings": [],
+   "faqs": [],
    "faq_log": [],
    "source_url": "https://www.pricecharting.com/game/pokemon-lost-origin/giratina-v-186",
    "fetched_at": "2026-10-25",
@@ -15133,34 +14850,49 @@
     "odds": "1 in 480",
     "price": 100.0
    },
-   "about_max_overlap_pct": 92,
-   "index": false,
-   "gate_fails": [
-    "duplicate of /cards/lost-origin/giratina-v",
-    "text 92% same as another page"
-   ],
-   "robots": "noindex, follow",
-   "in_sitemap": false,
-   "related": [
+   "page_type": "versions",
+   "versions": [
     {
-     "name": "Giratina VSTAR #GG69 (Crown Zenith)",
-     "url": "/cards/giratina-vstar",
-     "why": "same Pok\u00e9mon",
-     "psa10": 510.0
-    },
-    {
-     "name": "Giratina V #186 (Lost Origin)",
+     "name": "Giratina V",
+     "number": "186",
+     "set": "Lost Origin",
+     "ungraded": 792.64,
      "url": "/cards/lost-origin/giratina-v",
-     "why": "same Pok\u00e9mon",
-     "psa10": 3094.5
+     "source": "https://www.pricecharting.com/game/pokemon-lost-origin/giratina-v-186"
     },
     {
-     "name": "Gengar Full Art #TG06 (Lost Origin)",
-     "url": "/cards/gengar-full-art",
-     "why": "same set",
-     "psa10": 680.0
+     "name": "Giratina V",
+     "number": "185",
+     "set": "Lost Origin",
+     "ungraded": 17.4,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-lost-origin/giratina-v-185"
+    },
+    {
+     "name": "Giratina V",
+     "number": "SWSH259",
+     "set": "Promo",
+     "ungraded": 4.25,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/giratina-v-swsh259"
+    },
+    {
+     "name": "Giratina V",
+     "number": "130",
+     "set": "Lost Origin",
+     "ungraded": 2.75,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-lost-origin/giratina-v-130"
     }
    ],
+   "same_printing_as": "/cards/lost-origin/giratina-v",
+   "about_max_overlap_pct": 0,
+   "index": true,
+   "gate_fails": [],
+   "robots": "index, follow",
+   "in_sitemap": true,
+   "related": [],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -15171,83 +14903,44 @@
      "url": "/cards"
     },
     {
-     "name": "Lost Origin",
-     "url": "/sets/lost-origin"
-    },
-    {
-     "name": "Giratina V #186",
+     "name": "Giratina V: every version",
      "url": "/cards/giratina-v"
     }
    ],
    "schema": [
     {
      "@context": "https://schema.org",
-     "@type": "Product",
-     "name": "Giratina V #186 (Lost Origin)",
-     "sku": "186",
-     "category": "Graded trading card",
-     "description": "Giratina V #186 sells for $793 raw and $3,094 in PSA 10. 9,458 PSA 10s exist. Pull it on CardOutpost at 1 in 480 odds.",
+     "@type": "CollectionPage",
+     "name": "Giratina V: every version",
      "url": "https://www.cardoutpost.com/cards/giratina-v",
-     "additionalProperty": [
-      {
-       "@type": "PropertyValue",
-       "name": "Set",
-       "value": "Lost Origin"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Card number",
-       "value": "186"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Release date",
-       "value": "September 9, 2022"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Grade in stock",
-       "value": "PSA 9"
-      }
-     ],
-     "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "USD",
-      "offerCount": 2,
-      "lowPrice": 825.65,
-      "highPrice": 836.84,
-      "availability": "https://schema.org/InStock"
+     "description": "All 4 English printings of Giratina V, with the ungraded price of each. The most valuable is #186 from Lost Origin at $793.",
+     "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 4,
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Giratina V #186 (Lost Origin)",
+        "url": "https://www.cardoutpost.com/cards/lost-origin/giratina-v"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Giratina V #185 (Lost Origin)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Giratina V #SWSH259 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Giratina V #130 (Lost Origin)"
+       }
+      ]
      }
-    },
-    {
-     "@context": "https://schema.org",
-     "@type": "FAQPage",
-     "mainEntity": [
-      {
-       "@type": "Question",
-       "name": "How much is Giratina V #186 worth?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "As of 25 Oct 2026, Giratina V #186 sells for about $793 ungraded and $3,094 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $877."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "How many PSA 10 copies of Giratina V #186 exist?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "PSA has graded 22,851 copies of Giratina V #186, and 9,458 of them received a 10. That is 41.4% of all graded copies."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "What are the odds of pulling Giratina V on CardOutpost?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The odds are 1 in 480 packs. Giratina V sits in the Master pack, which costs $100. CardOutpost shows the odds on every pack before you open it."
-       }
-      }
-     ]
     },
     {
      "@context": "https://schema.org",
@@ -15268,13 +14961,7 @@
       {
        "@type": "ListItem",
        "position": 3,
-       "name": "Lost Origin",
-       "item": "https://www.cardoutpost.com/sets/lost-origin"
-      },
-      {
-       "@type": "ListItem",
-       "position": 4,
-       "name": "Giratina V #186",
+       "name": "Giratina V: every version",
        "item": "https://www.cardoutpost.com/cards/giratina-v"
       }
      ]
@@ -15481,6 +15168,7 @@
     "odds": "1 in 315",
     "price": 50.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 74,
    "index": true,
    "gate_fails": [],
@@ -15518,6 +15206,7 @@
      "psa10": 77.9
     }
    ],
+   "versions_url": "/cards/mega-greninja-ex",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -15899,6 +15588,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -15930,6 +15620,7 @@
      "psa10": 271.25
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -16383,6 +16074,7 @@
     "odds": "1 in 419",
     "price": 1000.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 63,
    "index": true,
    "gate_fails": [],
@@ -16414,6 +16106,7 @@
      "psa10": 26603.23
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -16884,6 +16577,7 @@
     "odds": "1 in 479",
     "price": 2500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 61,
    "index": true,
    "gate_fails": [],
@@ -16915,6 +16609,7 @@
      "psa10": 286.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -17366,6 +17061,7 @@
     "odds": "1 in 532",
     "price": 50.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 72,
    "index": true,
    "gate_fails": [],
@@ -17397,6 +17093,7 @@
      "psa10": 502.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -17732,6 +17429,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -17769,6 +17467,7 @@
      "psa10": 111.39
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -18263,12 +17962,14 @@
     "odds": "1 in 300",
     "price": 50.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 66,
    "index": true,
    "gate_fails": [],
    "robots": "index, follow",
    "in_sitemap": true,
    "related": [],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -18667,6 +18368,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -18704,6 +18406,7 @@
      "psa10": 120.95
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -19181,6 +18884,7 @@
     "odds": "1 in 300",
     "price": 250.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 68,
    "index": true,
    "gate_fails": [],
@@ -19212,6 +18916,7 @@
      "psa10": 26603.23
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -19673,6 +19378,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -19710,6 +19416,7 @@
      "psa10": 502.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -20132,6 +19839,7 @@
     "odds": "1 in 330",
     "price": 50.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 73,
    "index": true,
    "gate_fails": [],
@@ -20157,6 +19865,7 @@
      "psa10": 243.75
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -20635,6 +20344,7 @@
     "odds": "1 in 340",
     "price": 50.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -20666,6 +20376,7 @@
      "psa10": 502.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -21040,6 +20751,7 @@
     "odds": "1 in 330",
     "price": 250.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 62,
    "index": true,
    "gate_fails": [],
@@ -21083,6 +20795,7 @@
      "psa10": 101.88
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -21426,6 +21139,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 78,
    "index": true,
    "gate_fails": [],
@@ -21457,6 +21171,7 @@
      "psa10": 111.39
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -21919,6 +21634,7 @@
     "odds": "1 in 300",
     "price": 250.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 76,
    "index": true,
    "gate_fails": [],
@@ -21944,6 +21660,7 @@
      "psa10": 187.41
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -22438,6 +22155,7 @@
     "odds": "1 in 300",
     "price": 50.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 74,
    "index": true,
    "gate_fails": [],
@@ -22475,6 +22193,7 @@
      "psa10": 502.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -22969,6 +22688,7 @@
     "odds": "1 in 300",
     "price": 50.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 67,
    "index": true,
    "gate_fails": [],
@@ -23000,6 +22720,7 @@
      "psa10": 26603.23
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -23335,6 +23056,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 77,
    "index": true,
    "gate_fails": [],
@@ -23372,6 +23094,7 @@
      "psa10": 111.39
     }
    ],
+   "versions_url": "/cards/meowth-ex",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -23858,12 +23581,14 @@
     "odds": "1 in 300",
     "price": 250.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 66,
    "index": true,
    "gate_fails": [],
    "robots": "index, follow",
    "in_sitemap": true,
    "related": [],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -24322,6 +24047,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 57,
    "index": true,
    "gate_fails": [],
@@ -24359,6 +24085,7 @@
      "psa10": 1400.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -24714,6 +24441,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -24745,6 +24473,7 @@
      "psa10": 120.95
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -25102,6 +24831,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 71,
    "index": true,
    "gate_fails": [],
@@ -25127,6 +24857,7 @@
      "psa10": 101.88
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -25589,6 +25320,7 @@
     "odds": "1 in 323",
     "price": 500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 73,
    "index": true,
    "gate_fails": [],
@@ -25626,6 +25358,7 @@
      "psa10": 187.41
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -25991,6 +25724,7 @@
     "odds": "1 in 300",
     "price": 100.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -26022,6 +25756,7 @@
      "psa10": 229.71
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -26500,6 +26235,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 72,
    "index": true,
    "gate_fails": [],
@@ -26531,6 +26267,7 @@
      "psa10": 502.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -26984,6 +26721,7 @@
     "odds": "1 in 300",
     "price": 100.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 74,
    "index": true,
    "gate_fails": [],
@@ -27021,6 +26759,7 @@
      "psa10": 502.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -27370,6 +27109,7 @@
     "odds": "1 in 300",
     "price": 250.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 73,
    "index": true,
    "gate_fails": [],
@@ -27425,6 +27165,7 @@
      "psa10": 229.71
     }
    ],
+   "versions_url": "/cards/pikachu-ex",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -27908,6 +27649,7 @@
     "odds": "1 in 300",
     "price": 50.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 72,
    "index": true,
    "gate_fails": [],
@@ -27933,6 +27675,7 @@
      "psa10": 260.31
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -28355,6 +28098,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -28392,6 +28136,7 @@
      "psa10": 120.95
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -28515,11 +28260,11 @@
   {
    "card_id": "meowth-ex",
    "url": "/cards/meowth-ex",
-   "canonical": "https://www.cardoutpost.com/cards/perfect-order/meowth-ex",
-   "duplicate_of": "/cards/perfect-order/meowth-ex",
-   "title": "Meowth ex #121 Price & PSA 10 Value | CardOutpost",
-   "h1": "Meowth ex #121 (Perfect Order)",
-   "meta_description": "Meowth ex #121 sells for $87.00 raw and $203 in PSA 10. 455 CGC 10s exist. Pull it on CardOutpost at 1 in 300 odds.",
+   "canonical": "https://www.cardoutpost.com/cards/meowth-ex",
+   "duplicate_of": "",
+   "title": "Meowth ex: All 3 Versions & Prices | CardOutpost",
+   "h1": "Meowth ex: every version",
+   "meta_description": "All 3 English printings of Meowth ex, with the ungraded price of each. The most valuable is #121 from Perfect Order at $87.00.",
    "card_name": "Meowth ex",
    "set_name": "Perfect Order",
    "set_url": "/sets/perfect-order",
@@ -28540,15 +28285,8 @@
     "trend_psa10_pct": null,
     "updated": "25 Oct 2026"
    },
-   "selling_line": "Pull a real graded copy from the $25.00 Premium pack. Odds 1 in 300, shown before you open. Vaulted and insured. Ship it home in its slab, or sell it back at 100% of market value.",
-   "about": [
-    "Meowth ex #121 is from the Perfect Order set, released March 27, 2026.",
-    "An ungraded copy sells for about $87.00. A PSA 10 sells for $203.",
-    "High grades are common: 455 of the 565 copies CGC graded got a 10 (80.5%).",
-    "Sales speed: ungraded 1 sale per day, PSA 10 7 sales per day on eBay and TCGplayer.",
-    "On CardOutpost it is a Premium pack chase card at 1 in 300 odds, pulled 246 times in the last 90 days.",
-    "Sell it back to CardOutpost any time at 100% of market value, $203 today, with no fee."
-   ],
+   "selling_line": "",
+   "about": [],
    "grade_ladder": [
     {
      "grade": "Ungraded",
@@ -28675,75 +28413,9 @@
     "cop_lowest_live_listing": "186.75",
     "cop_listings_json": "[{\"id\": \"35e28524-72a9-7984-3222-417ec6c68269\", \"url\": \"/marketplace/listing/35e28524-72a9-7984-3222-417ec6c68269\", \"grade\": \"PSA 10\", \"price\": 186.75, \"seller\": \"pokepulls50\", \"listed\": \"2026-10-08\"}, {\"id\": \"e48b35f5-f236-7438-56ab-08165c98b82e\", \"url\": \"/marketplace/listing/e48b35f5-f236-7438-56ab-08165c98b82e\", \"grade\": \"PSA 10\", \"price\": 190.54, \"seller\": \"gemmint24\", \"listed\": \"2026-10-18\"}, {\"id\": \"040d4923-bfd2-7059-7204-e6e1bac93b28\", \"url\": \"/marketplace/listing/040d4923-bfd2-7059-7204-e6e1bac93b28\", \"grade\": \"PSA 10\", \"price\": 194.53, \"seller\": \"vaultking45\", \"listed\": \"2026-10-17\"}, {\"id\": \"c3d06216-141e-7e4f-a2a3-b53b5183490c\", \"url\": \"/marketplace/listing/c3d06216-141e-7e4f-a2a3-b53b5183490c\", \"grade\": \"PSA 10\", \"price\": 212.52, \"seller\": \"cardcollector57\", \"listed\": \"2026-10-20\"}]"
    },
-   "listings": [
-    {
-     "id": "35e28524-72a9-7984-3222-417ec6c68269",
-     "url": "/marketplace/listing/35e28524-72a9-7984-3222-417ec6c68269",
-     "grade": "PSA 10",
-     "price": 186.75,
-     "seller": "pokepulls50",
-     "listed": "2026-10-08"
-    },
-    {
-     "id": "e48b35f5-f236-7438-56ab-08165c98b82e",
-     "url": "/marketplace/listing/e48b35f5-f236-7438-56ab-08165c98b82e",
-     "grade": "PSA 10",
-     "price": 190.54,
-     "seller": "gemmint24",
-     "listed": "2026-10-18"
-    },
-    {
-     "id": "040d4923-bfd2-7059-7204-e6e1bac93b28",
-     "url": "/marketplace/listing/040d4923-bfd2-7059-7204-e6e1bac93b28",
-     "grade": "PSA 10",
-     "price": 194.53,
-     "seller": "vaultking45",
-     "listed": "2026-10-17"
-    },
-    {
-     "id": "c3d06216-141e-7e4f-a2a3-b53b5183490c",
-     "url": "/marketplace/listing/c3d06216-141e-7e4f-a2a3-b53b5183490c",
-     "grade": "PSA 10",
-     "price": 212.52,
-     "seller": "cardcollector57",
-     "listed": "2026-10-20"
-    }
-   ],
-   "faqs": [
-    {
-     "q": "How much is Meowth ex #121 worth?",
-     "a": "As of 25 Oct 2026, Meowth ex #121 sells for about $87.00 ungraded and $203 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $98.00.",
-     "from": "fixed"
-    },
-    {
-     "q": "How many CGC 10 copies of Meowth ex #121 exist?",
-     "a": "CGC has graded 565 copies of Meowth ex #121, and 455 of them received a 10. That is 80.5% of all graded copies. PSA has not published a count for this card yet.",
-     "from": "fixed"
-    },
-    {
-     "q": "What are the odds of pulling Meowth ex on CardOutpost?",
-     "a": "The odds are 1 in 300 packs. Meowth ex sits in the Premium pack, which costs $25.00. CardOutpost shows the odds on every pack before you open it.",
-     "from": "fixed"
-    }
-   ],
-   "faq_log": [
-    [
-     "How much money is a Meowth EX worth?",
-     "merged into the worth question"
-    ],
-    [
-     "Why is Meowth EX worth so much?",
-     "merged into the worth question"
-    ],
-    [
-     "What Pok\u00e9mon card is worth $1,000,000?",
-     "dropped: not about this card"
-    ],
-    [
-     "Is Meowth EX a rare card?",
-     "dropped: no topic we can answer"
-    ]
-   ],
+   "listings": [],
+   "faqs": [],
+   "faq_log": [],
    "source_url": "https://www.pricecharting.com/game/pokemon-perfect-order/meowth-ex-121",
    "fetched_at": "2026-10-25",
    "cta": {
@@ -28752,52 +28424,41 @@
     "odds": "1 in 300",
     "price": 25.0
    },
-   "about_max_overlap_pct": 95,
-   "index": false,
-   "gate_fails": [
-    "duplicate of /cards/perfect-order/meowth-ex",
-    "text 95% same as another page"
-   ],
-   "robots": "noindex, follow",
-   "in_sitemap": false,
-   "related": [
+   "page_type": "versions",
+   "versions": [
     {
-     "name": "Meowth ex #121 (Perfect Order)",
+     "name": "Meowth ex",
+     "number": "121",
+     "set": "Perfect Order",
+     "ungraded": 87.0,
      "url": "/cards/perfect-order/meowth-ex",
-     "why": "same Pok\u00e9mon",
-     "psa10": 203.05
+     "source": "https://www.pricecharting.com/game/pokemon-perfect-order/meowth-ex-121"
     },
     {
-     "name": "Meowth #106 (Phantasmal Flames)",
-     "url": "/cards/phantasmal-flames/meowth",
-     "why": "same Pok\u00e9mon",
-     "psa10": 101.88
+     "name": "Meowth ex",
+     "number": "107",
+     "set": "Perfect Order",
+     "ungraded": 11.5,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-perfect-order/meowth-ex-107"
     },
     {
-     "name": "Mega Zygarde ex #124 (Perfect Order)",
-     "url": "/cards/mega-zygarde-ex",
-     "why": "same set",
-     "psa10": 402.11
-    },
-    {
-     "name": "Clefairy #94 (Perfect Order)",
-     "url": "/cards/perfect-order/clefairy",
-     "why": "same set",
-     "psa10": 86.5
-    },
-    {
-     "name": "Mega Starmie ex #118 (Perfect Order)",
-     "url": "/cards/mega-starmie-ex",
-     "why": "same set",
-     "psa10": 94.26
-    },
-    {
-     "name": "Mega Clefable ex #119 (Perfect Order)",
-     "url": "/cards/mega-clefable-ex",
-     "why": "same set",
-     "psa10": 111.39
+     "name": "Meowth ex",
+     "number": "62",
+     "set": "Perfect Order",
+     "ungraded": 2.58,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-perfect-order/meowth-ex-62"
     }
    ],
+   "same_printing_as": "/cards/perfect-order/meowth-ex",
+   "about_max_overlap_pct": 0,
+   "index": true,
+   "gate_fails": [],
+   "robots": "index, follow",
+   "in_sitemap": true,
+   "related": [],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -28808,83 +28469,39 @@
      "url": "/cards"
     },
     {
-     "name": "Perfect Order",
-     "url": "/sets/perfect-order"
-    },
-    {
-     "name": "Meowth ex #121",
+     "name": "Meowth ex: every version",
      "url": "/cards/meowth-ex"
     }
    ],
    "schema": [
     {
      "@context": "https://schema.org",
-     "@type": "Product",
-     "name": "Meowth ex #121 (Perfect Order)",
-     "sku": "121",
-     "category": "Graded trading card",
-     "description": "Meowth ex #121 sells for $87.00 raw and $203 in PSA 10. 455 CGC 10s exist. Pull it on CardOutpost at 1 in 300 odds.",
+     "@type": "CollectionPage",
+     "name": "Meowth ex: every version",
      "url": "https://www.cardoutpost.com/cards/meowth-ex",
-     "additionalProperty": [
-      {
-       "@type": "PropertyValue",
-       "name": "Set",
-       "value": "Perfect Order"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Card number",
-       "value": "121"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Release date",
-       "value": "March 27, 2026"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Grade in stock",
-       "value": "PSA 10"
-      }
-     ],
-     "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "USD",
-      "offerCount": 4,
-      "lowPrice": 186.75,
-      "highPrice": 212.52,
-      "availability": "https://schema.org/InStock"
+     "description": "All 3 English printings of Meowth ex, with the ungraded price of each. The most valuable is #121 from Perfect Order at $87.00.",
+     "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 3,
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Meowth ex #121 (Perfect Order)",
+        "url": "https://www.cardoutpost.com/cards/perfect-order/meowth-ex"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Meowth ex #107 (Perfect Order)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Meowth ex #62 (Perfect Order)"
+       }
+      ]
      }
-    },
-    {
-     "@context": "https://schema.org",
-     "@type": "FAQPage",
-     "mainEntity": [
-      {
-       "@type": "Question",
-       "name": "How much is Meowth ex #121 worth?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "As of 25 Oct 2026, Meowth ex #121 sells for about $87.00 ungraded and $203 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $98.00."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "How many CGC 10 copies of Meowth ex #121 exist?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "CGC has graded 565 copies of Meowth ex #121, and 455 of them received a 10. That is 80.5% of all graded copies. PSA has not published a count for this card yet."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "What are the odds of pulling Meowth ex on CardOutpost?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The odds are 1 in 300 packs. Meowth ex sits in the Premium pack, which costs $25.00. CardOutpost shows the odds on every pack before you open it."
-       }
-      }
-     ]
     },
     {
      "@context": "https://schema.org",
@@ -28905,13 +28522,7 @@
       {
        "@type": "ListItem",
        "position": 3,
-       "name": "Perfect Order",
-       "item": "https://www.cardoutpost.com/sets/perfect-order"
-      },
-      {
-       "@type": "ListItem",
-       "position": 4,
-       "name": "Meowth ex #121",
+       "name": "Meowth ex: every version",
        "item": "https://www.cardoutpost.com/cards/meowth-ex"
       }
      ]
@@ -28921,11 +28532,11 @@
   {
    "card_id": "zekrom-ex",
    "url": "/cards/zekrom-ex",
-   "canonical": "https://www.cardoutpost.com/cards/black-bolt/zekrom-ex",
-   "duplicate_of": "/cards/black-bolt/zekrom-ex",
-   "title": "Zekrom ex Black Bolt #172 Price: PSA 10 $1,222 | CardOutpost",
-   "h1": "Zekrom ex #172 (Black Bolt)",
-   "meta_description": "Zekrom ex #172 sells for $564 raw and $1,222 in PSA 10. 6,345 PSA 10s exist. Pull it on CardOutpost at 1 in 300 odds.",
+   "canonical": "https://www.cardoutpost.com/cards/zekrom-ex",
+   "duplicate_of": "",
+   "title": "Zekrom ex: All 8 Versions & Prices | CardOutpost",
+   "h1": "Zekrom ex: every version",
+   "meta_description": "All 8 English printings of Zekrom ex, with the ungraded price of each. The most valuable is #172 from Black Bolt at $566.",
    "card_name": "Zekrom ex",
    "set_name": "Black Bolt",
    "set_url": "/sets/black-bolt",
@@ -28946,16 +28557,8 @@
     "trend_psa10_pct": -3.0,
     "updated": "25 Oct 2026"
    },
-   "selling_line": "Pull a real graded copy from the $250 Grail pack. Odds 1 in 300, shown before you open. Vaulted and insured. Ship it home in its slab, or sell it back at 100% of market value.",
-   "about": [
-    "Zekrom ex #172 is from the Black Bolt set, released July 18, 2025. Rarity: Black White Rare.",
-    "An ungraded copy sells for about $564, up 34% in 12 months. A PSA 10 sells for $1,222, down 3% in 12 months.",
-    "High grades are common: 6,345 of the 12,510 copies PSA graded got a 10 (50.7%).",
-    "Worth grading? Yes. A graded copy is worth about $881 on average after the $25 fee, against $564 raw.",
-    "Sales speed: ungraded 1 sale per day, PSA 10 2 sales per day on eBay and TCGplayer.",
-    "On CardOutpost it is a Grail pack chase card at 1 in 300 odds, pulled 17 times in the last 90 days.",
-    "Sell it back to CardOutpost any time at 100% of market value, $1,222 today, with no fee."
-   ],
+   "selling_line": "",
+   "about": [],
    "grade_ladder": [
     {
      "grade": "Ungraded",
@@ -29151,33 +28754,8 @@
     "cop_lowest_live_listing": "553.16",
     "cop_listings_json": "[{\"id\": \"2bf6d315-c0a2-71f5-fa5d-00ce1a8573a0\", \"url\": \"/marketplace/listing/2bf6d315-c0a2-71f5-fa5d-00ce1a8573a0\", \"grade\": \"PSA 9\", \"price\": 553.16, \"seller\": \"cardcollector57\", \"listed\": \"2026-09-29\"}]"
    },
-   "listings": [
-    {
-     "id": "2bf6d315-c0a2-71f5-fa5d-00ce1a8573a0",
-     "url": "/marketplace/listing/2bf6d315-c0a2-71f5-fa5d-00ce1a8573a0",
-     "grade": "PSA 9",
-     "price": 553.16,
-     "seller": "cardcollector57",
-     "listed": "2026-09-29"
-    }
-   ],
-   "faqs": [
-    {
-     "q": "How much is Zekrom ex #172 worth?",
-     "a": "As of 25 Oct 2026, Zekrom ex #172 sells for about $564 ungraded and $1,222 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $582.",
-     "from": "fixed"
-    },
-    {
-     "q": "How many PSA 10 copies of Zekrom ex #172 exist?",
-     "a": "PSA has graded 12,510 copies of Zekrom ex #172, and 6,345 of them received a 10. That is 50.7% of all graded copies.",
-     "from": "fixed"
-    },
-    {
-     "q": "What are the odds of pulling Zekrom ex on CardOutpost?",
-     "a": "The odds are 1 in 300 packs. Zekrom ex sits in the Grail pack, which costs $250. CardOutpost shows the odds on every pack before you open it.",
-     "from": "fixed"
-    }
-   ],
+   "listings": [],
+   "faqs": [],
    "faq_log": [],
    "source_url": "https://www.pricecharting.com/game/pokemon-black-bolt/zekrom-ex-172",
    "fetched_at": "2026-10-25",
@@ -29187,22 +28765,81 @@
     "odds": "1 in 300",
     "price": 250.0
    },
-   "about_max_overlap_pct": 98,
-   "index": false,
-   "gate_fails": [
-    "duplicate of /cards/black-bolt/zekrom-ex",
-    "text 98% same as another page"
-   ],
-   "robots": "noindex, follow",
-   "in_sitemap": false,
-   "related": [
+   "page_type": "versions",
+   "versions": [
     {
-     "name": "Zekrom ex #172 (Black Bolt)",
+     "name": "Zekrom ex",
+     "number": "172",
+     "set": "Black Bolt",
+     "ungraded": 565.65,
      "url": "/cards/black-bolt/zekrom-ex",
-     "why": "same Pok\u00e9mon",
-     "psa10": 1221.87
+     "source": "https://www.pricecharting.com/game/pokemon-black-bolt/zekrom-ex-172"
+    },
+    {
+     "name": "Zekrom ex",
+     "number": "166",
+     "set": "Black Bolt",
+     "ungraded": 218.75,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-black-bolt/zekrom-ex-166"
+    },
+    {
+     "name": "Zekrom EX",
+     "number": "97",
+     "set": "Next Destinies",
+     "ungraded": 207.85,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-next-destinies/zekrom-ex-97"
+    },
+    {
+     "name": "Zekrom EX",
+     "number": "51",
+     "set": "Next Destinies",
+     "ungraded": 18.0,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-next-destinies/zekrom-ex-51"
+    },
+    {
+     "name": "Zekrom EX",
+     "number": "52",
+     "set": "Legendary Treasures",
+     "ungraded": 8.43,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-legendary-treasures/zekrom-ex-52"
+    },
+    {
+     "name": "Zekrom EX",
+     "number": "BW38",
+     "set": "Promo",
+     "ungraded": 8.25,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/zekrom-ex-bw38"
+    },
+    {
+     "name": "Zekrom ex",
+     "number": "158",
+     "set": "Black Bolt",
+     "ungraded": 5.24,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-black-bolt/zekrom-ex-158"
+    },
+    {
+     "name": "Zekrom ex",
+     "number": "34",
+     "set": "Black Bolt",
+     "ungraded": 1.79,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-black-bolt/zekrom-ex-34"
     }
    ],
+   "same_printing_as": "/cards/black-bolt/zekrom-ex",
+   "about_max_overlap_pct": 0,
+   "index": true,
+   "gate_fails": [],
+   "robots": "index, follow",
+   "in_sitemap": true,
+   "related": [],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -29213,83 +28850,64 @@
      "url": "/cards"
     },
     {
-     "name": "Black Bolt",
-     "url": "/sets/black-bolt"
-    },
-    {
-     "name": "Zekrom ex #172",
+     "name": "Zekrom ex: every version",
      "url": "/cards/zekrom-ex"
     }
    ],
    "schema": [
     {
      "@context": "https://schema.org",
-     "@type": "Product",
-     "name": "Zekrom ex #172 (Black Bolt)",
-     "sku": "172",
-     "category": "Graded trading card",
-     "description": "Zekrom ex #172 sells for $564 raw and $1,222 in PSA 10. 6,345 PSA 10s exist. Pull it on CardOutpost at 1 in 300 odds.",
+     "@type": "CollectionPage",
+     "name": "Zekrom ex: every version",
      "url": "https://www.cardoutpost.com/cards/zekrom-ex",
-     "additionalProperty": [
-      {
-       "@type": "PropertyValue",
-       "name": "Set",
-       "value": "Black Bolt"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Card number",
-       "value": "172"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Release date",
-       "value": "July 18, 2025"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Grade in stock",
-       "value": "PSA 10"
-      }
-     ],
-     "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "USD",
-      "offerCount": 1,
-      "lowPrice": 553.16,
-      "highPrice": 553.16,
-      "availability": "https://schema.org/InStock"
+     "description": "All 8 English printings of Zekrom ex, with the ungraded price of each. The most valuable is #172 from Black Bolt at $566.",
+     "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 8,
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Zekrom ex #172 (Black Bolt)",
+        "url": "https://www.cardoutpost.com/cards/black-bolt/zekrom-ex"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Zekrom ex #166 (Black Bolt)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Zekrom EX #97 (Next Destinies)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Zekrom EX #51 (Next Destinies)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Zekrom EX #52 (Legendary Treasures)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Zekrom EX #BW38 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 7,
+        "name": "Zekrom ex #158 (Black Bolt)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 8,
+        "name": "Zekrom ex #34 (Black Bolt)"
+       }
+      ]
      }
-    },
-    {
-     "@context": "https://schema.org",
-     "@type": "FAQPage",
-     "mainEntity": [
-      {
-       "@type": "Question",
-       "name": "How much is Zekrom ex #172 worth?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "As of 25 Oct 2026, Zekrom ex #172 sells for about $564 ungraded and $1,222 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $582."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "How many PSA 10 copies of Zekrom ex #172 exist?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "PSA has graded 12,510 copies of Zekrom ex #172, and 6,345 of them received a 10. That is 50.7% of all graded copies."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "What are the odds of pulling Zekrom ex on CardOutpost?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The odds are 1 in 300 packs. Zekrom ex sits in the Grail pack, which costs $250. CardOutpost shows the odds on every pack before you open it."
-       }
-      }
-     ]
     },
     {
      "@context": "https://schema.org",
@@ -29310,13 +28928,7 @@
       {
        "@type": "ListItem",
        "position": 3,
-       "name": "Black Bolt",
-       "item": "https://www.cardoutpost.com/sets/black-bolt"
-      },
-      {
-       "@type": "ListItem",
-       "position": 4,
-       "name": "Zekrom ex #172",
+       "name": "Zekrom ex: every version",
        "item": "https://www.cardoutpost.com/cards/zekrom-ex"
       }
      ]
@@ -29681,6 +29293,7 @@
     "odds": "1 in 300",
     "price": 250.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 64,
    "index": true,
    "gate_fails": [],
@@ -29736,6 +29349,7 @@
      "psa10": 1400.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -30187,6 +29801,7 @@
     "odds": "1 in 401",
     "price": 2500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 71,
    "index": true,
    "gate_fails": [],
@@ -30218,6 +29833,7 @@
      "psa10": 26603.23
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -30688,6 +30304,7 @@
     "odds": "1 in 389",
     "price": 50.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 73,
    "index": true,
    "gate_fails": [],
@@ -30707,6 +30324,7 @@
      "psa10": 748.5
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -31056,6 +30674,7 @@
     "odds": "1 in 334",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 71,
    "index": true,
    "gate_fails": [],
@@ -31093,6 +30712,7 @@
      "psa10": 1546.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -31523,12 +31143,14 @@
     "odds": "1 in 300",
     "price": 250.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 69,
    "index": true,
    "gate_fails": [],
    "robots": "index, follow",
    "in_sitemap": true,
    "related": [],
+   "versions_url": "/cards/zekrom-ex",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -31990,6 +31612,7 @@
     "odds": "1 in 300",
     "price": 50.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 66,
    "index": true,
    "gate_fails": [],
@@ -32021,6 +31644,7 @@
      "psa10": 1546.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -32474,6 +32098,7 @@
     "odds": "1 in 315",
     "price": 100.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 72,
    "index": true,
    "gate_fails": [],
@@ -32499,6 +32124,7 @@
      "psa10": 187.41
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -32960,6 +32586,7 @@
     "odds": "1 in 300",
     "price": 100.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -33003,6 +32630,7 @@
      "psa10": 2550.0
     }
    ],
+   "versions_url": "/cards/charizard-ex",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -33480,6 +33108,7 @@
     "odds": "1 in 399",
     "price": 50.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -33511,6 +33140,7 @@
      "psa10": 502.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -33988,6 +33618,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -34019,6 +33650,7 @@
      "psa10": 502.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -34485,6 +34117,7 @@
     "odds": "1 in 300",
     "price": 2500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 71,
    "index": true,
    "gate_fails": [],
@@ -34522,6 +34155,7 @@
      "psa10": 6057.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -34874,6 +34508,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 76,
    "index": true,
    "gate_fails": [],
@@ -34905,6 +34540,7 @@
      "psa10": 203.05
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -35369,6 +35005,7 @@
     "odds": "1 in 300",
     "price": 250.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 67,
    "index": true,
    "gate_fails": [],
@@ -35388,6 +35025,7 @@
      "psa10": 860.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -35822,6 +35460,7 @@
     "odds": "1 in 7,049",
     "price": 2500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 66,
    "index": true,
    "gate_fails": [],
@@ -35835,6 +35474,7 @@
      "psa10": 1910.28
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -35948,11 +35588,11 @@
   {
    "card_id": "pikachu-ex",
    "url": "/cards/pikachu-ex",
-   "canonical": "https://www.cardoutpost.com/cards/ascended-heroes/pikachu-ex",
-   "duplicate_of": "/cards/ascended-heroes/pikachu-ex",
-   "title": "Pikachu ex #276 Price & PSA 10 Value | CardOutpost",
-   "h1": "Pikachu ex #276 (Ascended Heroes)",
-   "meta_description": "Pikachu ex #276 sells for $648 raw and $1,546 in PSA 10. 2,595 PSA 10s exist. Pull it on CardOutpost at 1 in 320 odds.",
+   "canonical": "https://www.cardoutpost.com/cards/pikachu-ex",
+   "duplicate_of": "",
+   "title": "Pikachu ex: All 19 Versions & Prices | CardOutpost",
+   "h1": "Pikachu ex: every version",
+   "meta_description": "All 19 English printings of Pikachu ex, with the ungraded price of each. The most valuable is #276 from Ascended Heroes at $648.",
    "card_name": "Pikachu ex",
    "set_name": "Ascended Heroes",
    "set_url": "/sets/ascended-heroes",
@@ -35973,16 +35613,8 @@
     "trend_psa10_pct": null,
     "updated": "25 Oct 2026"
    },
-   "selling_line": "Pull a real graded copy from the $100 Master pack. Odds 1 in 320, shown before you open. Vaulted and insured. Ship it home in its slab, or sell it back at 100% of market value.",
-   "about": [
-    "Pikachu ex #276 is from the Ascended Heroes set, released January 30, 2026. Rarity: Textured Holo.",
-    "An ungraded copy sells for about $648. A PSA 10 sells for $1,546.",
-    "High grades are common: 2,595 of the 3,819 copies PSA graded got a 10 (67.9%).",
-    "Worth grading? Yes. A graded copy is worth about $1,297 on average after the $25 fee, against $648 raw.",
-    "Sales speed: ungraded 1 sale per day, PSA 10 4 sales per day on eBay and TCGplayer.",
-    "On CardOutpost it is a Master pack chase card at 1 in 320 odds, pulled 50 times in the last 90 days.",
-    "Sell it back to CardOutpost any time at 100% of market value, $848 today, with no fee."
-   ],
+   "selling_line": "",
+   "about": [],
    "grade_ladder": [
     {
      "grade": "Ungraded",
@@ -36130,67 +35762,9 @@
     "cop_lowest_live_listing": "615.98",
     "cop_listings_json": "[{\"id\": \"25d4a7db-c644-7cc7-be4d-823b0fee8f7a\", \"url\": \"/marketplace/listing/25d4a7db-c644-7cc7-be4d-823b0fee8f7a\", \"grade\": \"Ungraded\", \"price\": 615.98, \"seller\": \"vaultking63\", \"listed\": \"2026-10-13\"}, {\"id\": \"c8b51932-c836-704a-4e9c-d96c73f34a4b\", \"url\": \"/marketplace/listing/c8b51932-c836-704a-4e9c-d96c73f34a4b\", \"grade\": \"PSA 9\", \"price\": 764.99, \"seller\": \"holofoil25\", \"listed\": \"2026-10-16\"}, {\"id\": \"5717a183-998b-7f5a-6df0-9a27b2a433df\", \"url\": \"/marketplace/listing/5717a183-998b-7f5a-6df0-9a27b2a433df\", \"grade\": \"PSA 9\", \"price\": 868.19, \"seller\": \"vaultking43\", \"listed\": \"2026-09-29\"}]"
    },
-   "listings": [
-    {
-     "id": "25d4a7db-c644-7cc7-be4d-823b0fee8f7a",
-     "url": "/marketplace/listing/25d4a7db-c644-7cc7-be4d-823b0fee8f7a",
-     "grade": "Ungraded",
-     "price": 615.98,
-     "seller": "vaultking63",
-     "listed": "2026-10-13"
-    },
-    {
-     "id": "c8b51932-c836-704a-4e9c-d96c73f34a4b",
-     "url": "/marketplace/listing/c8b51932-c836-704a-4e9c-d96c73f34a4b",
-     "grade": "PSA 9",
-     "price": 764.99,
-     "seller": "holofoil25",
-     "listed": "2026-10-16"
-    },
-    {
-     "id": "5717a183-998b-7f5a-6df0-9a27b2a433df",
-     "url": "/marketplace/listing/5717a183-998b-7f5a-6df0-9a27b2a433df",
-     "grade": "PSA 9",
-     "price": 868.19,
-     "seller": "vaultking43",
-     "listed": "2026-09-29"
-    }
-   ],
-   "faqs": [
-    {
-     "q": "How much is Pikachu ex #276 worth?",
-     "a": "As of 25 Oct 2026, Pikachu ex #276 sells for about $648 ungraded and $1,546 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $848.",
-     "from": "fixed"
-    },
-    {
-     "q": "How many PSA 10 copies of Pikachu ex #276 exist?",
-     "a": "PSA has graded 3,819 copies of Pikachu ex #276, and 2,595 of them received a 10. That is 67.9% of all graded copies.",
-     "from": "fixed"
-    },
-    {
-     "q": "What are the odds of pulling Pikachu ex on CardOutpost?",
-     "a": "The odds are 1 in 320 packs. Pikachu ex sits in the Master pack, which costs $100. CardOutpost shows the odds on every pack before you open it.",
-     "from": "fixed"
-    }
-   ],
-   "faq_log": [
-    [
-     "Is a Pikachu card worth anything?",
-     "merged into the worth question"
-    ],
-    [
-     "Does Pikachu evolve with Ash?",
-     "dropped: no topic we can answer"
-    ],
-    [
-     "How many Pok\u00e9mon EX are there?",
-     "dropped: not about this card"
-    ],
-    [
-     "What Pikachu illustrator card sold for $900000?",
-     "dropped: no topic we can answer"
-    ]
-   ],
+   "listings": [],
+   "faqs": [],
+   "faq_log": [],
    "source_url": "https://www.pricecharting.com/game/pokemon-ascended-heroes/pikachu-ex-276",
    "fetched_at": "2026-10-25",
    "cta": {
@@ -36199,64 +35773,169 @@
     "odds": "1 in 320",
     "price": 100.0
    },
-   "about_max_overlap_pct": 92,
-   "index": false,
-   "gate_fails": [
-    "duplicate of /cards/ascended-heroes/pikachu-ex",
-    "text 92% same as another page"
-   ],
-   "robots": "noindex, follow",
-   "in_sitemap": false,
-   "related": [
+   "page_type": "versions",
+   "versions": [
     {
-     "name": "Pikachu Illustrator (Japanese Promo)",
-     "url": "/cards/pikachu-illustrator",
-     "why": "same Pok\u00e9mon",
-     "psa10": 16492000.0
-    },
-    {
-     "name": "Van Gogh Pikachu #85 (Promo)",
-     "url": "/cards/van-gogh-pikachu",
-     "why": "same Pok\u00e9mon",
-     "psa10": 2513.89
-    },
-    {
-     "name": "Poncho Pikachu #207/XY-P (Japanese Promo)",
-     "url": "/cards/poncho-pikachu",
-     "why": "same Pok\u00e9mon",
-     "psa10": 24500.0
-    },
-    {
-     "name": "Pikachu ex #276 (Ascended Heroes)",
+     "name": "Pikachu ex",
+     "number": "276",
+     "set": "Ascended Heroes",
+     "ungraded": 647.5,
      "url": "/cards/ascended-heroes/pikachu-ex",
-     "why": "same Pok\u00e9mon",
-     "psa10": 1546.0
+     "source": "https://www.pricecharting.com/game/pokemon-ascended-heroes/pikachu-ex-276"
     },
     {
-     "name": "Psyduck #226 (Ascended Heroes)",
-     "url": "/cards/ascended-heroes/psyduck",
-     "why": "same set",
-     "psa10": 188.04
+     "name": "Pikachu EX",
+     "number": "XY124",
+     "set": "Promo",
+     "ungraded": 325.72,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/pikachu-ex-xy124"
     },
     {
-     "name": "Mega Gengar ex #284 (Ascended Heroes)",
-     "url": "/cards/ascended-heroes/mega-gengar-ex",
-     "why": "same set",
-     "psa10": 1475.0
+     "name": "Pikachu ex",
+     "number": "277",
+     "set": "Ascended Heroes",
+     "ungraded": 267.43,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-ascended-heroes/pikachu-ex-277"
     },
     {
-     "name": "Mega Dragonite ex #290 (Ascended Heroes)",
-     "url": "/cards/ascended-heroes/mega-dragonite-ex",
-     "why": "same set",
-     "psa10": 804.98
+     "name": "Pikachu ex",
+     "number": "238",
+     "set": "Surging Sparks",
+     "ungraded": 249.99,
+     "url": "/cards/pikachu-sir",
+     "source": "https://www.pricecharting.com/game/pokemon-surging-sparks/pikachu-ex-238"
     },
     {
-     "name": "Lillie's Clefairy ex #280 (Ascended Heroes)",
-     "url": "/cards/lillies-clefairy-ex",
-     "why": "same set",
-     "psa10": 229.71
+     "name": "Pikachu ex",
+     "number": "247",
+     "set": "Surging Sparks",
+     "ungraded": 72.24,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-surging-sparks/pikachu-ex-247"
+    },
+    {
+     "name": "Pikachu EX",
+     "number": "XY84",
+     "set": "Promo",
+     "ungraded": 70.22,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/pikachu-ex-xy84"
+    },
+    {
+     "name": "Pikachu ex",
+     "number": "150",
+     "set": "30th Celebration",
+     "ungraded": 64.36,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-30th-celebration/pikachu-ex-150"
+    },
+    {
+     "name": "Pikachu ex",
+     "number": "179",
+     "set": "Prismatic Evolutions",
+     "ungraded": 50.87,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-prismatic-evolutions/pikachu-ex-179"
+    },
+    {
+     "name": "Pikachu ex",
+     "number": "149",
+     "set": "30th Celebration",
+     "ungraded": 49.17,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-30th-celebration/pikachu-ex-149"
+    },
+    {
+     "name": "Pikachu ex",
+     "number": "219",
+     "set": "Surging Sparks",
+     "ungraded": 25.99,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-surging-sparks/pikachu-ex-219"
+    },
+    {
+     "name": "Pikachu EX",
+     "number": "XY174",
+     "set": "Promo",
+     "ungraded": 21.35,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/pikachu-ex-xy174"
+    },
+    {
+     "name": "Pikachu Ex",
+     "number": "106",
+     "set": "Promo",
+     "ungraded": 11.4,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/pikachu-ex-106"
+    },
+    {
+     "name": "Pikachu",
+     "number": "6",
+     "set": "EX Latias & Latios",
+     "ungraded": 6.56,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/pikachu-6"
+    },
+    {
+     "name": "Pikachu ex",
+     "number": "57",
+     "set": "Surging Sparks",
+     "ungraded": 4.99,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-surging-sparks/pikachu-ex-57"
+    },
+    {
+     "name": "Pikachu ex",
+     "number": "63",
+     "set": "Paldea Evolved",
+     "ungraded": 4.27,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-paldea-evolved/pikachu-ex-63"
+    },
+    {
+     "name": "Pikachu ex",
+     "number": "57",
+     "set": "Ascended Heroes",
+     "ungraded": 3.75,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-ascended-heroes/pikachu-ex-57"
+    },
+    {
+     "name": "Pikachu ex",
+     "number": "28",
+     "set": "Prismatic Evolutions",
+     "ungraded": 3.56,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-prismatic-evolutions/pikachu-ex-28"
+    },
+    {
+     "name": "Pikachu ex",
+     "number": "54",
+     "set": "30th Celebration",
+     "ungraded": 2.34,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-30th-celebration/pikachu-ex-54"
+    },
+    {
+     "name": "Pikachu ex",
+     "number": "53",
+     "set": "30th Celebration",
+     "ungraded": 2.19,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-30th-celebration/pikachu-ex-53"
     }
    ],
+   "same_printing_as": "/cards/ascended-heroes/pikachu-ex",
+   "about_max_overlap_pct": 0,
+   "index": true,
+   "gate_fails": [],
+   "robots": "index, follow",
+   "in_sitemap": true,
+   "related": [],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -36267,83 +35946,120 @@
      "url": "/cards"
     },
     {
-     "name": "Ascended Heroes",
-     "url": "/sets/ascended-heroes"
-    },
-    {
-     "name": "Pikachu ex #276",
+     "name": "Pikachu ex: every version",
      "url": "/cards/pikachu-ex"
     }
    ],
    "schema": [
     {
      "@context": "https://schema.org",
-     "@type": "Product",
-     "name": "Pikachu ex #276 (Ascended Heroes)",
-     "sku": "276",
-     "category": "Graded trading card",
-     "description": "Pikachu ex #276 sells for $648 raw and $1,546 in PSA 10. 2,595 PSA 10s exist. Pull it on CardOutpost at 1 in 320 odds.",
+     "@type": "CollectionPage",
+     "name": "Pikachu ex: every version",
      "url": "https://www.cardoutpost.com/cards/pikachu-ex",
-     "additionalProperty": [
-      {
-       "@type": "PropertyValue",
-       "name": "Set",
-       "value": "Ascended Heroes"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Card number",
-       "value": "276"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Release date",
-       "value": "January 30, 2026"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Grade in stock",
-       "value": "PSA 9"
-      }
-     ],
-     "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "USD",
-      "offerCount": 3,
-      "lowPrice": 615.98,
-      "highPrice": 868.19,
-      "availability": "https://schema.org/InStock"
+     "description": "All 19 English printings of Pikachu ex, with the ungraded price of each. The most valuable is #276 from Ascended Heroes at $648.",
+     "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 19,
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Pikachu ex #276 (Ascended Heroes)",
+        "url": "https://www.cardoutpost.com/cards/ascended-heroes/pikachu-ex"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Pikachu EX #XY124 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Pikachu ex #277 (Ascended Heroes)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Pikachu ex #238 (Surging Sparks)",
+        "url": "https://www.cardoutpost.com/cards/pikachu-sir"
+       },
+       {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Pikachu ex #247 (Surging Sparks)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Pikachu EX #XY84 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 7,
+        "name": "Pikachu ex #150 (30th Celebration)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 8,
+        "name": "Pikachu ex #179 (Prismatic Evolutions)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 9,
+        "name": "Pikachu ex #149 (30th Celebration)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 10,
+        "name": "Pikachu ex #219 (Surging Sparks)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 11,
+        "name": "Pikachu EX #XY174 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 12,
+        "name": "Pikachu Ex #106 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 13,
+        "name": "Pikachu #6 (EX Latias & Latios)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 14,
+        "name": "Pikachu ex #57 (Surging Sparks)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 15,
+        "name": "Pikachu ex #63 (Paldea Evolved)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 16,
+        "name": "Pikachu ex #57 (Ascended Heroes)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 17,
+        "name": "Pikachu ex #28 (Prismatic Evolutions)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 18,
+        "name": "Pikachu ex #54 (30th Celebration)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 19,
+        "name": "Pikachu ex #53 (30th Celebration)"
+       }
+      ]
      }
-    },
-    {
-     "@context": "https://schema.org",
-     "@type": "FAQPage",
-     "mainEntity": [
-      {
-       "@type": "Question",
-       "name": "How much is Pikachu ex #276 worth?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "As of 25 Oct 2026, Pikachu ex #276 sells for about $648 ungraded and $1,546 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $848."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "How many PSA 10 copies of Pikachu ex #276 exist?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "PSA has graded 3,819 copies of Pikachu ex #276, and 2,595 of them received a 10. That is 67.9% of all graded copies."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "What are the odds of pulling Pikachu ex on CardOutpost?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The odds are 1 in 320 packs. Pikachu ex sits in the Master pack, which costs $100. CardOutpost shows the odds on every pack before you open it."
-       }
-      }
-     ]
     },
     {
      "@context": "https://schema.org",
@@ -36364,13 +36080,7 @@
       {
        "@type": "ListItem",
        "position": 3,
-       "name": "Ascended Heroes",
-       "item": "https://www.cardoutpost.com/sets/ascended-heroes"
-      },
-      {
-       "@type": "ListItem",
-       "position": 4,
-       "name": "Pikachu ex #276",
+       "name": "Pikachu ex: every version",
        "item": "https://www.cardoutpost.com/cards/pikachu-ex"
       }
      ]
@@ -36712,6 +36422,7 @@
     "odds": "1 in 403",
     "price": 2500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 67,
    "index": true,
    "gate_fails": [],
@@ -36743,6 +36454,7 @@
      "psa10": 26603.23
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -37148,6 +36860,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 71,
    "index": true,
    "gate_fails": [],
@@ -37179,6 +36892,7 @@
      "psa10": 243.75
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -37600,6 +37314,7 @@
     "odds": "1 in 300",
     "price": 100.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 73,
    "index": true,
    "gate_fails": [],
@@ -37637,6 +37352,7 @@
      "psa10": 243.75
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -37956,6 +37672,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -37981,6 +37698,7 @@
      "psa10": 77.9
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -38434,6 +38152,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -38465,6 +38184,7 @@
      "psa10": 502.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -38943,6 +38663,7 @@
     "odds": "1 in 2,755",
     "price": 2500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 59,
    "index": true,
    "gate_fails": [],
@@ -38962,6 +38683,7 @@
      "psa10": 4575.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -39422,6 +39144,7 @@
     "odds": "1 in 300",
     "price": 1000.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 70,
    "index": true,
    "gate_fails": [],
@@ -39447,6 +39170,7 @@
      "psa10": 24808.28
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -39925,6 +39649,7 @@
     "odds": "1 in 316",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 65,
    "index": true,
    "gate_fails": [],
@@ -39956,6 +39681,7 @@
      "psa10": 26603.23
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -40287,6 +40013,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 73,
    "index": true,
    "gate_fails": [],
@@ -40318,6 +40045,7 @@
      "psa10": 1546.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -40726,6 +40454,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 65,
    "index": true,
    "gate_fails": [],
@@ -40757,6 +40486,7 @@
      "psa10": 120.95
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -41210,6 +40940,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -41241,6 +40972,7 @@
      "psa10": 502.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -41694,6 +41426,7 @@
     "odds": "1 in 300",
     "price": 100.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 72,
    "index": true,
    "gate_fails": [],
@@ -41725,6 +41458,7 @@
      "psa10": 177.91
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -42195,6 +41929,7 @@
     "odds": "1 in 300",
     "price": 2500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 69,
    "index": true,
    "gate_fails": [],
@@ -42226,6 +41961,7 @@
      "psa10": 3406.54
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -42591,6 +42327,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 69,
    "index": true,
    "gate_fails": [],
@@ -42622,6 +42359,7 @@
      "psa10": 52.5
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -42925,6 +42663,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 74,
    "index": true,
    "gate_fails": [],
@@ -42950,6 +42689,7 @@
      "psa10": 77.9
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -43420,6 +43160,7 @@
     "odds": "1 in 300",
     "price": 50.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 72,
    "index": true,
    "gate_fails": [],
@@ -43433,6 +43174,7 @@
      "psa10": 631.5
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -43894,12 +43636,14 @@
     "odds": "1 in 300",
     "price": 2500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 66,
    "index": true,
    "gate_fails": [],
    "robots": "index, follow",
    "in_sitemap": true,
    "related": [],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -44228,6 +43972,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 74,
    "index": true,
    "gate_fails": [],
@@ -44241,6 +43986,7 @@
      "psa10": 710.6
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -44713,6 +44459,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 66,
    "index": true,
    "gate_fails": [],
@@ -44744,6 +44491,7 @@
      "psa10": 1546.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -45134,6 +44882,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 69,
    "index": true,
    "gate_fails": [],
@@ -45165,6 +44914,7 @@
      "psa10": 120.95
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -45643,6 +45393,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 64,
    "index": true,
    "gate_fails": [],
@@ -45698,6 +45449,7 @@
      "psa10": 110.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -46115,6 +45867,7 @@
     "odds": "1 in 411",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 71,
    "index": true,
    "gate_fails": [],
@@ -46140,6 +45893,7 @@
      "psa10": 860.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -46625,6 +46379,7 @@
     "odds": "1 in 535",
     "price": 250.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 63,
    "index": true,
    "gate_fails": [],
@@ -46674,6 +46429,7 @@
      "psa10": 177.91
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -47127,6 +46883,7 @@
     "odds": "1 in 300",
     "price": 100.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 64,
    "index": true,
    "gate_fails": [],
@@ -47164,6 +46921,7 @@
      "psa10": 3094.5
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -47658,6 +47416,7 @@
     "odds": "1 in 345",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 66,
    "index": true,
    "gate_fails": [],
@@ -47689,6 +47448,7 @@
      "psa10": 26603.23
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -48159,6 +47919,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 73,
    "index": true,
    "gate_fails": [],
@@ -48184,6 +47945,7 @@
      "psa10": 177.91
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -48654,6 +48416,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 73,
    "index": true,
    "gate_fails": [],
@@ -48679,6 +48442,7 @@
      "psa10": 141.36
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -48998,6 +48762,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 75,
    "index": true,
    "gate_fails": [],
@@ -49023,6 +48788,7 @@
      "psa10": 108.75
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -49484,6 +49250,7 @@
     "odds": "1 in 300",
     "price": 500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 69,
    "index": true,
    "gate_fails": [],
@@ -49515,6 +49282,7 @@
      "psa10": 680.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -49995,6 +49763,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 65,
    "index": true,
    "gate_fails": [],
@@ -50014,6 +49783,7 @@
      "psa10": 631.5
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -50483,6 +50253,7 @@
     "odds": "1 in 509",
     "price": 250.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 71,
    "index": true,
    "gate_fails": [],
@@ -50520,6 +50291,7 @@
      "psa10": 481.46
     }
    ],
+   "versions_url": "/cards/gengar-vmax",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -51006,6 +50778,8 @@
     "odds": "1 in 300",
     "price": 50.0
    },
+   "page_type": "redirect",
+   "redirect_to": "/cards/151/bulbasaur",
    "about_max_overlap_pct": 92,
    "index": false,
    "gate_fails": [
@@ -51052,6 +50826,7 @@
      "psa10": 502.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -51522,6 +51297,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 76,
    "index": true,
    "gate_fails": [],
@@ -51547,6 +51323,7 @@
      "psa10": 570.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -51883,6 +51660,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 76,
    "index": true,
    "gate_fails": [],
@@ -51914,6 +51692,7 @@
      "psa10": 203.05
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -52037,11 +51816,11 @@
   {
    "card_id": "blastoise-ex",
    "url": "/cards/blastoise-ex",
-   "canonical": "https://www.cardoutpost.com/cards/151/blastoise-ex",
-   "duplicate_of": "/cards/151/blastoise-ex",
-   "title": "Blastoise ex #200 Price & PSA 10 Value | CardOutpost",
-   "h1": "Blastoise ex #200 (Scarlet & Violet 151)",
-   "meta_description": "Blastoise ex #200 sells for $117 raw and $502 in PSA 10. 18,100 PSA 10s exist. Pull it on CardOutpost at 1 in 300 odds.",
+   "canonical": "https://www.cardoutpost.com/cards/blastoise-ex",
+   "duplicate_of": "",
+   "title": "Blastoise ex: All 11 Versions & Prices | CardOutpost",
+   "h1": "Blastoise ex: every version",
+   "meta_description": "All 11 English printings of Blastoise ex, with the ungraded price of each. The most valuable is #104 from Fire Red & Leaf Green at $348.",
    "card_name": "Blastoise ex",
    "set_name": "Scarlet & Violet 151",
    "set_url": "/sets/151",
@@ -52062,16 +51841,8 @@
     "trend_psa10_pct": 15.0,
     "updated": "25 Oct 2026"
    },
-   "selling_line": "Pull a real graded copy from the $100 Master pack. Odds 1 in 300, shown before you open. Vaulted and insured. Ship it home in its slab, or sell it back at 100% of market value.",
-   "about": [
-    "Blastoise ex #200 is from the Scarlet & Violet 151 set, released September 22, 2023. Rarity: Special Illustration Rare.",
-    "An ungraded copy sells for about $117, up 45% in 12 months. A PSA 10 sells for $502, up 15% in 12 months.",
-    "PSA has graded 59,197 copies. 18,100 came back a 10, about 1 in 3.",
-    "Worth grading? Yes. A graded copy is worth about $226 on average after the $25 fee, against $117 raw.",
-    "Sales speed: ungraded 1 sale per day, PSA 10 2 sales per day on eBay and TCGplayer.",
-    "On CardOutpost it is a Master pack chase card at 1 in 300 odds, pulled 56 times in the last 90 days.",
-    "Sell it back to CardOutpost any time at 100% of market value, $502 today, with no fee."
-   ],
+   "selling_line": "",
+   "about": [],
    "grade_ladder": [
     {
      "grade": "Ungraded",
@@ -52331,51 +52102,9 @@
     "cop_lowest_live_listing": "129.2",
     "cop_listings_json": "[{\"id\": \"95c6ea94-2cd4-7df0-4b2e-546ee843e380\", \"url\": \"/marketplace/listing/95c6ea94-2cd4-7df0-4b2e-546ee843e380\", \"grade\": \"Ungraded\", \"price\": 129.2, \"seller\": \"gemmint19\", \"listed\": \"2026-10-25\"}]"
    },
-   "listings": [
-    {
-     "id": "95c6ea94-2cd4-7df0-4b2e-546ee843e380",
-     "url": "/marketplace/listing/95c6ea94-2cd4-7df0-4b2e-546ee843e380",
-     "grade": "Ungraded",
-     "price": 129.2,
-     "seller": "gemmint19",
-     "listed": "2026-10-25"
-    }
-   ],
-   "faqs": [
-    {
-     "q": "How much is Blastoise ex #200 worth?",
-     "a": "As of 25 Oct 2026, Blastoise ex #200 sells for about $117 ungraded and $502 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $140.",
-     "from": "fixed"
-    },
-    {
-     "q": "How many PSA 10 copies of Blastoise ex #200 exist?",
-     "a": "PSA has graded 59,197 copies of Blastoise ex #200, and 18,100 of them received a 10. That is 30.6% of all graded copies.",
-     "from": "fixed"
-    },
-    {
-     "q": "What are the odds of pulling Blastoise ex on CardOutpost?",
-     "a": "The odds are 1 in 300 packs. Blastoise ex sits in the Master pack, which costs $100. CardOutpost shows the odds on every pack before you open it.",
-     "from": "fixed"
-    }
-   ],
-   "faq_log": [
-    [
-     "How much does a Blastoise ex sell for?",
-     "merged into the worth question"
-    ],
-    [
-     "Is Blastoise better than Wartortle?",
-     "dropped: no topic we can answer"
-    ],
-    [
-     "What Pok\u00e9mon card is worth $1,000,000?",
-     "dropped: not about this card"
-    ],
-    [
-     "Is Mega Blastoise a real Pok\u00e9mon?",
-     "dropped: no topic we can answer"
-    ]
-   ],
+   "listings": [],
+   "faqs": [],
+   "faq_log": [],
    "source_url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-151/blastoise-ex-200",
    "fetched_at": "2026-10-25",
    "cta": {
@@ -52384,46 +52113,105 @@
     "odds": "1 in 300",
     "price": 100.0
    },
-   "about_max_overlap_pct": 98,
-   "index": false,
-   "gate_fails": [
-    "duplicate of /cards/151/blastoise-ex",
-    "text 98% same as another page"
-   ],
-   "robots": "noindex, follow",
-   "in_sitemap": false,
-   "related": [
+   "page_type": "versions",
+   "versions": [
     {
-     "name": "Blastoise ex #200 (Scarlet & Violet 151)",
+     "name": "Blastoise EX",
+     "number": "104",
+     "set": "Fire Red & Leaf Green",
+     "ungraded": 347.63,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-fire-red-&-leaf-green/blastoise-ex-104"
+    },
+    {
+     "name": "Blastoise EX",
+     "number": "XY122",
+     "set": "Promo",
+     "ungraded": 207.72,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/blastoise-ex-xy122"
+    },
+    {
+     "name": "Blastoise ex",
+     "number": "200",
+     "set": "Scarlet & Violet 151",
+     "ungraded": 117.02,
      "url": "/cards/151/blastoise-ex",
-     "why": "same Pok\u00e9mon",
-     "psa10": 502.0
+     "source": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-151/blastoise-ex-200"
     },
     {
-     "name": "Charizard ex #199 (Scarlet & Violet 151)",
-     "url": "/cards/151/charizard-ex",
-     "why": "same set",
-     "psa10": 1288.33
+     "name": "Blastoise EX",
+     "number": "142",
+     "set": "XY",
+     "ungraded": 111.23,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-xy/blastoise-ex-142"
     },
     {
-     "name": "Bubble Mew #205 (Scarlet & Violet 151)",
-     "url": "/cards/bubble-mew",
-     "why": "same set",
-     "psa10": 224.5
+     "name": "Blastoise ex",
+     "number": "184",
+     "set": "Scarlet & Violet 151",
+     "ungraded": 19.58,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-151/blastoise-ex-184"
     },
     {
-     "name": "Mew ex #193 (Scarlet & Violet 151)",
-     "url": "/cards/151/mew-ex",
-     "why": "same set",
-     "psa10": 203.48
+     "name": "Blastoise EX",
+     "number": "29",
+     "set": "XY",
+     "ungraded": 9.99,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-xy/blastoise-ex-29"
     },
     {
-     "name": "Squirtle #170 (Scarlet & Violet 151)",
-     "url": "/cards/151/squirtle",
-     "why": "same set",
-     "psa10": 453.88
+     "name": "Blastoise EX",
+     "number": "17",
+     "set": "Generations",
+     "ungraded": 9.99,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-generations/blastoise-ex-17"
+    },
+    {
+     "name": "Blastoise EX",
+     "number": "XY30",
+     "set": "Promo",
+     "ungraded": 7.86,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-promo/blastoise-ex-xy30"
+    },
+    {
+     "name": "Blastoise EX",
+     "number": "21",
+     "set": "Evolutions",
+     "ungraded": 7.0,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-evolutions/blastoise-ex-21"
+    },
+    {
+     "name": "Blastoise ex",
+     "number": "30",
+     "set": "Stellar Crown",
+     "ungraded": 2.99,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-stellar-crown/blastoise-ex-30"
+    },
+    {
+     "name": "Blastoise ex",
+     "number": "9",
+     "set": "Scarlet & Violet 151",
+     "ungraded": 2.8,
+     "url": "",
+     "source": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-151/blastoise-ex-9"
     }
    ],
+   "same_printing_as": "/cards/151/blastoise-ex",
+   "about_max_overlap_pct": 0,
+   "index": true,
+   "gate_fails": [],
+   "robots": "index, follow",
+   "in_sitemap": true,
+   "related": [],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -52434,83 +52222,79 @@
      "url": "/cards"
     },
     {
-     "name": "Scarlet & Violet 151",
-     "url": "/sets/151"
-    },
-    {
-     "name": "Blastoise ex #200",
+     "name": "Blastoise ex: every version",
      "url": "/cards/blastoise-ex"
     }
    ],
    "schema": [
     {
      "@context": "https://schema.org",
-     "@type": "Product",
-     "name": "Blastoise ex #200 (Scarlet & Violet 151)",
-     "sku": "200",
-     "category": "Graded trading card",
-     "description": "Blastoise ex #200 sells for $117 raw and $502 in PSA 10. 18,100 PSA 10s exist. Pull it on CardOutpost at 1 in 300 odds.",
+     "@type": "CollectionPage",
+     "name": "Blastoise ex: every version",
      "url": "https://www.cardoutpost.com/cards/blastoise-ex",
-     "additionalProperty": [
-      {
-       "@type": "PropertyValue",
-       "name": "Set",
-       "value": "Scarlet & Violet 151"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Card number",
-       "value": "200"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Release date",
-       "value": "September 22, 2023"
-      },
-      {
-       "@type": "PropertyValue",
-       "name": "Grade in stock",
-       "value": "PSA 10"
-      }
-     ],
-     "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "USD",
-      "offerCount": 1,
-      "lowPrice": 129.2,
-      "highPrice": 129.2,
-      "availability": "https://schema.org/InStock"
+     "description": "All 11 English printings of Blastoise ex, with the ungraded price of each. The most valuable is #104 from Fire Red & Leaf Green at $348.",
+     "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 11,
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Blastoise EX #104 (Fire Red & Leaf Green)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blastoise EX #XY122 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Blastoise ex #200 (Scarlet & Violet 151)",
+        "url": "https://www.cardoutpost.com/cards/151/blastoise-ex"
+       },
+       {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Blastoise EX #142 (XY)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Blastoise ex #184 (Scarlet & Violet 151)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Blastoise EX #29 (XY)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 7,
+        "name": "Blastoise EX #17 (Generations)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 8,
+        "name": "Blastoise EX #XY30 (Promo)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 9,
+        "name": "Blastoise EX #21 (Evolutions)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 10,
+        "name": "Blastoise ex #30 (Stellar Crown)"
+       },
+       {
+        "@type": "ListItem",
+        "position": 11,
+        "name": "Blastoise ex #9 (Scarlet & Violet 151)"
+       }
+      ]
      }
-    },
-    {
-     "@context": "https://schema.org",
-     "@type": "FAQPage",
-     "mainEntity": [
-      {
-       "@type": "Question",
-       "name": "How much is Blastoise ex #200 worth?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "As of 25 Oct 2026, Blastoise ex #200 sells for about $117 ungraded and $502 in PSA 10, based on recent eBay and TCGplayer sales. A grade 9 copy sells for about $140."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "How many PSA 10 copies of Blastoise ex #200 exist?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "PSA has graded 59,197 copies of Blastoise ex #200, and 18,100 of them received a 10. That is 30.6% of all graded copies."
-       }
-      },
-      {
-       "@type": "Question",
-       "name": "What are the odds of pulling Blastoise ex on CardOutpost?",
-       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The odds are 1 in 300 packs. Blastoise ex sits in the Master pack, which costs $100. CardOutpost shows the odds on every pack before you open it."
-       }
-      }
-     ]
     },
     {
      "@context": "https://schema.org",
@@ -52531,13 +52315,7 @@
       {
        "@type": "ListItem",
        "position": 3,
-       "name": "Scarlet & Violet 151",
-       "item": "https://www.cardoutpost.com/sets/151"
-      },
-      {
-       "@type": "ListItem",
-       "position": 4,
-       "name": "Blastoise ex #200",
+       "name": "Blastoise ex: every version",
        "item": "https://www.cardoutpost.com/cards/blastoise-ex"
       }
      ]
@@ -52885,12 +52663,14 @@
     "odds": "1 in 484",
     "price": 2500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 66,
    "index": true,
    "gate_fails": [],
    "robots": "index, follow",
    "in_sitemap": true,
    "related": [],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -53334,6 +53114,7 @@
     "odds": "1 in 300",
     "price": 50.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 73,
    "index": true,
    "gate_fails": [],
@@ -53371,6 +53152,7 @@
      "psa10": 399.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -53833,6 +53615,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 68,
    "index": true,
    "gate_fails": [],
@@ -53846,6 +53629,7 @@
      "psa10": 960.5
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -54307,6 +54091,7 @@
     "odds": "1 in 300",
     "price": 25.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 68,
    "index": true,
    "gate_fails": [],
@@ -54344,6 +54129,7 @@
      "psa10": 1250.0
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -54764,6 +54550,7 @@
     "odds": "1 in 498",
     "price": 100.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 69,
    "index": true,
    "gate_fails": [],
@@ -54777,6 +54564,7 @@
      "psa10": 153.5
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -55238,6 +55026,7 @@
     "odds": "1 in 557",
     "price": 50.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 71,
    "index": true,
    "gate_fails": [],
@@ -55275,6 +55064,7 @@
      "psa10": 2215.32
     }
    ],
+   "versions_url": "",
    "breadcrumbs": [
     {
      "name": "Home",
@@ -55744,6 +55534,7 @@
     "odds": "1 in 300",
     "price": 500.0
    },
+   "page_type": "card",
    "about_max_overlap_pct": 66,
    "index": true,
    "gate_fails": [],
@@ -55763,6 +55554,7 @@
      "psa10": 680.0
     }
    ],
+   "versions_url": "/cards/giratina-v",
    "breadcrumbs": [
     {
      "name": "Home",

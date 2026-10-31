@@ -203,7 +203,7 @@ def render(p):
         return f'<tr class="{"hl" if g["grade"] == "PSA 10" else ""}"><td>{E(g["grade"])}</td><td class="n">{usd(g["price"]) or "–"}</td><td class="n">{pop}</td></tr>'
     ladder = ''.join(ladder_row(g) for g in p['grade_ladder'])
     faqs = ''.join(f'<details><summary>{E(q["q"])}</summary><p>{E(q["a"])}</p></details>' for q in p['faqs'])
-    ups = ''.join(f'<a href="{E(u)}">{E(t)}</a>' for u, t in ((p['set_url'], f"All {p['set_name']} cards"), (p['pokemon_url'], f"All {p['pokemon'].title()} cards")) if u)
+    ups = ''.join(f'<a href="{E(u)}">{E(t)}</a>' for u, t in ((p.get('versions_url'), f"Every version of {p['card_name']}"), (p['set_url'], f"All {p['set_name']} cards"), (p['pokemon_url'], f"All {p['pokemon'].title()} cards")) if u)
     rel = ''.join(f'<a href="{E(r["url"])}"><b>{E(r["name"])}</b><span>PSA 10 {usd(r["psa10"])}</span></a>' for r in p['related'])
     hist = {'psa10': p['price_history_psa10'], 'raw': p['price_history_ungraded']}
     hist_rows = ''.join(f'<tr><td>{m}</td><td class="n">{usd(v) or "–"}</td><td class="n">{usd(dict(hist["raw"]).get(m)) or "–"}</td></tr>' for m, v in hist['psa10'])

@@ -89,7 +89,17 @@ A page is indexed only if all four pass:
 | Not a duplicate printing | Two URLs on the same card compete with each other. The URL that names the set wins; the other gets a canonical tag. |
 | Text under 80% the same as any other page | Thin and copied pages never ship |
 
-Result on the 120: **109 indexed, 11 noindex** (all 11 are duplicate printings). A noindex page is still built, stays out of the sitemap, and gets no internal links. It is rechecked on every refresh.
+Result on the 120: **119 indexed, 1 redirect.** A noindex page is still built, stays out of the sitemap, and gets no internal links. It is rechecked on every refresh.
+
+## Versions pages
+
+A URL with no set, like `/cards/charizard-ex`, is for someone who has not picked a version yet. PriceCharting lists 22 English printings of Charizard ex, so one card cannot answer that search.
+
+- **Printed more than once:** the URL becomes a list of every English printing, most valuable first, with set, number, ungraded price and a link to our card page where one exists. Schema: CollectionPage + ItemList + BreadcrumbList. 10 of the 120 pages are versions pages.
+- **Printed once:** the URL redirects to that card's page (a 301 on the live site; GitHub Pages can only show a refresh). 1 page.
+- Every card page links up to its versions page: "Every version of Charizard ex".
+
+The printings come from the PriceCharting search the engine already runs in step 2, so no new requests are needed.
 
 ## Schema
 
@@ -131,7 +141,7 @@ Mock numbers are generated from a fixed seed per card, so they never change betw
 **What breaks first, in order**
 1. **Card matching.** Nicknames, reprints and non-English sets are the main error source. Fix: the alias table (`data/aliases.csv`) grows with every new card family, and any card with a loose match or a zero-sales printing is held for review.
 2. **Price source rate limits.** Free readers stop at about 20 requests a minute. Fix: paid API or a crawler, as above.
-3. **Duplicate pages.** As the set-less and set-named URLs multiply, more pairs land on the same printing. The gate catches them, but the page plan should stop creating set-less URLs for cards that exist in only one set.
+3. **Versions pages.** As the catalogue grows, more set-less URLs become versions pages. Their list depends on clean card matching, so a loose match there shows the wrong cards.
 4. **Text overlap.** With thousands of cards from the same set, bullets start to look alike. Fix: more sentence variants per bullet, and the writer's paragraph on the top 200.
 5. **Google questions run dry.** Most cards below the top 500 have no People Also Ask. The 3 fixed questions cover them.
 6. **Crawl budget.** At 10,000 URLs on a new domain, Google will not crawl everything at once. Fix: the sitemap lists only indexed pages, and set pages link to every card, so Google finds the important ones first.

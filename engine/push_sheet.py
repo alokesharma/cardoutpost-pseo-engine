@@ -93,6 +93,8 @@ def columns():
      ('CardOutpost: sell-back value $', PURPLE, 'What CardOutpost pays if you sell the card back. Real rule from the FAQ: 100% of market value, no fee.', o('cop_sellback_value'), 0),
      ('CardOutpost: lowest listing price $', PURPLE, 'Lowest price a user can list this card for on the CardOutpost marketplace. Real rule from the FAQ: 50% of market value.', o('cop_min_list_price'), 0),
      # Phase 5
+     ('Page: type', ORANGE, 'CARD = one printed card. VERSIONS = a URL with no set for a card printed more than once: a list of every printing, linking down to the card pages (the market columns then show the most traded printing). REDIRECT = a URL with no set for a card printed once: it sends visitors to that card page.', lambda r: r['page'].get('page_type', 'card').upper(), 0),
+     ('Page: versions listed', ORANGE, 'VERSIONS pages only: every English printing on the page, most valuable first, with set, number and ungraded price. Blank on card pages.', lambda r: [f"{v['name']} #{v['number']} ({v['set']}) ${v['ungraded']:,.2f}" + (f" -> {v['url']}" if v['url'] else '') for v in r['page'].get('versions', [])], 1),
      ('Page: index or noindex', ORANGE, 'Result of the quality gate. INDEX = the page goes live for Google. NOINDEX = the page exists but Google is told to skip it.', lambda r: 'INDEX' if r['page']['index'] else 'NOINDEX', 0),
      ('Page: why noindex', ORANGE, 'Which quality gate rules the page failed. Blank = passed all. See the Rules tab.', lambda r: r['page']['gate_fails'], 1),
      ('Page: canonical URL', ORANGE, 'The canonical tag: tells Google which URL is the main one. Points to itself, or to the main page when two of our URLs show the same card.', p('canonical'), 0),
@@ -135,7 +137,7 @@ def num(v):
     except (TypeError, ValueError): return v
 
 def main():
-    ids = json.load(open(D / 'sheet_ids.json')); SID, gid, rgid = ids['sheet_id'], ids['gids']['Cards'], ids['gids']['Rules']
+    ids = json.load(open(D / 'sheet_ids.json')); SID, gid, rgid = os.environ.get('SHEET_ID', ids['sheet_id']), ids['gids']['Cards'], ids['gids']['Rules']   # SHEET_ID: write to a copy instead
     s = build('sheets', 'v4', credentials=Credentials.from_authorized_user_file(TOKEN)).spreadsheets()
     cards = list(csv.DictReader(open(D / 'cards.csv')))
     market = {r['card_id']: r for r in csv.DictReader(open(D / 'market.csv'))}

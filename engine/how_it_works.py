@@ -16,7 +16,7 @@ import push_sheet as ps
 CARD = '/cards/151/charizard-ex'
 P1 = {'Rank', 'Card ID', 'Card name', 'Set', 'Set slug', 'URL', 'Main keyword', 'Searches / month (US)', 'Keywords', 'All keywords'}
 GATE = {'Page: index or noindex', 'Page: why noindex', 'Page: canonical URL', 'Page: in sitemap?'}
-RULES_BY_STEP = {'s1': [1, 13], 's2': [2, 3, 4, 5], 's3': [6], 's4': [7, 8], 's5': [9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26], 's6': [27, 28, 29, 30, 31], 's7': []}
+RULES_BY_STEP = {'s1': [1, 14], 's2': [2, 3, 4, 5], 's3': [6], 's4': [7, 8], 's5': [9, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], 's6': [28, 29, 30, 31, 32], 's7': []}
 
 STEPS = [
     {'id': 's1', 'name': 'Pick the cards', 'icon': '1', 'source': 'Keyword research sheet (Ahrefs volumes)', 'real': 'Real',
@@ -32,7 +32,7 @@ STEPS = [
     {'id': 's6', 'name': 'Check and build', 'icon': '6', 'source': 'Step 5', 'real': 'Built from the data',
      'what': 'Before a page goes live it must pass four checks: a real market price, CardOutpost odds, not a duplicate of another page, and text under 80% the same as any other page. Pages that pass are INDEX and go in the sitemap. Pages that fail are built anyway but marked noindex, so Google ignores them until the data arrives. Then every page is rendered into HTML from one template.'},
     {'id': 's7', 'name': 'Fill the sheet', 'icon': '7', 'source': 'Steps 1 to 5', 'real': '',
-     'what': 'Everything above is written into the Google Sheet. The Cards tab has one row per card and one column per fact, in step colours. Hover over any header to read what the column means. The Rules tab is the recipe: 31 lines, each with what we do and why.'},
+     'what': 'Everything above is written into the Google Sheet. The Cards tab has one row per card and one column per fact, in step colours. Hover over any header to read what the column means. The Rules tab is the recipe: 32 lines, each with what we do and why.'},
 ]
 
 def step_of(h):

@@ -28,6 +28,7 @@ RULES = [
  ('CardOutpost data', 'Pull odds, pulls, vault copies and pack are MOCK until CardOutpost connects its database. The Premium pack price ($25) and max pull ($250) are real. Sell-back (100%) and lowest listing (50%) follow the real FAQ rules.', 'We have no access to CardOutpost data. Columns keep the same names when the real data arrives.'),
  ('CardOutpost data', 'A card goes in the cheapest pack whose max pull covers its value.', 'A $1,288 card cannot sit in a pack whose max pull is $250.'),
  ('One page per card', 'If two of our URLs land on the same printing, the URL that names the set is the main page (if both or neither do, the one with more searches). The other gets a canonical tag pointing to it and stays out of the sitemap.', 'Two pages about the same card compete with each other. Google picks one anyway. We decide which.'),
+ ('Versions page', 'A URL with no set (/cards/charizard-ex) is for people who have not picked a version yet. If the card was printed more than once, that URL becomes a list of every English printing: set, number, ungraded price, and a link to the card page where we have one. If it was printed only once, the URL redirects to that card page.', '"charizard ex" is 9 different cards on PriceCharting. One version cannot answer that search, and a copy of one version is a duplicate. A list of every version answers it and links down to the card pages.'),
  ('Title', '"[Card] [Set] #[No.] Price: PSA 10 $[price] | CardOutpost". If over 60 characters, drop the price, then the set.', 'Google cuts titles near 60 characters. The price in the title answers the search before the click.'),
  ('H1', '"[Card] #[No.] ([Set])".', 'Names the exact printing. Clear for the reader and for Google.'),
  ('Meta description', 'Raw price, PSA 10 price, number of 10s, and CardOutpost pull odds. Under 155 characters.', 'Shows numbers no other result shows: the odds.'),
@@ -51,6 +52,10 @@ RULES = [
  ('Mobile', 'First phone screen holds only: H1 (2 lines max), small image, price box with 2 numbers, the selling line, the button. Sticky bottom bar with pack, price and odds. Grade ladder as stacked rows. Chart loads when scrolled to. FAQ tap-to-open with text in the page code. 16px text, 44px tap targets, fixed image box so nothing jumps.', 'Most card searches happen on phones. A phone screen is about 640px after the header, so nothing else fits above the fold.'),
  ('Mobile', 'All content is in the HTML, not built by JavaScript. Test every template change with Lighthouse mobile and on a real phone.', 'Fixes audit issue 5 and keeps pages fast on 4G.'),
 ]
+
+import sys as _sys
+_sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import phase2_market_data as P2
 
 # ---------- helpers
 def f(x):
@@ -238,9 +243,35 @@ def main():
             'cta': {'text': f"Rip the {cp['cop_pack']} pack", 'url': PACKS_URL, 'odds': cp['cop_pull_odds'], 'price': f(cp['cop_pack_price'])},
         }
         pages.append(page)
-    # quality gate
-    abouts = {p['card_id']: words(' '.join(p['about'])) for p in pages if not p['duplicate_of']}
+    # versions pages: a set-less URL that landed on a printing we already have under its set URL
+    by_id = {c['card_id']: c for c in cards}
+    card_page_by_pc = {market[c['card_id']].get('pc_url'): c['url'] for c in cards if c['card_id'] not in canonical_to}
     for p in pages:
+        c = by_id[p['card_id']]
+        if not p['duplicate_of'] or c['set_slug']: continue
+        good, _ = P2.search(c)
+        prints = [g for g in (good or []) if g.get('ungraded')]
+        if len(prints) < 2:
+            p['page_type'] = 'redirect'; p['redirect_to'] = p['duplicate_of']; continue
+        rows = []
+        for g in sorted(prints, key=lambda g: -g['ungraded']):
+            m_ = re.search(r'#(\S+)$', g['title']); setn = g['set'].replace('Pokemon ', '')
+            rows.append({'name': re.sub(r'\s*#\S+$', '', g['title']), 'number': m_.group(1) if m_ else '', 'set': setn,
+                         'ungraded': g['ungraded'], 'url': card_page_by_pc.get(g['url'], ''), 'source': g['url']})
+        n, top = len(rows), rows[0]
+        p.update({'page_type': 'versions', 'versions': rows, 'same_printing_as': p['duplicate_of'], 'duplicate_of': '',
+                  'canonical': SITE + p['url'], 'about': [], 'selling_line': '', 'faqs': [], 'faq_log': [], 'listings': [],
+                  'title': f"{p['card_name']}: All {n} Versions & Prices | CardOutpost",
+                  'h1': f"{p['card_name']}: every version",
+                  'meta_description': f"All {n} English printings of {p['card_name']}, with the ungraded price of each. The most valuable is #{top['number']} from {top['set']} at {usd(top['ungraded'])}."[:155]})
+    # quality gate
+    abouts = {p['card_id']: words(' '.join(p['about'])) for p in pages if not p['duplicate_of'] and p.get('page_type') != 'versions'}
+    for p in pages:
+        p.setdefault('page_type', 'card')
+        if p['page_type'] == 'versions':
+            fails = [] if sum(1 for v in p['versions'] if v['ungraded']) >= 2 else ['fewer than 2 versions with a price']
+            p['about_max_overlap_pct'] = 0; p['index'] = not fails; p['gate_fails'] = fails
+            p['robots'] = 'index, follow' if p['index'] else 'noindex, follow'; p['in_sitemap'] = p['index']; continue
         fails = []
         if not p['price_box']['raw'] and not p['price_box']['psa10']: fails.append('no market price')
         if not p['cop'].get('cop_pull_odds'): fails.append('no CardOutpost odds')
@@ -252,12 +283,22 @@ def main():
         p['index'] = not fails; p['gate_fails'] = fails
         p['robots'] = 'index, follow' if p['index'] else 'noindex, follow'; p['in_sitemap'] = p['index']
     # links and schema
-    ok = {p['card_id']: p for p in pages if p['index']}
+    ok = {p['card_id']: p for p in pages if p['index'] and p['page_type'] == 'card'}
+    vers = {p['card_name'].lower(): p['url'] for p in pages if p['page_type'] == 'versions' and p['index']}
     for p in pages:
         same_p = [q for q in ok.values() if q['pokemon'] == p['pokemon'] and q['card_id'] != p['card_id']]
         same_s = [q for q in ok.values() if q['set_name'] == p['set_name'] and q['card_id'] != p['card_id'] and q not in same_p]
         rel = sorted(same_p, key=lambda q: -q['search_volume_us'])[:4] + sorted(same_s, key=lambda q: -q['search_volume_us'])[:4]
         p['related'] = [{'name': q['h1'], 'url': q['url'], 'why': 'same Pokémon' if q in same_p else 'same set', 'psa10': q['price_box']['psa10']} for q in rel]
+        p['versions_url'] = vers.get(p['card_name'].lower(), '') if p['page_type'] == 'card' else ''
+        if p['page_type'] == 'versions':
+            p['related'] = []
+            p['breadcrumbs'] = [{'name': n, 'url': u} for n, u in (('Home', '/'), ('Cards', '/cards'), (f"{p['card_name']}: every version", p['url']))]
+            items = [{'@type': 'ListItem', 'position': i + 1, 'name': f"{v['name']} #{v['number']} ({v['set']})", **({'url': SITE + v['url']} if v['url'] else {})} for i, v in enumerate(p['versions'])]
+            p['schema'] = [{'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': p['h1'], 'url': SITE + p['url'], 'description': p['meta_description'],
+                            'mainEntity': {'@type': 'ItemList', 'numberOfItems': len(items), 'itemListElement': items}},
+                           {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': b['name'], 'item': SITE + b['url']} for i, b in enumerate(p['breadcrumbs'])]}]
+            continue
         crumbs = [('Home', '/'), ('Cards', '/cards')] + ([(p['set_name'], p['set_url'])] if p['set_url'] else []) + [(f"{p['card_name']}{nn(p['card_number'])}", p['url'])]
         p['breadcrumbs'] = [{'name': n, 'url': u} for n, u in crumbs]
         cp = p['cop']; val = f(cp['cop_card_value'])
@@ -272,13 +313,13 @@ def main():
         bc = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': b['name'], 'item': SITE + b['url']} for i, b in enumerate(p['breadcrumbs'])]}
         p['schema'] = [product, faq, bc]
     json.dump({'rules': RULES, 'pages': pages}, open(D / 'pages.json', 'w'), indent=1)
-    cols = ['card_id', 'index', 'gate_fails', 'robots', 'in_sitemap', 'canonical', 'title', 'h1', 'meta_description', 'selling_line', 'about', 'faqs', 'faq_log', 'related', 'breadcrumbs', 'cta', 'schema']
+    cols = ['card_id', 'page_type', 'index', 'gate_fails', 'robots', 'in_sitemap', 'canonical', 'title', 'h1', 'meta_description', 'selling_line', 'about', 'faqs', 'faq_log', 'related', 'breadcrumbs', 'cta', 'schema']
     with open(D / 'pages.csv', 'w', newline='') as fh:
         w = csv.DictWriter(fh, fieldnames=cols, extrasaction='ignore'); w.writeheader()
         for p in pages: w.writerow({k: (json.dumps(p[k], ensure_ascii=False) if isinstance(p[k], (list, dict)) else p[k]) for k in cols})
     n = sum(p['index'] for p in pages)
     from collections import Counter
-    print(f'{len(pages)} pages | index: {n} | noindex: {len(pages) - n}')
+    print(f'{len(pages)} pages | index: {n} | noindex: {len(pages) - n} | versions pages: {sum(p["page_type"] == "versions" for p in pages)} | redirects: {sum(p["page_type"] == "redirect" for p in pages)}')
     print('fail reasons:', Counter(re.sub(r'\d+%', 'N%', r.split(' of ')[0]) for p in pages for r in p['gate_fails']))
     print('titles over 60:', sum(len(p['title']) > 60 for p in pages), '| metas over 155:', sum(len(p['meta_description']) > 155 for p in pages),
           '| max text overlap:', max(p['about_max_overlap_pct'] for p in pages), '% | about words avg:', sum(len(' '.join(p['about']).split()) for p in pages) // len(pages))
