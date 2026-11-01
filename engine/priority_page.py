@@ -109,6 +109,9 @@ table.ladder{width:100%;border-collapse:collapse;font-size:15px}
 .mbar .l{font-size:13px;color:#a5a5a5;line-height:1.3}
 .mbar .l b{color:#fff;display:block;font-size:15px}
 @media(min-width:1024px){.mbar{display:none}}
+.nb{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 5px;border-radius:10px;background:#cee64d;color:#111;font:700 11px/1 system-ui,sans-serif;vertical-align:middle;cursor:help;letter-spacing:0;text-transform:none;margin-left:4px}
+.nbstrip{font-size:13px;color:#a5a5a5;border:1px dashed rgba(206,230,77,.5);border-radius:10px;padding:8px 12px;line-height:2}
+#nbtip{position:fixed;z-index:100;max-width:300px;background:#fff;color:#111;font:14px/1.45 system-ui,sans-serif;padding:10px 12px;border-radius:8px;box-shadow:0 6px 24px rgba(0,0,0,.5);pointer-events:none;display:none;text-transform:none;letter-spacing:0}
 body{padding-bottom:84px}
 @media(min-width:1024px){body{padding-bottom:0}}
 @media(prefers-reduced-motion:reduce){.animate-cosmic-spin{animation:none}}
@@ -192,6 +195,40 @@ def footer():
     t = re.sub(r'src="[^"]*logo-text\.svg[^"]*"', 'src="/priority/assets/logo-text.png"', t)
     return re.sub(r'href="/(?!/)', f'href="{SITE}/', t)
 
+WHY = {
+    1: 'Google title and description: the first thing people see in Google. It uses the words they search, so more of them click.',
+    2: 'URL /cards/151/charizard-ex: one permanent address that never changes, so Google can keep ranking it. Listings die when the card sells.',
+    3: 'Breadcrumb: tells Google how the site is organised, and lets people move up to the set page.',
+    4: 'Heading and card image: confirms this is exactly the card they searched for. The image also brings visits from Google Images.',
+    5: 'Price box: answers the search in the first second. Price sites lead with the price, so we match them.',
+    6: 'Selling line and pack button: turns a price search into a pack opening. This is the revenue step.',
+    7: 'Quick facts (rarity, release date, PSA population): easy to scan for people, and easy for Google and AI to quote.',
+    8: 'About this card: unique text written from real data. Google drops pages that are only a price.',
+    9: 'Price by grade: catches searches like "psa 9 price" on this one page, so we do not need 10 thin pages.',
+    10: 'Price history chart: keeps people on the page and brings them back. Most competitors show less.',
+    11: 'On CardOutpost: odds, pulls, vault copies, sell-back value. Data only CardOutpost has, so no competitor can copy it. The main reason Google should prefer this page.',
+    12: 'Copies for sale now: takes buyers straight to stock, and gives Google a path to every listing.',
+    13: 'FAQ: real questions people ask Google, answered from the data. Can show in "People also ask" and in AI answers.',
+    14: 'Related cards: moves people to the next card and spreads ranking power across the site.',
+    15: 'Schema (hidden code): Product, price range, FAQ and breadcrumb. Lets Google show price and stock in the search result.',
+    16: 'Phone view: price and pack button on the first screen, and a sticky "Rip a pack" bar that is always in reach.',
+    17: "CardOutpost's own design: same header, sidebar, footer and colours. No redesign, the tech team drops it into the site.",
+}
+def nb(i): return f'<span class="nb" tabindex="0" data-tip="{E(WHY[i])}">{i}</span>'
+
+NBJS = r"""
+(function(){
+  var t=document.createElement('div');t.id='nbtip';document.body.appendChild(t);
+  function show(e){var b=e.currentTarget,r=b.getBoundingClientRect();t.textContent=b.dataset.tip;t.style.display='block';
+    var w=t.offsetWidth,h=t.offsetHeight,x=Math.min(Math.max(8,r.left+r.width/2-w/2),innerWidth-w-8),y=r.bottom+8;
+    if(y+h>innerHeight-8)y=r.top-h-8;t.style.left=x+'px';t.style.top=y+'px';}
+  function hide(){t.style.display='none';}
+  document.querySelectorAll('.nb').forEach(function(b){b.addEventListener('mouseenter',show);b.addEventListener('focus',show);b.addEventListener('mouseleave',hide);b.addEventListener('blur',hide);
+    b.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();show(e);});});
+  addEventListener('scroll',hide,{passive:true});
+})();
+"""
+
 def render(p):
     pb, cp, cta = p['price_box'], p['cop'], p['cta']
     img = IMAGES.get(p['card_id'])
@@ -220,31 +257,32 @@ def render(p):
 
     main = f'''
 <main class="card-page flex-1 min-w-0 flex flex-col gap-6 md:gap-8 py-6 md:py-8 px-4 md:px-6 lg:px-8 max-w-[1180px]">
-  <nav class="crumbs" aria-label="Breadcrumb">{crumbs}</nav>
+  <div class="nbstrip">Behind the page: {nb(1)} Google title {nb(2)} URL {nb(15)} Schema {nb(16)} Phone view {nb(17)} Design. Hover any number for why it is there.</div>
+  <nav class="crumbs" aria-label="Breadcrumb">{crumbs} {nb(3)}</nav>
 
   <section class="hero">
     <div class="card-img {PANEL} p-3"><img src="/priority/assets/{img}" alt="{E(p['h1'])}" width="733" height="1024" fetchpriority="high"></div>
     <div class="hcol">
-      <div class="htop"><h1 class="h1">{E(p['h1'])}</h1><p class="sub">{E(sub)}</p></div>
+      <div class="htop"><h1 class="h1">{E(p['h1'])} {nb(4)}</h1><p class="sub">{E(sub)} {nb(7)}</p></div>
       <div class="pricebox">
         <div class="price {PANEL}"><div class="lbl">PSA 10</div><div class="val hi">{usd(pb['psa10']) or '–'}</div><div class="trend {tcls(pb['trend_psa10'])}">{E(pb['trend_psa10'] or '')}</div></div>
         <div class="price {PANEL}"><div class="lbl">Ungraded</div><div class="val">{usd(pb['raw']) or '–'}</div><div class="trend {tcls(pb['trend_raw'])}">{E(pb['trend_raw'] or '')}</div></div>
       </div>
-      <p class="updated">Market price from recent eBay and TCGplayer sales. Updated {E(pb['updated'])}.{few}</p>
-      <p class="sell">{E(p['selling_line'])}</p>
+      <p class="updated">Market price from recent eBay and TCGplayer sales. Updated {E(pb['updated'])}.{few} {nb(5)}</p>
+      <p class="sell">{E(p['selling_line'])} {nb(6)}</p>
       <div class="cta-row">{cosmic(cta['text'], SITE + cta['url'])}<span class="fmv">{usd(cta['price'])} pack · {E(cta['odds'])} odds</span></div>
-      <div class="{PANEL} section"><h2 class="{H2}">About this card</h2><ul class="about">{about}</ul></div>
+      <div class="{PANEL} section"><h2 class="{H2}">About this card {nb(8)}</h2><ul class="about">{about}</ul></div>
     </div>
   </section>
 
   <section class="{PANEL} section">
-    <h2 class="{H2}">Price by grade</h2>
+    <h2 class="{H2}">Price by grade {nb(9)}</h2>
     <div style="overflow-x:auto"><table class="ladder"><thead><tr><th>Grade</th><th class="n">Market price</th><th class="n">{E(p['pop_source'] or 'PSA')} population</th></tr></thead><tbody>{ladder}</tbody></table></div>
     <p class="note">Population is how many copies PSA has graded at that grade. Grade 9.5 and ungraded have no PSA count.</p>
   </section>
 
   <section class="{PANEL} section">
-    <div class="chart-head"><h2 class="{H2}">Price history, last {len(hist['psa10'])} months</h2>
+    <div class="chart-head"><h2 class="{H2}">Price history, last {len(hist['psa10'])} months {nb(10)}</h2>
       <div class="seg" role="group" aria-label="Choose series"><button type="button" data-mode="both" aria-pressed="true">Both</button><button type="button" data-mode="psa10" aria-pressed="false">PSA 10</button><button type="button" data-mode="raw" aria-pressed="false">Ungraded</button></div></div>
     <div class="chart" id="chart-wrap"><svg id="chart-svg" viewBox="0 0 640 240" role="img" aria-label="Monthly market price, PSA 10 and ungraded">{static_chart(p)}</svg><div class="tip" id="chart-tip"></div></div>
     <div class="legend"><span><i style="background:#cee64d"></i>PSA 10</span><span><i style="background:#a5a5a5"></i>Ungraded</span><span>Hover or touch the chart for the month's price</span></div>
@@ -253,7 +291,7 @@ def render(p):
   </section>
 
   <section class="{PANEL} section">
-    <div class="chart-head"><h2 class="{H2}">On CardOutpost</h2>{'<span class="badge">Sample data</span>' if mock else ''}</div>
+    <div class="chart-head"><h2 class="{H2}">On CardOutpost {nb(11)}</h2>{'<span class="badge">Sample data</span>' if mock else ''}</div>
     <div class="stats">
       <div class="stat"><div class="lbl">Pull odds</div><div class="val">{E(cp['cop_pull_odds'])}</div></div>
       <div class="stat"><div class="lbl">Pack</div><div class="val">{E(cp['cop_pack'])} · {usd(float(cp['cop_pack_price']))}</div></div>
@@ -268,17 +306,17 @@ def render(p):
   </section>
 
   <section class="{PANEL} section">
-    <div class="chart-head"><h2 class="{H2}">Copies for sale now</h2>{'<span class="badge">Sample data</span>' if mock else ''}</div>
+    <div class="chart-head"><h2 class="{H2}">Copies for sale now {nb(12)}</h2>{'<span class="badge">Sample data</span>' if mock else ''}</div>
     {listings_html}
   </section>
 
-  <section class="{PANEL} section faq"><h2 class="{H2}">Questions about {E(p['card_name'])} #{E(p['card_number'])}</h2><div>{faqs}</div></section>
+  <section class="{PANEL} section faq"><h2 class="{H2}">Questions about {E(p['card_name'])} #{E(p['card_number'])} {nb(13)}</h2><div>{faqs}</div></section>
 
-  <section class="{PANEL} section"><h2 class="{H2}">Related cards</h2><div class="ups">{ups}</div><div class="rel">{rel}</div></section>
+  <section class="{PANEL} section"><h2 class="{H2}">Related cards {nb(14)}</h2><div class="ups">{ups}</div><div class="rel">{rel}</div></section>
 
   <p class="note">Market prices and population: <a href="{E(p['source_url'])}" rel="nofollow" style="text-decoration:underline">PriceCharting</a>, PSA. CardOutpost is not affiliated with Pokémon, PSA or PriceCharting. Card image © Pokémon / The Pokémon Company.</p>
 </main>
-<div class="mbar"><div class="l">{E(cta['odds'])} odds · {usd(cta['price'])}<b>{E(p['card_name'])} #{E(p['card_number'])}</b></div>{cosmic(cta['text'], SITE + cta['url'])}</div>
+<div class="mbar"><div class="l">{E(cta['odds'])} odds · {usd(cta['price'])}<b>{E(p['card_name'])} #{E(p['card_number'])} {nb(16)}</b></div>{cosmic(cta['text'], SITE + cta['url'])}</div>
 '''
     head = f'''<!DOCTYPE html><html lang="en" class="dark funnel_sans_8a2f1df4-module__gbKt0G__variable"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{E(p['title'])}</title><meta name="description" content="{E(p['meta_description'])}"><meta name="robots" content="{p['robots']}"><link rel="canonical" href="{E(p['canonical'])}">
@@ -289,7 +327,7 @@ def render(p):
 <link rel="stylesheet" href="/priority/assets/cop.css"><style>{CSS}</style>{schema}</head>
 '''
     close = '</div>' + footer() + '</div></div></div></div></div>'
-    page = head + shell_top() + main + close + f'<script>{JS}</script></body></html>'
+    page = head + shell_top() + main + close + f'<script>{JS}</script><script>{NBJS}</script></body></html>'
     return re.sub(r'(href|src)="/(?!/)', lambda m: f'{m.group(1)}="{BASE}/', page) if BASE else page
 
 def main():
