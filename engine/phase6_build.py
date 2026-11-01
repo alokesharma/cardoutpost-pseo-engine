@@ -119,20 +119,28 @@ def hubs(pages):
            f'{sec("By set", sets_)}{sec("By Pokémon", poks)}<p class="note">Sample hub page. In production this page lists every set and every Pokémon, built on the server.</p></main></body></html>')
     (OUT / 'cards').mkdir(parents=True, exist_ok=True); (OUT / 'cards/index.html').write_text(rebase(doc))
     print(f'built {len(groups)} hub pages (sets and Pokémon) + /cards')
+    return groups
 
 def main():
     pages = json.load(open(ROOT / 'data/pages.json'))['pages']
     for p in pages:
         d = OUT / p['url'].strip('/'); d.mkdir(parents=True, exist_ok=True)
         (d / 'index.html').write_text(render_versions(p) if p.get('page_type') == 'versions' else render_redirect(p) if p.get('page_type') == 'redirect' else render(p))
-    hubs(pages)
+    groups = hubs(pages)
     live = [p for p in pages if p['in_sitemap']]
     (OUT / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         ''.join(f'  <url><loc>{SITE}{p["url"]}</loc><lastmod>{p["fetched_at"]}</lastmod><changefreq>weekly</changefreq></url>\n' for p in live) + '</urlset>\n')
     (OUT / 'robots.txt').write_text(f'User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n')
-    rows = ''.join(f'<tr><td><a href="{p["url"].strip("/")}/index.html">{html.escape(p["h1"])}</a></td><td>{p["search_volume_us"]:,}</td><td>{("INDEX: list of every version" if p.get("page_type") == "versions" else "INDEX") if p["index"] else ("301 redirect to " + p["redirect_to"] if p.get("page_type") == "redirect" else "noindex: " + "; ".join(p["gate_fails"]))}</td></tr>' for p in pages)
-    (OUT / 'index.html').write_text(f'<!doctype html><meta charset="utf-8"><title>CardOutpost pSEO demo: {len(pages)} card pages</title><style>body{{font-family:system-ui;max-width:900px;margin:30px auto;padding:0 16px}}table{{border-collapse:collapse;width:100%}}td,th{{border-bottom:1px solid #ddd;padding:6px;text-align:left;font-size:14px}}</style>'
-        f'<h1>CardOutpost pSEO demo</h1><p>{len(pages)} card pages generated. {len(live)} are indexable and listed in <a href="sitemap.xml">sitemap.xml</a>. The rest carry noindex (see reason).</p><table><tr><th>Page</th><th>Searches/mo</th><th>Status</th></tr>{rows}</table>')
+    ptype = lambda p: 'Versions page' if p.get('page_type') == 'versions' else 'Redirect' if p.get('page_type') == 'redirect' else 'Card page'
+    rows = ''.join(f'<tr><td><a href="{p["url"].strip("/")}/index.html">{html.escape(p["h1"])}</a></td><td>{ptype(p)}</td><td>{p["search_volume_us"]:,}</td><td>{("INDEX: list of every version" if p.get("page_type") == "versions" else "INDEX") if p["index"] else ("301 redirect to " + p["redirect_to"] if p.get("page_type") == "redirect" else "noindex: " + "; ".join(p["gate_fails"]))}</td></tr>' for p in pages)
+    hub_rows = lambda pre, t: ''.join(f'<tr><td><a href="{u.strip("/")}/index.html">{html.escape(n)}</a></td><td>{t}</td><td>{len(c)}</td></tr>' for u, (n, c) in sorted(groups.items()) if u.startswith(pre))
+    n_set = sum(u.startswith('/sets/') for u in groups); n_pok = len(groups) - n_set
+    hub_table = lambda t, pre, label: f'<h2>{t}</h2><table><tr><th>Page</th><th>Type</th><th>Card pages listed</th></tr>{hub_rows(pre, label)}</table>'
+    (OUT / 'index.html').write_text(f'<!doctype html><meta charset="utf-8"><title>CardOutpost pSEO demo: {len(pages)} card pages</title><style>body{{font-family:system-ui;max-width:900px;margin:30px auto;padding:0 16px}}table{{border-collapse:collapse;width:100%}}td,th{{border-bottom:1px solid #ddd;padding:6px;text-align:left;font-size:14px}}h2{{margin-top:32px}}</style>'
+        f'<h1>CardOutpost pSEO demo</h1><p>{len(pages)} keyword pages ({sum(ptype(p) == "Card page" for p in pages)} card pages, {sum(ptype(p) == "Versions page" for p in pages)} versions pages, {sum(ptype(p) == "Redirect" for p in pages)} redirect), plus {n_set} set pages and {n_pok} Pokémon pages built on top. {len(live)} keyword pages are indexable and listed in <a href="sitemap.xml">sitemap.xml</a>.</p>'
+        f'<p>Jump to: <a href="#cards">Card and versions pages</a> · <a href="#sets">Set pages</a> · <a href="#pokemon">Pokémon pages</a> · <a href="cards/index.html">/cards hub</a></p>'
+        f'<h2 id="cards">Card and versions pages</h2><table><tr><th>Page</th><th>Type</th><th>Search volume (US, monthly)</th><th>Status</th></tr>{rows}</table>'
+        f'<div id="sets">{hub_table("Set pages", "/sets/", "Set page")}</div><div id="pokemon">{hub_table("Pokémon pages", "/pokemon/", "Pokémon page")}</div>')
     print(f'built {len(pages)} pages -> out/ | sitemap: {len(live)} urls')
 
 if __name__ == '__main__':
