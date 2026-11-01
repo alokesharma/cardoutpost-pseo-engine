@@ -211,7 +211,7 @@ WHY = {
     13: 'FAQ: real questions people ask Google, answered from the data. Can show in "People also ask" and in AI answers.',
     14: 'Related cards: moves people to the next card and spreads ranking power across the site.',
     15: 'Schema (hidden code): Product, price range, FAQ and breadcrumb. Lets Google show price and stock in the search result.',
-    16: 'Phone view: price and pack button on the first screen, and a sticky "Rip a pack" bar that is always in reach.',
+    16: 'Phone view: price and pack button on the first screen, and a sticky "Rip a pack" bar, so the buy button is never out of reach.',
     17: "CardOutpost's own design: same header, sidebar, footer and colours. No redesign, the tech team drops it into the site.",
 }
 def nb(i): return f'<span class="nb" tabindex="0" data-tip="{E(WHY[i])}">{i}</span>'
