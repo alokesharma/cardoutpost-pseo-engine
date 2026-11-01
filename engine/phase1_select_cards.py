@@ -1,6 +1,6 @@
 """Phase 1: pick the cards the engine will build pages for.
 
-Input : data/keywords_cards.csv  (one row per keyword, from the keyword research sheet)
+Input : data/keywords_mapped.csv  (one row per keyword with its card page, from step 0)
 Output: data/cards.csv           (one row per card page, ranked by total search volume)
 
 Rule: one card page = one URL. All keywords that point at the same URL are added up.
@@ -11,7 +11,7 @@ from pathlib import Path
 
 N = int(sys.argv[1]) if len(sys.argv) > 1 else 120
 ROOT = Path(__file__).resolve().parent.parent
-src = ROOT / 'data/keywords_cards.csv'
+src = ROOT / 'data/keywords_mapped.csv'
 dst = ROOT / 'data/cards.csv'
 
 pages = collections.OrderedDict()

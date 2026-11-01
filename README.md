@@ -3,7 +3,7 @@
 Builds one SEO page per Pokémon card from public data plus CardOutpost's own data, at scale.
 Add a card to the input list and its page appears, with zero manual work.
 
-- **Input:** 1,376 card keywords from the keyword research (120 card pages, 1.95M US searches a month)
+- **Input:** one file of keywords and their US search volume, exported from Ahrefs (`data/keywords.csv`, 1,376 card keywords). The engine maps them to 903 card pages by itself and builds the top 120 (1.95M US searches a month)
 - **Output:** 120 card pages plus 74 set, Pokémon and `/cards` hub pages in `out/`, a sitemap, a robots.txt, and a Google Sheet that shows every number behind every page
 
 ## Start here: three links
@@ -20,7 +20,7 @@ Add a card to the input list and its page appears, with zero manual work.
 
 | Step | Script | What it does | Source |
 |---|---|---|---|
-| 1 Pick cards | `engine/phase1_select_cards.py` | Adds up every keyword that points at the same card page. Keeps the top 120 by searches. | Keyword research sheet (Ahrefs volumes) |
+| 1 Map and pick cards | `engine/phase0_map_keywords.py`, `engine/phase1_select_cards.py` | Maps every keyword to its card: finds the set, card number and Pokémon it names, matches them to the card catalogue, and checks Google's top 10 titles. Then adds up every keyword on the same card page and keeps the top 120 by searches. | Keywords and volumes (Ahrefs), card catalogue, saved Google results |
 | 2 Market data | `engine/phase2_market_data.py` | Finds the exact printing. Price at every grade, sales speed, 38 months of price history, PSA and CGC population, release date, card number. | PriceCharting public pages |
 | 3 Search data | `engine/phase3_search_data.py` | What Google shows for the main keyword: AI Overview text, People Also Ask, top 10 sites, related searches. | Saved SerpAPI results |
 | 4 CardOutpost data | `engine/phase4_cop_data.py` | Pack, odds, pulls, vault copies, sell-back value. **Mock** until CardOutpost's database is connected. | CardOutpost (mock) |
@@ -36,29 +36,41 @@ Add a card to the input list and its page appears, with zero manual work.
 git clone https://github.com/alokesharma/cardoutpost-pseo-engine.git
 cd cardoutpost-pseo-engine
 ./run_all.sh
-open out/index.html
+cd out && python3 -m http.server 8765   # then open http://localhost:8765
 ```
 
 - Needs Python 3.9 or newer. Nothing to install for steps 1 to 6.
-- The only input is `data/keywords_cards.csv`: one row per keyword with its card page URL and US search volume, from the keyword research. Change the `120` in `run_all.sh` to build more or fewer pages.
-- No API keys are in the repo and none are needed. Steps 2 and 3 read public pages; their outputs (`data/market.csv`, `data/serp.csv`) and the 120 saved Google results are committed, so the run uses them. `REFRESH=1 ./run_all.sh` fetches prices again (about 30 minutes, free reader, 20 requests a minute). New keywords without a saved Google result need `SERPAPI_KEY` in the environment.
+- The only input is `data/keywords.csv`: keyword and US search volume, nothing else. Change the `120` in `run_all.sh` to build more or fewer pages.
+- No API keys are in the repo and none are needed for this demo. The raw data the engine needs is saved in the repo, so a run works offline except for new prices:
+
+| Saved in the repo | What it is | Live source in production |
+|---|---|---|
+| `data/keywords.csv` | 1,376 card keywords with US search volume | Ahrefs API |
+| `data/context/card_catalogue.csv` | 903 cards: name, set, card number, Pokémon, page URL | CardOutpost's card database (TCGdex for numbers) |
+| `data/context/sets.csv`, `word_aliases.csv` | Set names and shorthand as people type them ("25th anniversary" = Celebrations, "zard" = Charizard) | Maintained list |
+| `data/context/google_top10.json` | Google's top 10 titles for every keyword | SerpAPI |
+| `data/context/mapping_decisions.csv` | 78 keywords where more than one card fits the words (for example "charizard sir"); the card was chosen in the keyword research from what Google ranks | Reviewed by the SEO team |
+| `data/market.csv`, `data/raw/serp/` | Prices and full Google results for the 120 cards | PriceCharting, SerpAPI |
+| Step 4 output | Pack, odds, pulls, listings | CardOutpost's database (mock here) |
+
+- Mapping result on the saved data: 1,298 keywords (94% of search volume) mapped by the rules alone, 78 by a reviewed decision, 903 card pages, the same 120 URLs as the research.
+- `REFRESH=1 ./run_all.sh` fetches prices again (about 30 minutes, free reader, 20 requests a minute).
 - Step 7, the Google Sheet, is skipped unless you add your own Google OAuth token and `data/sheet_ids.json`.
 
 Each step reads the previous step's CSV, so any step can be rerun alone.
 
-### Adding more keywords
+### Testing your own keywords
 
-Open `data/keywords_cards.csv` in Excel and add one row per keyword. Five columns matter:
+1. Add rows to `data/keywords.csv`: the keyword, and its US search volume if you have it. Leave the volume blank to fetch it from Ahrefs.
+2. Set your keys for the run (they are read from the environment and never saved):
+   ```
+   export AHREFS_API_KEY=...   # fills blank search volumes (Ahrefs API, Enterprise plan)
+   export SERPAPI_KEY=...      # Google's top 10 for new keywords, used to map them and for People also ask
+   ./run_all.sh
+   ```
+3. The engine maps each new keyword to a card in the catalogue and prints any weak match to review. Raise the `120` in `run_all.sh` if the new pages should be built even when they rank below the top 120.
 
-| Column | Example | Where it comes from |
-|---|---|---|
-| keyword | umbreon vmax alt art | Ahrefs or any keyword tool |
-| search_volume_us | 12000 | same tool |
-| page_url | /cards/evolving-skies/umbreon-vmax | the page this keyword belongs to |
-| page_name | Umbreon VMAX card | the card's name |
-| pokemon | umbreon | the Pokémon, lowercase |
-
-`intent` and `pattern` are research notes and can be left blank. Several keywords can share one `page_url`; the engine adds their volumes together and builds one page per URL. Save as CSV and run `./run_all.sh` again. A new card fetches its prices online, about 15 seconds each, no key needed. A new keyword without a saved Google result needs `SERPAPI_KEY` in the environment; without it the page is still built, just without the "People also ask" and AI Overview columns.
+Without keys the run still works: blank volumes count as 0, and new keywords are mapped on their words alone, with no "People also ask" on their pages. Prices need no key. A keyword for a card that is not in `data/context/card_catalogue.csv` is mapped to the closest card, so add the card there first.
 
 
 Links inside the built pages are root-relative (`/cards/...`). For GitHub Pages the build sets `PAGES_BASE=/cardoutpost-pseo-engine/out`; for a local server (`cd out && python3 -m http.server 8765`) leave it empty.
@@ -121,7 +133,7 @@ Mock numbers are generated from a fixed seed per card, so they never change betw
 ## How 120 pages becomes 10,000
 
 **Data pipeline**
-- Step 1 takes any size of keyword list. The 903 card pages in the research run as is. The 21,256 cards in CardOutpost's catalogue need only a card list with set and number.
+- Step 1 takes any size of keyword list. The 903 card pages in the research run as is. For the 21,256 cards in CardOutpost's catalogue, `card_catalogue.csv` becomes a query on CardOutpost's card database, and the keywords and Google results come live from the Ahrefs and SerpAPI APIs.
 - Step 2 is the slow step: 3 page reads per card. At the free reader rate that is 120 cards in 30 minutes. For 10,000 cards: PriceCharting's paid API ($15 a month), or a paid reader with a key, or a bulk crawler such as Firecrawl. All three are a one-line change in `fetch()`.
 - Step 3 at 10,000 cards is 10,000 SerpAPI searches, about $50 a month on the Developer plan. Only the main keyword per card is searched.
 - Steps 4 to 6 are pure computation: 120 pages build in 2 seconds, 10,000 in about 3 minutes.

@@ -1,0 +1,904 @@
+page_url,card_name,set_name,card_number,pokemon,set_numbers
+/cards/mega-charizard-x-ex,Mega Charizard X ex,,,charizard,
+/cards/charizard-ex,Charizard ex,,,charizard,
+/cards/bubble-mew,Bubble Mew,,,mew,
+/cards/charizard-vmax,Charizard VMAX,,,charizard,
+/cards/mewtwo-ex,Mewtwo ex,,,mewtwo,
+/cards/mega-lucario-ex,Mega Lucario ex,,,lucario,
+/cards/pikachu-illustrator,Pikachu Illustrator,,,pikachu,
+/cards/mega-greninja-ex,Mega Greninja ex,,,greninja,
+/cards/mega-venusaur-ex,Mega Venusaur ex,,,venusaur,
+/cards/mega-gengar-ex,Mega Gengar ex,,,gengar,
+/cards/151/charizard-ex,Charizard ex,151,,charizard,183|199|6
+/cards/mega-zygarde-ex,Mega Zygarde ex,,,zygarde,
+/cards/gengar-vmax,Gengar VMAX,,,gengar,
+/cards/mew-ex,Mew ex,,,mew,
+/cards/gengar-ex,Gengar ex,,,gengar,
+/cards/mega-latias-ex,Mega Latias ex,,,latias,
+/cards/mega-kangaskhan-ex,Mega Kangaskhan ex,,,kangaskhan,
+/cards/umbreon-vmax,Umbreon VMAX,,,umbreon,
+/cards/poncho-pikachu,Poncho Pikachu,,,pikachu,
+/cards/dark-charizard,Dark Charizard,,,charizard,
+/cards/van-gogh-pikachu,Van Gogh Pikachu,,,pikachu,
+/cards/ancient-mew,Ancient Mew,,,mew,
+/cards/151/blastoise-ex,Blastoise ex,151,,blastoise,184|200|9
+/cards/phantasmal-flames/mega-charizard-x-ex,Mega Charizard X ex,Phantasmal Flames,,charizard,109|125|13|130
+/cards/rayquaza-vmax,Rayquaza VMAX,,,rayquaza,
+/cards/base-set/charizard,Charizard,Base Set,,charizard,39|4|40|6
+/cards/rainbow-charizard,Rainbow Charizard,,,charizard,
+/cards/gardevoir-ex,Gardevoir ex,,,gardevoir,
+/cards/mega-starmie-ex,Mega Starmie ex,,,starmie,
+/cards/mega-gardevoir-ex,Mega Gardevoir ex,,,gardevoir,
+/cards/charizard-gx,Charizard GX,,,charizard,
+/cards/151/squirtle,Squirtle,151,,squirtle,170|7
+/cards/perfect-order/meowth-ex,Meowth ex,Perfect Order,,meowth,107|121|62
+/cards/1st-edition-charizard,1st Edition Charizard,,,charizard,
+/cards/charmander-promo,Charmander Promo,,,charmander,
+/cards/charizard-v,Charizard V,,,charizard,
+/cards/mega-absol-ex,Mega Absol ex,,,absol,
+/cards/mega-lopunny-ex,Mega Lopunny ex,,,lopunny,
+/cards/151/bulbasaur,Bulbasaur,151,,bulbasaur,1|166
+/cards/perfect-order/clefairy,Clefairy,Perfect Order,,clefairy,30|94
+/cards/umbreon-ex,Umbreon ex,,,umbreon,
+/cards/giratina-v,Giratina V,,,giratina,
+/cards/zekrom-ex,Zekrom ex,,,zekrom,
+/cards/sylveon-ex,Sylveon ex,,,sylveon,
+/cards/ascended-heroes/psyduck,Psyduck,Ascended Heroes,,psyduck,226|39
+/cards/paldea-evolved/magikarp,Magikarp,Paldea Evolved,,magikarp,203|42
+/cards/ascended-heroes/pikachu-ex,Pikachu ex,Ascended Heroes,,pikachu,276|277|57
+/cards/ascended-heroes/mega-gengar-ex,Mega Gengar ex,Ascended Heroes,,gengar,125|269|284
+/cards/lugia-v-alt-art,Lugia V Alt Art,,,lugia,
+/cards/meowth-ex,Meowth ex,,,meowth,
+/cards/charizard-vstar,Charizard VSTAR,,,charizard,
+/cards/151/alakazam-ex,Alakazam ex,151,,alakazam,188|201|65
+/cards/pikachu-vmax,Pikachu VMAX,,,pikachu,
+/cards/flareon-ex,Flareon ex,,,flareon,
+/cards/mega-clefable-ex,Mega Clefable ex,,,clefable,
+/cards/pikachu-ex,Pikachu ex,,,pikachu,
+/cards/mistys-psyduck,Misty's Psyduck,,,psyduck,
+/cards/151/mew-ex,Mew ex,151,,mew,151|193|205
+/cards/mewtwo-gx,Mewtwo GX,,,mewtwo,
+/cards/shadowless-charizard,Shadowless Charizard,,,charizard,
+/cards/base-set-2/charizard,Charizard,Base Set 2,,charizard,4
+/cards/mega-evolution/bulbasaur,Bulbasaur,Mega Evolution,,bulbasaur,1|133
+/cards/mega-floette-ex,Mega Floette ex,,,floette,
+/cards/latias-ex,Latias ex,,,latias,
+/cards/mega-diancie-ex,Mega Diancie ex,,,diancie,
+/cards/black-bolt/zekrom-ex,Zekrom ex,Black Bolt,,zekrom,158|166|172|34
+/cards/151/charmander,Charmander,151,,charmander,168|4
+/cards/mega-mawile-ex,Mega Mawile ex,,,mawile,
+/cards/151/ivysaur,Ivysaur,151,,ivysaur,167|2
+/cards/151/charmeleon,Charmeleon,151,,charmeleon,169|5
+/cards/phantasmal-flames/meowth,Meowth,Phantasmal Flames,,meowth,106
+/cards/shining-charizard,Shining Charizard,,,charizard,
+/cards/151/wartortle,Wartortle,151,,wartortle,171|8
+/cards/pitch-black/mega-darkrai-ex,Mega Darkrai ex,Pitch Black,,darkrai,101|116|120|48
+/cards/cynthias-garchomp-ex,Cynthia's Garchomp ex,,,garchomp,
+/cards/gold-charizard,Gold Charizard,,,charizard,
+/cards/151/snorlax,Snorlax,151,,snorlax,143
+/cards/flying-pikachu-vmax,Flying Pikachu VMAX,,,pikachu,
+/cards/mega-abomasnow-ex,Mega Abomasnow ex,,,abomasnow,
+/cards/radiant-charizard,Radiant Charizard,,,charizard,
+/cards/surfing-pikachu,Surfing Pikachu,,,pikachu,
+/cards/chaos-rising/mega-greninja-ex,Mega Greninja ex,Chaos Rising,,greninja,100|116|122|22
+/cards/cinccino-ex,Cinccino ex,,,cinccino,
+/cards/ethans-typhlosion,Ethan's Typhlosion,,,typhlosion,
+/cards/umbreon-gold-star,Umbreon Gold Star,,,umbreon,
+/cards/m-charizard-ex,M Charizard ex,,,charizard,
+/cards/hisuian-zoroark-vstar,Hisuian Zoroark VSTAR,,,zoroark,
+/cards/leafeon-vstar,Leafeon VSTAR,,,leafeon,
+/cards/151/zapdos-ex,Zapdos ex,151,,zapdos,145|192|202
+/cards/radiant-greninja,Radiant Greninja,,,greninja,
+/cards/gengar-full-art,Gengar Full Art,,,gengar,
+/cards/bulbasaur-full-art,Bulbasaur Full Art,,,bulbasaur,
+/cards/dragapult-ex,Dragapult ex,,,dragapult,
+/cards/mega-skarmory-ex,Mega Skarmory ex,,,skarmory,
+/cards/pikachu-sir,Pikachu SIR,,,pikachu,
+/cards/latias-and-latios-gx,Latias and Latios GX,,,latios,
+/cards/ns-reshiram,N's Reshiram,,,reshiram,
+/cards/lucario-vstar-promo,Lucario VSTAR Promo,,,lucario,
+/cards/giratina-vstar,Giratina VSTAR,,,giratina,
+/cards/reshiram-ex,Reshiram ex,,,reshiram,
+/cards/obsidian-flames/charizard-ex,Charizard ex,Obsidian Flames,,charizard,125|215|223|228
+/cards/blastoise-ex,Blastoise ex,,,blastoise,
+/cards/espeon-ex,Espeon ex,,,espeon,
+/cards/151/venusaur-ex,Venusaur ex,151,,venusaur,182|198|3
+/cards/chaos-rising/xerneas,Xerneas,Chaos Rising,,xerneas,42|91
+/cards/mega-chandelure-ex,Mega Chandelure ex,,,chandelure,
+/cards/lillies-clefairy-ex,Lillie's Clefairy ex,,,clefairy,
+/cards/gold-star-charizard,Gold Star Charizard,,,charizard,
+/cards/special-delivery-charizard,Special Delivery Charizard,,,charizard,
+/cards/mewtwo-promo,Mewtwo Promo,,,mewtwo,
+/cards/eternatus-vmax,Eternatus VMAX,,,eternatus,
+/cards/mega-zeraora-ex,Mega Zeraora ex,,,zeraora,
+/cards/special-delivery-bidoof,Special Delivery Bidoof,,,bidoof,
+/cards/charizard-v-promo,Charizard V Promo,,,charizard,
+/cards/terapagos-ex,Terapagos ex,,,terapagos,
+/cards/gold-star-rayquaza,Gold Star Rayquaza,,,rayquaza,
+/cards/charizard-vmax-gold,Charizard VMAX Gold,,,charizard,
+/cards/team-rockets-mewtwo,Team Rocket's Mewtwo,,,mewtwo,
+/cards/mimikyu-promo,Mimikyu Promo,,,mimikyu,
+/cards/pitch-black/slowbro,Slowbro,Pitch Black,,slowbro,30|90
+/cards/twilight-masquerade/greninja-ex,Greninja ex,Twilight Masquerade,,greninja,106|198|214
+/cards/sabrinas-gengar,Sabrina's Gengar,,,gengar,
+/cards/crown-zenith/mew,Mew,Crown Zenith,,mew,gg10
+/cards/flying-pikachu,Flying Pikachu,,,pikachu,
+/cards/mew-vmax,Mew VMAX,,,mew,
+/cards/lillies-determination,Lillie's Determination,,,,
+/cards/pikachu-promo,Pikachu Promo,,,pikachu,
+/cards/chaos-rising/froakie,Froakie,Chaos Rising,,froakie,20|88
+/cards/shiny-charizard-v,Shiny Charizard V,,,charizard,
+/cards/black-kyurem-ex,Black Kyurem ex,,,kyurem,
+/cards/pikachu-v,Pikachu V,,,pikachu,
+/cards/mega-dragalge-ex,Mega Dragalge ex,,,dragalge,
+/cards/greninja-promo,Greninja Promo,,,greninja,
+/cards/surging-sparks/pikachu,Pikachu,Surging Sparks,,pikachu,
+/cards/charizard-ex-promo,Charizard ex Promo,,,charizard,
+/cards/charizard-vmax-promo,Charizard VMAX Promo,,,charizard,
+/cards/lucario-vstar,Lucario VSTAR,,,lucario,
+/cards/chaos-rising/frogadier,Frogadier,Chaos Rising,,frogadier,21|89
+/cards/chaos-rising/ampharos,Ampharos,Chaos Rising,,ampharos,29|90
+/cards/ascended-heroes/mega-dragonite-ex,Mega Dragonite ex,Ascended Heroes,,dragonite,152|271|290|295
+/cards/mega-darkrai-ex,Mega Darkrai ex,,,darkrai,
+/cards/chaos-rising/cinccino-ex,Cinccino ex,Chaos Rising,,cinccino,105|119|73
+/cards/eevee-gx,Eevee GX,,,eevee,
+/cards/squirtle-full-art,Squirtle Full Art,,,squirtle,
+/cards/glaceon-ex,Glaceon ex,,,glaceon,
+/cards/kingdra-ex,Kingdra ex,,,kingdra,
+/cards/mega-evolution/mega-lucario-ex,Mega Lucario ex,Mega Evolution,,lucario,160|179|188|77
+/cards/celebrations/charizard,Charizard,Celebrations,,charizard,cc002
+/cards/pitch-black/morpeko-ex,Morpeko ex,Pitch Black,,morpeko,102|117|55
+/cards/cubone-full-art,Cubone Full Art,,,cubone,
+/cards/pikachu-full-art,Pikachu Full Art,,,pikachu,
+/cards/hydrapple-ex,Hydrapple ex,,,hydrapple,
+/cards/lances-charizard-v,Lance's Charizard V,,,charizard,
+/cards/gholdengo-ex,Gholdengo ex,,,gholdengo,
+/cards/dedenne-gx,Dedenne GX,,,dedenne,
+/cards/twilight-masquerade/eevee,Eevee,Twilight Masquerade,,eevee,135|188
+/cards/shiny-charizard-vmax,Shiny Charizard VMAX,,,charizard,
+/cards/oricorio-ex,Oricorio ex,,,oricorio,
+/cards/alolan-exeggutor-ex,Alolan Exeggutor ex,,,exeggutor,
+/cards/zacian-v,Zacian V,,,zacian,
+/cards/eevee-vmax,Eevee VMAX,,,eevee,
+/cards/mistys-tears,Misty's Tears,,,,
+/cards/koraidon-ex,Koraidon ex,,,koraidon,
+/cards/arceus-vstar,Arceus VSTAR,,,arceus,
+/cards/ns-zoroark-ex,N's Zoroark ex,,,zoroark,
+/cards/destined-rivals/mewtwo-ex,Mewtwo ex,Destined Rivals,,mewtwo,
+/cards/charizard-vstar-promo,Charizard VSTAR Promo,,,charizard,
+/cards/surfing-pikachu-vmax,Surfing Pikachu VMAX,,,pikachu,
+/cards/ceruledge-ex,Ceruledge ex,,,ceruledge,
+/cards/raging-bolt-ex,Raging Bolt ex,,,raging bolt,
+/cards/dragonite-vstar,Dragonite VSTAR,,,dragonite,
+/cards/mew-ex-promo,Mew ex Promo,,,mew,
+/cards/pikachu-vmax-gold,Pikachu VMAX Gold,,,pikachu,
+/cards/glaceon-vstar,Glaceon VSTAR,,,glaceon,
+/cards/jolteon-vmax,Jolteon VMAX,,,jolteon,
+/cards/journey-together/articuno,Articuno,Journey Together,,articuno,161|32
+/cards/mew-ex-promo-53,Mew ex Promo,,53,mew,
+/cards/roaring-moon-ex,Roaring Moon ex,,,roaring moon,
+/cards/oricorio-ex-promo,Oricorio ex Promo,,,oricorio,
+/cards/lost-origin/giratina-v,Giratina V,Lost Origin,,giratina,130|185|186
+/cards/mega-excadrill-ex,Mega Excadrill ex,,,excadrill,
+/cards/maushold-full-art,Maushold Full Art,,,maushold,
+/cards/darkrai-vstar,Darkrai VSTAR,,,darkrai,
+/cards/lost-origin/gengar,Gengar,Lost Origin,,gengar,66|tg06
+/cards/greninja-gold-star,Greninja Gold Star,,,greninja,
+/cards/blaines-charizard,Blaine's Charizard,,,charizard,
+/cards/dragonite-ex,Dragonite ex,,,dragonite,
+/cards/base-set/blastoise,Blastoise,Base Set,,blastoise,2|36|37|4
+/cards/mega-pyroar-ex,Mega Pyroar ex,,,pyroar,
+/cards/yveltal-ex,Yveltal ex,,,yveltal,
+/cards/aerodactyl-v,Aerodactyl V,,,aerodactyl,
+/cards/meowth-sir,Meowth SIR,,,meowth,
+/cards/paldean-fates/charizard-ex,Charizard ex,Paldean Fates,,charizard,234|54
+/cards/mega-lucario-ex-gold,Mega Lucario ex Gold,,,lucario,
+/cards/151/poliwhirl,Poliwhirl,151,,poliwhirl,176|61
+/cards/neo-genesis/lugia,Lugia,Neo Genesis,,lugia,9
+/cards/phantasmal-flames/wigglytuff,Wigglytuff,Phantasmal Flames,,wigglytuff,105|77
+/cards/snorlax-full-art,Snorlax Full Art,,,snorlax,
+/cards/phantasmal-flames/mega-gengar-ex,Mega Gengar ex,Phantasmal Flames,,gengar,56
+/cards/espeon-vmax,Espeon VMAX,,,espeon,
+/cards/gold-star-mew,Gold Star Mew,,,mew,
+/cards/cinderace-ex,Cinderace ex,,,cinderace,
+/cards/alakazam-ex,Alakazam ex,,,alakazam,
+/cards/glaceon-vmax,Glaceon VMAX,,,glaceon,
+/cards/pitch-black/primarina,Primarina,Pitch Black,,primarina,20|88
+/cards/151/mewtwo,Mewtwo,151,,mewtwo,150
+/cards/mistys-lapras,Misty's Lapras,,,lapras,
+/cards/obsidian-flames/charmander,Charmander,Obsidian Flames,,charmander,26
+/cards/greninja-ex-promo,Greninja ex Promo,,,greninja,
+/cards/pitch-black/goldeen,Goldeen,Pitch Black,,goldeen,13|87
+/cards/mega-evolution/ivysaur,Ivysaur,Mega Evolution,,ivysaur,134|2
+/cards/fossil/gengar,Gengar,Fossil,,gengar,20|5
+/cards/vaporeon-vmax,Vaporeon VMAX,,,vaporeon,
+/cards/blastoise-vmax,Blastoise VMAX,,,blastoise,
+/cards/arceus-dialga-palkia-gx,Arceus Dialga Palkia GX,,,dialga,
+/cards/evolving-skies/rayquaza-vmax,Rayquaza VMAX,Evolving Skies,,rayquaza,111|217|218
+/cards/pikachu-mimikyu-promo,Pikachu Mimikyu Promo,,,pikachu,
+/cards/mistys-gyarados,Misty's Gyarados,,,gyarados,
+/cards/blaziken-ex,Blaziken ex,,,blaziken,
+/cards/magikarp-and-wailord-gx,Magikarp and Wailord GX,,,magikarp,
+/cards/galarian-moltres-v,Galarian Moltres V,,,moltres,
+/cards/lugia-ex,Lugia ex,,,lugia,
+/cards/mega-delphox-ex,Mega Delphox ex,,,delphox,
+/cards/umbreon-v,Umbreon V,,,umbreon,
+/cards/dark-dragonite-holo,Dark Dragonite Holo,,,dragonite,
+/cards/zeraora-vmax,Zeraora VMAX,,,zeraora,
+/cards/charizard-and-braixen-gx,Charizard and Braixen GX,,,charizard,
+/cards/crown-zenith/pikachu,Pikachu,Crown Zenith,,pikachu,160|gg30
+/cards/ns-zekrom,N's Zekrom,,,zekrom,
+/cards/rayquaza-v-alt-art,Rayquaza V Alt Art,,,rayquaza,
+/cards/krookodile-ex,Krookodile ex,,,krookodile,
+/cards/evolving-skies/umbreon-vmax,Umbreon VMAX,Evolving Skies,,umbreon,214|215|95
+/cards/151/psyduck,Psyduck,151,,psyduck,175|54
+/cards/celebrations/greninja-star,Greninja Star,Celebrations,,greninja,
+/cards/milotic-sir,Milotic SIR,,,milotic,
+/cards/raikou-v,Raikou V,,,raikou,
+/cards/umbreon-gx,Umbreon GX,,,umbreon,
+/cards/zekrom-full-art,Zekrom Full Art,,,zekrom,
+/cards/zacian-full-art,Zacian Full Art,,,zacian,
+/cards/lumineon-v,Lumineon V,,,lumineon,
+/cards/cinderace-v,Cinderace V,,,cinderace,
+/cards/mimikyu-vmax,Mimikyu VMAX,,,mimikyu,
+/cards/special-delivery-pikachu,Special Delivery Pikachu,,,pikachu,
+/cards/mario-pikachu,Mario Pikachu,,,pikachu,
+/cards/perfect-order/rowlet,Rowlet,Perfect Order,,rowlet,10|90
+/cards/perfect-order/gengar,Gengar,Perfect Order,,gengar,50
+/cards/phantasmal-flames/toxtricity,Toxtricity,Phantasmal Flames,,toxtricity,103|68
+/cards/1st-edition-machamp,1st Edition Machamp,,,machamp,
+/cards/dawn-sir,Dawn SIR,,,,
+/cards/charizard-ex-promo-56,Charizard ex Promo,,56,charizard,
+/cards/duraludon-vmax,Duraludon VMAX,,,duraludon,
+/cards/perfect-order/yveltal-ex,Yveltal ex,Perfect Order,,yveltal,105|53
+/cards/mega-evolution/mega-latias-ex,Mega Latias ex,Mega Evolution,,latias,100|163|181
+/cards/fusion-strike/gengar-vmax,Gengar VMAX,Fusion Strike,,gengar,157|271
+/cards/perfect-order/espurr,Espurr,Perfect Order,,espurr,33|95
+/cards/perfect-order/doublade,Doublade,Perfect Order,,doublade,57|98
+/cards/origin-forme-dialga-vstar,Origin Forme Dialga VSTAR,,,dialga,
+/cards/team-rockets-moltres,Team Rocket's Moltres,,,moltres,
+/cards/zamazenta-v,Zamazenta V,,,zamazenta,
+/cards/ceruledge-full-art,Ceruledge Full Art,,,ceruledge,
+/cards/radiant-gardevoir,Radiant Gardevoir,,,gardevoir,
+/cards/base-set/mewtwo,Mewtwo,Base Set,,mewtwo,10|20|56
+/cards/evolving-skies/dragonite-v,Dragonite V,Evolving Skies,,dragonite,191|192
+/cards/prismatic-evolutions/umbreon,Umbreon,Prismatic Evolutions,,umbreon,59
+/cards/mega-gallade-ex,Mega Gallade ex,,,gallade,
+/cards/chaos-rising/mega-dragalge-ex,Mega Dragalge ex,Chaos Rising,,dragalge,104|118|65
+/cards/greninja-ex-sir,Greninja ex SIR,,,greninja,
+/cards/zekrom-promo,Zekrom Promo,,,zekrom,
+/cards/xerneas-ex,Xerneas ex,,,xerneas,
+/cards/brilliant-stars/eevee,Eevee,Brilliant Stars,,eevee,tg11
+/cards/flareon-v,Flareon V,,,flareon,
+/cards/charcadet-promo,Charcadet Promo,,,charcadet,
+/cards/mega-charizard-ex,Mega Charizard ex,,,charizard,
+/cards/prismatic-evolutions/leafeon,Leafeon,Prismatic Evolutions,,leafeon,5
+/cards/paldean-fates/gardevoir-ex,Gardevoir ex,Paldean Fates,,gardevoir,217|233|29
+/cards/ns-zekrom-promo,N's Zekrom Promo,,,zekrom,
+/cards/tapu-koko-ex,Tapu Koko ex,,,tapu koko,
+/cards/m-blastoise-ex,M Blastoise ex,,,blastoise,
+/cards/flygon-ex,Flygon ex,,,flygon,
+/cards/crown-zenith/deoxys,Deoxys,Crown Zenith,,deoxys,gg12
+/cards/erikas-invitation,Erika's Invitation,,,,
+/cards/silver-tempest/lugia-v,Lugia V,Silver Tempest,,lugia,138|185|186
+/cards/yamper-full-art,Yamper Full Art,,,yamper,
+/cards/mewtwo-full-art,Mewtwo Full Art,,,mewtwo,
+/cards/armored-mewtwo,Armored Mewtwo,,,mewtwo,
+/cards/mega-evolution/mega-gardevoir-ex,Mega Gardevoir ex,Mega Evolution,,gardevoir,159|178|187|60
+/cards/neo-discovery/umbreon,Umbreon,Neo Discovery,,umbreon,13|32
+/cards/temporal-forces/gastly,Gastly,Temporal Forces,,gastly,102|177
+/cards/paradox-rift/groudon,Groudon,Paradox Rift,,groudon,199|93
+/cards/base-set/pikachu,Pikachu,Base Set,,pikachu,124|58|87
+/cards/151/gengar,Gengar,151,,gengar,94
+/cards/ascended-heroes/mewtwo,Mewtwo,Ascended Heroes,,mewtwo,
+/cards/white-flare/reshiram-ex,Reshiram ex,White Flare,,reshiram,158|166|173|20
+/cards/ns-plan,N's Plan,,,,
+/cards/bulbasaur-promo,Bulbasaur Promo,,,bulbasaur,
+/cards/wailord-full-art,Wailord Full Art,,,wailord,
+/cards/deerling-full-art,Deerling Full Art,,,deerling,
+/cards/dragonite-full-art,Dragonite Full Art,,,dragonite,
+/cards/ice-rider-calyrex-v,Ice Rider Calyrex V,,,calyrex,
+/cards/vulpix-full-art,Vulpix Full Art,,,vulpix,
+/cards/dragonite-v,Dragonite V,,,dragonite,
+/cards/crown-zenith/mewtwo-vstar,Mewtwo VSTAR,Crown Zenith,,mewtwo,gg44
+/cards/sylveon-vmax,Sylveon VMAX,,,sylveon,
+/cards/surfing-beach,Surfing Beach (Full Art),,,,
+/cards/iron-leaves-ex,Iron Leaves ex,,,iron leaves,
+/cards/charizard-v-promo-swsh260,Charizard V Promo,,SWSH260,charizard,
+/cards/shiny-rayquaza,Shiny Rayquaza,,,rayquaza,
+/cards/origin-forme-palkia-vstar,Origin Forme Palkia VSTAR,,,palkia,
+/cards/rapid-strike-urshifu-vmax,Rapid Strike Urshifu VMAX,,,urshifu,
+/cards/kyurem-vmax,Kyurem VMAX,,,kyurem,
+/cards/mewtwo-vmax,Mewtwo VMAX,,,mewtwo,
+/cards/mega-charizard-x-ex-23,Mega Charizard X ex,,23,charizard,
+/cards/base-set/venusaur,Venusaur,Base Set,,venusaur,15|18|30|67|68
+/cards/tatsugiri-ex,Tatsugiri ex,,,tatsugiri,
+/cards/jolteon-v,Jolteon V,,,jolteon,
+/cards/litten-full-art,Litten Full Art,,,litten,
+/cards/regidrago-v,Regidrago V,,,regidrago,
+/cards/haunter-full-art,Haunter Full Art,,,haunter,
+/cards/ogerpon-ex,Ogerpon ex,,,ogerpon,
+/cards/charizard-vmax-promo-swsh261,Charizard VMAX Promo,,SWSH261,charizard,
+/cards/pikachu-ex-promo-xy124,Pikachu ex Promo,,XY124,pikachu,
+/cards/charizard-ex-gold,Charizard ex Gold,,,charizard,
+/cards/brilliant-stars/flareon,Flareon,Brilliant Stars,,flareon,tg01
+/cards/frogadier-full-art,Frogadier Full Art,,,frogadier,
+/cards/greninja-ex-promo-132,Greninja ex Promo,,132,greninja,
+/cards/charizard-trainer-gallery,Charizard Trainer Gallery,,,charizard,
+/cards/mewtwo-v-union,Mewtwo V Union,,,mewtwo,
+/cards/prismatic-evolutions/eevee,Eevee,Prismatic Evolutions,,eevee,74
+/cards/galarian-moltres,Galarian Moltres,,,moltres,
+/cards/prismatic-evolutions/vaporeon,Vaporeon,Prismatic Evolutions,,vaporeon,22
+/cards/surging-sparks/latias-ex,Latias ex,Surging Sparks,,latias,220|239|76
+/cards/hidden-fates/charizard-gx,Charizard GX,Hidden Fates,,charizard,9|sv49
+/cards/skyridge/charizard,Charizard,Skyridge,,charizard,146
+/cards/151/nidoking,Nidoking,151,,nidoking,174|34
+/cards/perfect-order/jacinthe,Jacinthe,Perfect Order,,,110|122|75
+/cards/mega-greninja-ex-gold,Mega Greninja ex Gold,,,greninja,
+/cards/alakazam-promo,Alakazam Promo,,,alakazam,
+/cards/team-rockets-ariana,Team Rocket's Ariana,,,,
+/cards/pikachu-trainer-gallery,Pikachu Trainer Gallery,,,pikachu,
+/cards/wigglytuff-ex,Wigglytuff ex,,,wigglytuff,
+/cards/dark-blastoise-1st-edition,Dark Blastoise 1st Edition,,,blastoise,
+/cards/mistys-determination,Misty's Determination,,,,
+/cards/tapu-koko-vmax,Tapu Koko VMAX,,,tapu koko,
+/cards/suicune-v,Suicune V,,,suicune,
+/cards/lapras-full-art,Lapras Full Art,,,lapras,
+/cards/probopass-full-art,Probopass Full Art,,,probopass,
+/cards/snorlax-ex,Snorlax ex,,,snorlax,
+/cards/meowscarada-ex,Meowscarada ex,,,meowscarada,
+/cards/vaporeon-v,Vaporeon V,,,vaporeon,
+/cards/slowpoke-full-art,Slowpoke Full Art,,,slowpoke,
+/cards/fidough-full-art,Fidough Full Art,,,fidough,
+/cards/espeon-sir,Espeon SIR,,,espeon,
+/cards/starmie-v,Starmie V,,,starmie,
+/cards/brilliant-stars/vaporeon,Vaporeon,Brilliant Stars,,vaporeon,tg02
+/cards/zapdos-sir,Zapdos SIR,,,zapdos,
+/cards/paldean-fates/bubble-mew,Bubble Mew,Paldean Fates,,mew,
+/cards/teal-mask-ogerpon-promo,Teal Mask Ogerpon Promo,,,ogerpon,
+/cards/generations/flareon-ex,Flareon ex,Generations,,flareon,rc28|rc6
+/cards/birthday-pikachu,Birthday Pikachu,,,pikachu,
+/cards/crown-zenith/latias,Latias,Crown Zenith,,latias,gg20
+/cards/darkrai-ex,Darkrai ex,,,darkrai,
+/cards/1st-edition-blastoise,1st Edition Blastoise,,,blastoise,
+/cards/shadowless-charmander,Shadowless Charmander,,,charmander,
+/cards/mega-gyarados-ex,Mega Gyarados ex,,,gyarados,
+/cards/fossil/dragonite,Dragonite,Fossil,,dragonite,19|4
+/cards/obsidian-flames/ninetales,Ninetales,Obsidian Flames,,ninetales,199|29
+/cards/151/caterpie,Caterpie,151,,caterpie,10|172
+/cards/ascended-heroes/marill,Marill,Ascended Heroes,,marill,232|83
+/cards/japanese-charizard,Japanese Charizard,,,charizard,
+/cards/lucario-gx,Lucario GX,,,lucario,
+/cards/fusion-strike/mew-vmax,Mew VMAX,Fusion Strike,,mew,114|268|269
+/cards/team-rockets-nidoking-ex,Team Rocket's Nidoking ex,,,nidoking,
+/cards/perrin-sir,Perrin SIR,,,,
+/cards/fennekin-full-art,Fennekin Full Art,,,fennekin,
+/cards/iron-treads-ex,Iron Treads ex,,,iron treads,
+/cards/duskull-full-art,Duskull Full Art,,,duskull,
+/cards/blastoise-gx,Blastoise GX,,,blastoise,
+/cards/sylveon-gx,Sylveon GX,,,sylveon,
+/cards/crown-zenith/radiant-charizard,Radiant Charizard,Crown Zenith,,charizard,20
+/cards/cyclizar-ex,Cyclizar ex,,,cyclizar,
+/cards/dudunsparce-ex,Dudunsparce ex,,,dudunsparce,
+/cards/pikachu-and-zekrom-gx-gold,Pikachu and Zekrom GX Gold,,,pikachu,
+/cards/mew-promo,Mew Promo,,,mew,
+/cards/cynthias-ambition,Cynthia's Ambition,,,,
+/cards/miraidon-promo,Miraidon Promo,,,miraidon,
+/cards/carmine-sir,Carmine SIR,,,,
+/cards/eevee-vmax-promo-swsh87,Eevee VMAX Promo,,SWSH87,eevee,
+/cards/galarian-moltres-promo,Galarian Moltres Promo,,,moltres,
+/cards/iono-sir,Iono SIR,,,,
+/cards/espeon-v-alt-art,Espeon V Alt Art,,,espeon,
+/cards/eevee-ex-promo,Eevee ex Promo,,,eevee,
+/cards/charizard-ex-promo-xy121,Charizard ex Promo,,XY121,charizard,
+/cards/celebi-v-alt-art,Celebi V Alt Art,,,celebi,
+/cards/garchomp-and-giratina-gx,Garchomp and Giratina GX,,,garchomp,
+/cards/alolan-vulpix-vstar,Alolan Vulpix VSTAR,,,vulpix,
+/cards/eevee-ex,Eevee ex,,,eevee,
+/cards/blaines-arcanine,Blaine's Arcanine,,,arcanine,
+/cards/origin-forme-dialga-v,Origin Forme Dialga V,,,dialga,
+/cards/mega-evolution/mega-venusaur-ex,Mega Venusaur ex,Mega Evolution,,venusaur,155|177|3
+/cards/chaos-rising/watchog,Watchog,Chaos Rising,,watchog,71|97
+/cards/team-rocket/mewtwo,Mewtwo,Team Rocket,,mewtwo,
+/cards/lost-origin/pikachu-vmax,Pikachu VMAX,Lost Origin,,pikachu,tg17|tg29
+/cards/perfect-order/spewpa,Spewpa,Perfect Order,,spewpa,8|89
+/cards/destined-rivals/blaziken,Blaziken,Destined Rivals,,blaziken,192|42
+/cards/white-flare/oshawott,Oshawott,White Flare,,oshawott,105|21
+/cards/chaos-rising/mega-pyroar-ex,Mega Pyroar ex,Chaos Rising,,pyroar,15|99
+/cards/chansey-full-art,Chansey Full Art,,,chansey,
+/cards/surging-sparks/milotic-ex,Milotic ex,Surging Sparks,,milotic,217|237|42
+/cards/kingdra-promo,Kingdra Promo,,,kingdra,
+/cards/eevee-vmax-promo,Eevee VMAX Promo,,,eevee,
+/cards/beedrill-v,Beedrill V,,,beedrill,
+/cards/alcremie-vmax,Alcremie VMAX,,,alcremie,
+/cards/dragapult-sir,Dragapult SIR,,,dragapult,
+/cards/altaria-full-art,Altaria Full Art,,,altaria,
+/cards/silvally-gx,Silvally GX,,,silvally,
+/cards/sawsbuck-full-art,Sawsbuck Full Art,,,sawsbuck,
+/cards/absol-ex,Absol ex,,,absol,
+/cards/rapid-strike-urshifu-v,Rapid Strike Urshifu V,,,urshifu,
+/cards/hoopa-ex,Hoopa ex,,,hoopa,
+/cards/morpeko-full-art,Morpeko Full Art,,,morpeko,
+/cards/kyurem-ex,Kyurem ex,,,kyurem,
+/cards/genesect-v,Genesect V,,,genesect,
+/cards/piplup-full-art,Piplup Full Art,,,piplup,
+/cards/ethans-adventure,Ethan's Adventure,,,,
+/cards/leafeon-vmax-alt-art,Leafeon VMAX Alt Art,,,leafeon,
+/cards/gloom-full-art,Gloom Full Art,,,gloom,
+/cards/crown-zenith/raikou-v,Raikou V,Crown Zenith,,raikou,gg41
+/cards/mewtwo-v-promo,Mewtwo V Promo,,,mewtwo,
+/cards/skyla-full-art,Skyla Full Art,,,,
+/cards/pikachu-27,Pikachu,,27,pikachu,
+/cards/mega-sableye-and-tyranitar-gx,Mega Sableye and Tyranitar GX,,,tyranitar,
+/cards/n-zoroark-ex,N Zoroark ex,,,zoroark,
+/cards/prismatic-evolutions/glaceon-ex,Glaceon ex,Prismatic Evolutions,,glaceon,150|26
+/cards/jungle/pikachu,Pikachu,Jungle,,pikachu,60
+/cards/perfect-order/drapion,Drapion,Perfect Order,,drapion,52|97
+/cards/shiny-charizard-gx,Shiny Charizard GX,,,charizard,
+/cards/reshiram-sir,Reshiram SIR,,,reshiram,
+/cards/rotom-sir,Rotom SIR,,,rotom,
+/cards/pikachu-gold-star,Pikachu Gold Star,,,pikachu,
+/cards/lost-origin/pikachu-trainer-gallery,Pikachu Trainer Gallery,Lost Origin,,pikachu,
+/cards/metagross-ex,Metagross ex,,,metagross,
+/cards/rayquaza-full-art,Rayquaza Full Art,,,rayquaza,
+/cards/zeraora-v,Zeraora V,,,zeraora,
+/cards/deoxys-ex,Deoxys ex,,,deoxys,
+/cards/spidops-ex,Spidops ex,,,spidops,
+/cards/dedenne-full-art,Dedenne Full Art,,,dedenne,
+/cards/charizard-v-promo-swsh50,Charizard V Promo,,SWSH50,charizard,
+/cards/snom-full-art,Snom Full Art,,,snom,
+/cards/mew-ex-gold,Mew ex Gold,,,mew,
+/cards/mew-ex-rc24,Mew ex,,RC24,mew,
+/cards/rockets-zapdos,Rocket's Zapdos,,,zapdos,
+/cards/cinderace-vmax,Cinderace VMAX,,,cinderace,
+/cards/perfect-order/lapras-ex,Lapras ex,Perfect Order,,lapras,22
+/cards/shadow-lugia,Shadow Lugia,,,lugia,
+/cards/mewtwo-vstar,Mewtwo VSTAR,,,mewtwo,
+/cards/prismatic-evolutions/sylveon-ex,Sylveon ex,Prismatic Evolutions,,sylveon,156|41
+/cards/crown-zenith/darkrai-vstar,Darkrai VSTAR,Crown Zenith,,darkrai,gg50
+/cards/celebrations/mew,Mew,Celebrations,,mew,11|25
+/cards/base-set/charmander,Charmander,Base Set,,charmander,46|69|97|98
+/cards/celebi-gold-star,Celebi Gold Star,,,celebi,
+/cards/ancient-mew-promo,Ancient Mew Promo,,,mew,
+/cards/fossil/lapras,Lapras,Fossil,,lapras,10|25
+/cards/keldeo-ex,Keldeo ex,,,keldeo,
+/cards/zekrom-sir,Zekrom SIR,,,zekrom,
+/cards/paldean-fates/mew-ex,Mew ex,Paldean Fates,,mew,216|232
+/cards/ns-zorua,N's Zorua,,,zorua,
+/cards/meloetta-ex,Meloetta ex,,,meloetta,
+/cards/milcery-full-art,Milcery Full Art,,,milcery,
+/cards/flareon-full-art,Flareon Full Art,,,flareon,
+/cards/noivern-ex,Noivern ex,,,noivern,
+/cards/silver-tempest/milotic,Milotic,Silver Tempest,,milotic,40|tg02
+/cards/radiant-blastoise,Radiant Blastoise,,,blastoise,
+/cards/radiant-charjabug,Radiant Charjabug,,,charjabug,
+/cards/serperior-vstar,Serperior VSTAR,,,serperior,
+/cards/inteleon-vmax,Inteleon VMAX,,,inteleon,
+/cards/enamorus-v,Enamorus V,,,enamorus,
+/cards/mega-rayquaza-ex-full-art,Mega Rayquaza ex Full Art,,,rayquaza,
+/cards/empoleon-v,Empoleon V,,,empoleon,
+/cards/mew-v,Mew V,,,mew,
+/cards/galarian-zapdos-v,Galarian Zapdos V,,,zapdos,
+/cards/evolving-skies/rayquaza-v,Rayquaza V,Evolving Skies,,rayquaza,110|193|194
+/cards/galarian-slowking-v,Galarian Slowking V,,,slowking,
+/cards/giovannis-charisma,Giovanni's Charisma,,,,
+/cards/mega-pidgeot-ex,Mega Pidgeot ex,,,pidgeot,
+/cards/trick-or-trade/gengar,Gengar,Trick Or Trade,,gengar,
+/cards/obsidian-flames/gloom,Gloom,Obsidian Flames,,gloom,198|2
+/cards/celebrations/pikachu,Pikachu,Celebrations,,pikachu,5
+/cards/mega-evolution/shuckle,Shuckle,Mega Evolution,,shuckle,11|136
+/cards/ascended-heroes/scorbunny,Scorbunny,Ascended Heroes,,scorbunny,225|36
+/cards/chaos-rising/krookodile-ex,Krookodile ex,Chaos Rising,,krookodile,55
+/cards/chaos-rising/mega-gallade-ex,Mega Gallade ex,Chaos Rising,,gallade,48
+/cards/charizard-alt-art,Charizard Alt Art,,,charizard,
+/cards/mewtwo-gold-star,Mewtwo Gold Star,,,mewtwo,
+/cards/darkness-ablaze/charizard-vmax,Charizard VMAX,Darkness Ablaze,,charizard,20
+/cards/jungle/jolteon,Jolteon,Jungle,,jolteon,20|4
+/cards/charizard-v-star-promo,Charizard V Star Promo,,,charizard,
+/cards/journey-together/lillies-clefairy-ex,Lillie's Clefairy ex,Journey Together,,clefairy,173|184|56
+/cards/dark-dragonite-non-holo,Dark Dragonite Non Holo,,,dragonite,
+/cards/jungle/vaporeon,Vaporeon,Jungle,,vaporeon,12|28
+/cards/gold-star-mudkip,Gold Star Mudkip,,,mudkip,
+/cards/wooper-full-art,Wooper Full Art,,,wooper,
+/cards/meloetta-full-art,Meloetta Full Art,,,meloetta,
+/cards/espeon-promo,Espeon Promo,,,espeon,
+/cards/dachsbun-ex,Dachsbun ex,,,dachsbun,
+/cards/glaceon-gx,Glaceon GX,,,glaceon,
+/cards/fuecoco-full-art,Fuecoco Full Art,,,fuecoco,
+/cards/gyarados-gx,Gyarados GX,,,gyarados,
+/cards/magnezone-vstar,Magnezone VSTAR,,,magnezone,
+/cards/walking-wake-ex-gold,Walking Wake ex Gold,,,walking wake,
+/cards/cynthias-roserade,Cynthia's Roserade,,,roserade,
+/cards/hisuian-samurott-vstar,Hisuian Samurott VSTAR,,,samurott,
+/cards/wugtrio-full-art,Wugtrio Full Art,,,wugtrio,
+/cards/charmander-illustration-rare,Charmander Illustration Rare,,,charmander,
+/cards/blaziken-v,Blaziken V,,,blaziken,
+/cards/squirtle-illustration-rare,Squirtle Illustration Rare,,,squirtle,
+/cards/crown-zenith/lapras,Lapras,Crown Zenith,,lapras,gg05
+/cards/mew-vmax-gold,Mew VMAX Gold,,,mew,
+/cards/greninja-gx,Greninja GX,,,greninja,
+/cards/tyranitar-v-alt-art,Tyranitar V Alt Art,,,tyranitar,
+/cards/snorlax-vmax-rainbow,Snorlax VMAX Rainbow,,,snorlax,
+/cards/paldea-evolved/pikachu,Pikachu,Paldea Evolved,,pikachu,62
+/cards/pawmi-full-art,Pawmi Full Art,,,pawmi,
+/cards/blaziken-vmax-alt-art,Blaziken VMAX Alt Art,,,blaziken,
+/cards/gold-giratina-vstar,Gold Giratina VSTAR,,,giratina,
+/cards/team-rocket/dark-charizard,Dark Charizard,Team Rocket,,charizard,21|4
+/cards/dark-blastoise-non-holo,Dark Blastoise Non Holo,,,blastoise,
+/cards/eevee-v,Eevee V,,,eevee,
+/cards/jirachi-gx,Jirachi GX,,,jirachi,
+/cards/lt-surges-pikachu,Lt Surges Pikachu,,,pikachu,
+/cards/blaines-charizard-japanese,Blaine's Charizard Japanese,,,charizard,
+/cards/gold-mega-zygarde-ex,Gold Mega Zygarde ex,,,zygarde,
+/cards/mega-dragonite-ex-gold,Mega Dragonite ex Gold,,,dragonite,
+/cards/shiny-mega-gengar-ex,Shiny Mega Gengar ex,,,gengar,
+/cards/mega-dragonite-ex,Mega Dragonite ex,,,dragonite,
+/cards/first-partner/piplup,Piplup,First Partner,,piplup,
+/cards/aquapolis/lugia,Lugia,Aquapolis,,lugia,149
+/cards/base-set/alakazam,Alakazam,Base Set,,alakazam,1|33
+/cards/151/machoke,Machoke,151,,machoke,177|67
+/cards/neo-discovery/espeon,Espeon,Neo Discovery,,espeon,1|20
+/cards/celebrations/venusaur,Venusaur,Celebrations,,venusaur,cc003
+/cards/celebrations/reshiram,Reshiram,Celebrations,,reshiram,2|cc020
+/cards/champions-path/charizard,Charizard,Champions Path,,charizard,
+/cards/lost-origin/charizard,Charizard,Lost Origin,,charizard,tg03
+/cards/ascended-heroes/slurpuff,Slurpuff,Ascended Heroes,,slurpuff,236|94
+/cards/ascended-heroes/dreepy,Dreepy,Ascended Heroes,,dreepy,158|247
+/cards/shiny-gyarados,Shiny Gyarados,,,gyarados,
+/cards/leafeon-v-alt-art,Leafeon V Alt Art,,,leafeon,
+/cards/mistys-seadra-prerelease,Misty's Seadra Prerelease,,,seadra,
+/cards/lechonk-full-art,Lechonk Full Art,,,lechonk,
+/cards/turtwig-full-art,Turtwig Full Art,,,turtwig,
+/cards/altaria-ex,Altaria ex,,,altaria,
+/cards/dragonair-full-art,Dragonair Full Art,,,dragonair,
+/cards/pidgeot-ex-full-art,Pidgeot ex Full Art,,,pidgeot,
+/cards/jirachi-ex,Jirachi ex,,,jirachi,
+/cards/lugia-v-full-art,Lugia V Full Art,,,lugia,
+/cards/growlithe-full-art,Growlithe Full Art,,,growlithe,
+/cards/steelix-ex,Steelix ex,,,steelix,
+/cards/miltank-full-art,Miltank Full Art,,,miltank,
+/cards/reshiram-gx,Reshiram GX,,,reshiram,
+/cards/kyogre-ex,Kyogre ex,,,kyogre,
+/cards/cresselia-full-art,Cresselia Full Art,,,cresselia,
+/cards/regieleki-vmax,Regieleki VMAX,,,regieleki,
+/cards/victini-ex,Victini ex,,,victini,
+/cards/gold-gardevoir,Gold Gardevoir,,,gardevoir,
+/cards/latios-full-art,Latios Full Art,,,latios,
+/cards/gardevoir-gx,Gardevoir GX,,,gardevoir,
+/cards/emolga-full-art,Emolga Full Art,,,emolga,
+/cards/vaporeon-trainer-gallery,Vaporeon Trainer Gallery,,,vaporeon,
+/cards/ionos-kilowattrel,Ionos Kilowattrel,,,kilowattrel,
+/cards/kingdra-ex-promo-131,Kingdra ex Promo,,131,kingdra,
+/cards/crown-zenith/absol,Absol,Crown Zenith,,absol,76|gg16
+/cards/shiny-pikachu,Shiny Pikachu,,,pikachu,
+/cards/shaymin-ex-full-art,Shaymin ex Full Art,,,shaymin,
+/cards/noctowl-promo,Noctowl Promo,,,noctowl,
+/cards/charmander-promo-44,Charmander Promo,,44,charmander,
+/cards/jungle/snorlax,Snorlax,Jungle,,snorlax,11|27
+/cards/pikachu-vmax-promo-swsh286,Pikachu VMAX Promo,,SWSH286,pikachu,
+/cards/hidden-fates/mewtwo-gx,Mewtwo GX,Hidden Fates,,mewtwo,31|sv59
+/cards/team-rockets-weezing,Team Rocket's Weezing,,,weezing,
+/cards/shiny-rayquaza-gx,Shiny Rayquaza GX,,,rayquaza,
+/cards/fusion-strike/mew-v,Mew V,Fusion Strike,,mew,113|250|251
+/cards/scarlet-and-violet/gyarados-ex,Gyarados ex,Scarlet and Violet,,gyarados,
+/cards/charizard-gx-promo-sm211,Charizard GX Promo,,SM211,charizard,
+/cards/ethans-magcargo,Ethan's Magcargo,,,magcargo,
+/cards/thundurus-promo,Thundurus Promo,,,thundurus,
+/cards/pikachu-v-promo,Pikachu V Promo,,,pikachu,
+/cards/silver-tempest/braixen,Braixen,Silver Tempest,,braixen,26|tg01
+/cards/mew-black-star-promo,Mew Black Star Promo,,,mew,
+/cards/mewtwo-ex-164,Mewtwo ex,,164,mewtwo,
+/cards/ninetales-ex,Ninetales ex,,,ninetales,
+/cards/eevee-trainer-gallery,Eevee Trainer Gallery,,,eevee,
+/cards/xy/mew,Mew,XY,,mew,xy110|xy192
+/cards/machamp-v,Machamp V,,,machamp,
+/cards/lugia-gx,Lugia GX,,,lugia,
+/cards/flying-pikachu-v,Flying Pikachu V,,,pikachu,
+/cards/entei-gx,Entei GX,,,entei,
+/cards/sabrinas-alakazam,Sabrina's Alakazam,,,alakazam,
+/cards/ascended-heroes/mega-diancie-ex,Mega Diancie ex,Ascended Heroes,,diancie,267|282
+/cards/mega-evolution/alakazam,Alakazam,Mega Evolution,,alakazam,56
+/cards/team-rocket/here-comes,Here Comes,Team Rocket,,,
+/cards/base-set/ninetales,Ninetales,Base Set,,ninetales,12|13|21|57
+/cards/base-set/zapdos,Zapdos,Base Set,,zapdos,16|20
+/cards/lenticular-deoxys,Lenticular Deoxys,,,deoxys,
+/cards/base-set-2/blastoise,Blastoise,Base Set 2,,blastoise,2
+/cards/crown-zenith/giratina-vstar,Giratina VSTAR,Crown Zenith,,giratina,gg69
+/cards/stellar-crown/squirtle,Squirtle,Stellar Crown,,squirtle,148
+/cards/rayquaza-and-deoxys-legend,Rayquaza and Deoxys Legend,,,rayquaza,
+/cards/base-set/gyarados,Gyarados,Base Set,,gyarados,6|7
+/cards/mega-evolutions-bulbasaur,Mega Evolutions Bulbasaur,,,bulbasaur,
+/cards/gengar-ex-114,Gengar ex,,114,gengar,
+/cards/torchic-gold-star,Torchic Gold Star,,,torchic,
+/cards/erikas-venusaur,Erika's Venusaur,,,venusaur,
+/cards/charizard-ex-promo-74,Charizard ex Promo,,74,charizard,
+/cards/celebrations/mewtwo-ex,Mewtwo ex,Celebrations,,mewtwo,cc022
+/cards/dragonite-holo,Dragonite Holo,,,dragonite,
+/cards/dark-raichu-1st-edition,Dark Raichu 1st Edition,,,raichu,
+/cards/fossil/zapdos,Zapdos,Fossil,,zapdos,15|30
+/cards/charizard-v-gold,Charizard V Gold,,,charizard,
+/cards/vaporeon-gold-star,Vaporeon Gold Star,,,vaporeon,
+/cards/greedent-v,Greedent V,,,greedent,
+/cards/luxray-ex,Luxray ex,,,luxray,
+/cards/sylveon-full-art,Sylveon Full Art,,,sylveon,
+/cards/kangaskhan-full-art,Kangaskhan Full Art,,,kangaskhan,
+/cards/excadrill-ex,Excadrill ex,,,excadrill,
+/cards/incineroar-gx,Incineroar GX,,,incineroar,
+/cards/groudon-full-art,Groudon Full Art,,,groudon,
+/cards/blissey-ex,Blissey ex,,,blissey,
+/cards/ralts-full-art,Ralts Full Art,,,ralts,
+/cards/houndour-full-art,Houndour Full Art,,,houndour,
+/cards/morpeko-v,Morpeko V,,,morpeko,
+/cards/volcanion-ex-full-art,Volcanion ex Full Art,,,volcanion,
+/cards/gulpin-full-art,Gulpin Full Art,,,gulpin,
+/cards/spiritomb-full-art,Spiritomb Full Art,,,spiritomb,
+/cards/ninetales-full-art,Ninetales Full Art,,,ninetales,
+/cards/rapidash-full-art,Rapidash Full Art,,,rapidash,
+/cards/duraludon-v,Duraludon V,,,duraludon,
+/cards/scizor-ex,Scizor ex,,,scizor,
+/cards/team-rockets-giovanni,Team Rocket's Giovanni,,,,
+/cards/celebrations/umbreon,Umbreon,Celebrations,,umbreon,
+/cards/arvens-mabostiff-ex,Arven's Mabostiff ex,,,,
+/cards/rayquaza-vmax-gold,Rayquaza VMAX Gold,,,rayquaza,
+/cards/brilliant-stars/umbreon-vmax,Umbreon VMAX,Brilliant Stars,,umbreon,tg23
+/cards/silver-tempest/jynx,Jynx,Silver Tempest,,jynx,62|tg04
+/cards/team-rockets-houndoom,Team Rocket's Houndoom,,,houndoom,
+/cards/destined-rivals/mistys-psyduck,Misty's Psyduck,Destined Rivals,,psyduck,193|45
+/cards/pikachu-ex-gold,Pikachu ex Gold,,,pikachu,
+/cards/radiant-tsareena,Radiant Tsareena,,,tsareena,
+/cards/canari-sir,Canari SIR,,,,
+/cards/magneton-full-art,Magneton Full Art,,,magneton,
+/cards/brilliant-stars/mimikyu-v,Mimikyu V,Brilliant Stars,,mimikyu,68|tg16
+/cards/mimikyu-center-promo,Mimikyu Center Promo,,,mimikyu,
+/cards/151/erikas-invitation,Erika's Invitation,151,,,160|196|203
+/cards/charizard-ex-11,Charizard ex,,11,charizard,
+/cards/mewtwo-gg44,Mewtwo,,GG44,mewtwo,
+/cards/eevee-gx-promo-sm233,Eevee GX Promo,,SM233,eevee,
+/cards/mewtwo-v-promo-swsh229,Mewtwo V Promo,,SWSH229,mewtwo,
+/cards/manaphy-full-art,Manaphy Full Art,,,manaphy,
+/cards/m-alakazam-ex,M Alakazam ex,,,alakazam,
+/cards/unown-v,Unown V,,,unown,
+/cards/articuno-ex,Articuno ex,,,articuno,
+/cards/pikachu-promo-88,Pikachu Promo,,88,pikachu,
+/cards/astral-radiance/hoothoot,Hoothoot,Astral Radiance,,hoothoot,120|tg12
+/cards/lost-origin/castform,Castform,Lost Origin,,castform,tg11
+/cards/lost-origin/banette,Banette,Lost Origin,,banette,73|tg07
+/cards/hops-wooloo,Hop's Wooloo,,,wooloo,
+/cards/gengar-v,Gengar V,,,gengar,
+/cards/evolutions/mewtwo-ex,Mewtwo ex,Evolutions,,mewtwo,103|52
+/cards/crown-zenith/manaphy,Manaphy,Crown Zenith,,manaphy,gg06
+/cards/logan-paul,Logan Paul,,,pikachu,
+/cards/fossil/aerodactyl,Aerodactyl,Fossil,,aerodactyl,1|16
+/cards/phantom-forces/gengar,Gengar,Phantom Forces,,gengar,
+/cards/crystal-guardians/charizard,Charizard,Crystal Guardians,,charizard,
+/cards/surging-sparks/latios,Latios,Surging Sparks,,latios,203|77
+/cards/celebrations/dark-sylveon,Dark Sylveon,Celebrations,,sylveon,
+/cards/celebrations/blastoise,Blastoise,Celebrations,,blastoise,cc001
+/cards/celebrations/mimikyu,Mimikyu,Celebrations,,mimikyu,
+/cards/latias-gold-star,Latias Gold Star,,,latias,
+/cards/giovannis-nidoking,Giovanni's Nidoking,,,nidoking,
+/cards/shining-gyarados-1st-edition,Shining Gyarados 1st Edition,,,gyarados,
+/cards/espeon-gold-star,Espeon Gold Star,,,espeon,
+/cards/fossil/articuno,Articuno,Fossil,,articuno,17|2
+/cards/reverse-holo-charizard,Reverse Holo Charizard,,,charizard,
+/cards/giovannis-persian,Giovanni's Persian,,,persian,
+/cards/1st-edition-pikachu,1st Edition Pikachu,,,pikachu,
+/cards/entei-gold-star,Entei Gold Star,,,entei,
+/cards/shadowless-mewtwo,Shadowless Mewtwo,,,mewtwo,
+/cards/eevee-gx-promo,Eevee GX Promo,,,eevee,
+/cards/victini-full-art,Victini Full Art,,,victini,
+/cards/gardevoir-trainer-gallery,Gardevoir Trainer Gallery,,,gardevoir,
+/cards/chandelure-full-art,Chandelure Full Art,,,chandelure,
+/cards/arboliva-ex,Arboliva ex,,,arboliva,
+/cards/melmetal-ex,Melmetal ex,,,melmetal,
+/cards/kirlia-full-art,Kirlia Full Art,,,kirlia,
+/cards/inteleon-v,Inteleon V,,,inteleon,
+/cards/noibat-full-art,Noibat Full Art,,,noibat,
+/cards/crustle-full-art,Crustle Full Art,,,crustle,
+/cards/zeraora-full-art,Zeraora Full Art,,,zeraora,
+/cards/rotom-full-art,Rotom Full Art,,,rotom,
+/cards/mimikyu-gx,Mimikyu GX,,,mimikyu,
+/cards/quaquaval-ex,Quaquaval ex,,,quaquaval,
+/cards/arceus-full-art,Arceus Full Art,,,arceus,
+/cards/slaking-ex,Slaking ex,,,slaking,
+/cards/lugia-vstar-rainbow,Lugia VSTAR Rainbow,,,lugia,
+/cards/golden-charizard-ex,Golden Charizard ex,,,charizard,
+/cards/team-rockets-raticate,Team Rocket's Raticate,,,raticate,
+/cards/hilda-sir,Hilda SIR,,,,
+/cards/reshiram-charizard-gx,Reshiram Charizard GX,,,charizard,
+/cards/crown-zenith/lunatone,Lunatone,Crown Zenith,,lunatone,62|gg11
+/cards/mela,Mela (Full Art),,,,
+/cards/temporal-forces/gengar-ex,Gengar ex,Temporal Forces,,gengar,104|193
+/cards/judge,Judge (Full Art),,,,
+/cards/crown-zenith/leafeon-vstar,Leafeon VSTAR,Crown Zenith,,leafeon,14|gg35
+/cards/gold-mewtwo,Gold Mewtwo,,,mewtwo,
+/cards/mewtwo-vstar-gold,Mewtwo VSTAR Gold,,,mewtwo,
+/cards/cynthia-full-art,Cynthia Full Art,,,,
+/cards/silver-dialga-ex,Silver Dialga ex,,,dialga,
+/cards/darkrai-gg50,Darkrai,,GG50,darkrai,
+/cards/evolutions/m-charizard-ex,M Charizard ex,Evolutions,,charizard,101|13
+/cards/zygarde-sir,Zygarde SIR,,,zygarde,
+/cards/brilliant-stars/houndoom,Houndoom,Brilliant Stars,,houndoom,tg10
+/cards/gold-mega-lucario,Gold Mega Lucario,,,lucario,
+/cards/ortega,Ortega (Full Art),,,,
+/cards/crown-zenith/duskull,Duskull,Crown Zenith,,duskull,gg28
+/cards/crown-zenith/arceus-vstar,Arceus VSTAR,Crown Zenith,,arceus,gg70
+/cards/scream-tail-promo,Scream Tail Promo,,,scream tail,
+/cards/pikachu-v-promo-swsh285,Pikachu V Promo,,SWSH285,pikachu,
+/cards/venusaur-vmax,Venusaur VMAX,,,venusaur,
+/cards/astral-radiance/mightyena,Mightyena,Astral Radiance,,mightyena,96|tg09
+/cards/crown-zenith/diancie,Diancie,Crown Zenith,,diancie,gg13
+/cards/brilliant-stars/jolteon,Jolteon,Brilliant Stars,,jolteon,tg04
+/cards/crown-zenith/bidoof,Bidoof,Crown Zenith,,bidoof,111|gg29
+/cards/crown-zenith/altaria,Altaria,Crown Zenith,,altaria,gg19
+/cards/umbreon-gx-80,Umbreon GX,,80,umbreon,
+/cards/base-set-2/venusaur,Venusaur,Base Set 2,,venusaur,18
+/cards/base-set/hitmonchan,Hitmonchan,Base Set,,hitmonchan,7|8
+/cards/151/tangela,Tangela,151,,tangela,114|178
+/cards/base-set/raichu,Raichu,Base Set,,raichu,14|16|25|61
+/cards/celebrations/dark-gyarados,Dark Gyarados,Celebrations,,gyarados,cc005
+/cards/charizard-cd-promo,Charizard CD Promo,,,charizard,
+/cards/shining-charizard-gold,Shining Charizard Gold,,,charizard,
+/cards/jolteon-trainer-gallery,Jolteon Trainer Gallery,,,jolteon,
+/cards/meloetta-promo,Meloetta Promo,,,meloetta,
+/cards/raichu-ex,Raichu ex,,,raichu,
+/cards/mareep-full-art,Mareep Full Art,,,mareep,
+/cards/erikas-dragonair,Erika's Dragonair,,,dragonair,
+/cards/rockruff-full-art,Rockruff Full Art,,,rockruff,
+/cards/shiny-gardevoir-ex,Shiny Gardevoir ex,,,gardevoir,
+/cards/necrozma-gx,Necrozma GX,,,necrozma,
+/cards/dunsparce-full-art,Dunsparce Full Art,,,dunsparce,
+/cards/kleavor-v,Kleavor V,,,kleavor,
+/cards/umbreon-promo,Umbreon Promo,,,umbreon,
+/cards/espeon-full-art,Espeon Full Art,,,espeon,
+/cards/scizor-full-art,Scizor Full Art,,,scizor,
+/cards/heracross-full-art,Heracross Full Art,,,heracross,
+/cards/raticate-full-art,Raticate Full Art,,,raticate,
+/cards/m-pidgeot-ex,M Pidgeot ex,,,pidgeot,
+/cards/shaymin-full-art,Shaymin Full Art,,,shaymin,
+/cards/corviknight-v,Corviknight V,,,corviknight,
+/cards/keldeo-full-art,Keldeo Full Art,,,keldeo,
+/cards/pachirisu-full-art,Pachirisu Full Art,,,pachirisu,
+/cards/pidgeotto-full-art,Pidgeotto Full Art,,,pidgeotto,
+/cards/torkoal-full-art,Torkoal Full Art,,,torkoal,
+/cards/rockets-moltres,Rocket's Moltres,,,moltres,
+/cards/pecharunt-promo,Pecharunt Promo,,,pecharunt,
+/cards/eri,Eri (Full Art),,,,
+/cards/lugia-ex-17,Lugia ex,,17,lugia,
+/cards/journey-together/ns-reshiram,N's Reshiram,Journey Together,,reshiram,116|167
+/cards/crown-zenith/keldeo,Keldeo,Crown Zenith,,keldeo,gg07
+/cards/eevee-v-promo-swsh65,Eevee V Promo,,SWSH65,eevee,
+/cards/pikachu-zekrom-promo,Pikachu Zekrom Promo,,,pikachu,
+/cards/vaporeon-vmax-promo,Vaporeon VMAX Promo,,,vaporeon,
+/cards/dark-gyarados-1st-edition,Dark Gyarados 1st Edition,,,gyarados,
+/cards/scarlet-and-violet/koraidon-ex,Koraidon ex,Scarlet and Violet,,koraidon,
+/cards/fusion-strike/gengar-v,Gengar V,Fusion Strike,,gengar,156
+/cards/arceus-v-promo-swsh204,Arceus V Promo,,SWSH204,arceus,
+/cards/crown-zenith/miltank,Miltank,Crown Zenith,,miltank,gg24
+/cards/pidgeot-full-art,Pidgeot Full Art,,,pidgeot,
+/cards/m-rayquaza-ex-98,M Rayquaza ex,,98,rayquaza,
+/cards/m-gengar-ex-xy166,M Gengar ex,,XY166,gengar,
+/cards/silver-tempest/flaaffy,Flaaffy,Silver Tempest,,flaaffy,tg03
+/cards/crown-zenith/rayquaza-vmax,Rayquaza VMAX,Crown Zenith,,rayquaza,101|102
+/cards/astral-radiance/bronzong,Bronzong,Astral Radiance,,bronzong,112|tg11
+/cards/charizard-ex-promo-xy17,Charizard ex Promo,,XY17,charizard,
+/cards/brilliant-stars/dusknoir,Dusknoir,Brilliant Stars,,dusknoir,62|tg06
+/cards/evolving-skies/sylveon-v,Sylveon V,Evolving Skies,,sylveon,183|184|74
+/cards/zacian-vstar,Zacian VSTAR,,,zacian,
+/cards/dark-raichu-holo,Dark Raichu Holo,,,raichu,
+/cards/scarlet-and-violet/gardevoir-ex,Gardevoir ex,Scarlet and Violet,,gardevoir,
+/cards/silver-tempest/lugia-vstar,Lugia VSTAR,Silver Tempest,,lugia,139|202|211
+/cards/pikachu-black-star-promo,Pikachu Black Star Promo,,,pikachu,
+/cards/blissey-v,Blissey V,,,blissey,
+/cards/hisuian-zoroark,Hisuian Zoroark,,,zoroark,
+/cards/crown-zenith/entei,Entei,Crown Zenith,,entei,21
+/cards/shining-fates/charizard-vmax,Charizard VMAX,Shining Fates,,charizard,sv107
+/cards/dark-slowbro-1st-edition,Dark Slowbro 1st Edition,,,slowbro,
+/cards/dark-arbok-holo,Dark Arbok Holo,,,arbok,
+/cards/gold-zekrom,Gold Zekrom,,,zekrom,
+/cards/zeraora-vstar,Zeraora VSTAR,,,zeraora,
+/cards/tinkatink-full-art,Tinkatink Full Art,,,tinkatink,
+/cards/shiny-umbreon,Shiny Umbreon,,,umbreon,
+/cards/mismagius-full-art,Mismagius Full Art,,,mismagius,
+/cards/sandile-full-art,Sandile Full Art,,,sandile,
+/cards/alakazam-ex-125,Alakazam ex,,125,alakazam,
+/cards/gengar-mimikyu-gx,Gengar & Mimikyu GX,,,mimikyu,
+/cards/brilliant-stars/zekrom,Zekrom,Brilliant Stars,,zekrom,tg05
+/cards/evolutions/dragonite-ex,Dragonite ex,Evolutions,,dragonite,106|72
+/cards/silver-tempest/altaria,Altaria,Silver Tempest,,altaria,143|tg11
+/cards/lost-origin/pikachu-v,Pikachu V,Lost Origin,,pikachu,tg16
+/cards/astral-radiance/frosmoth,Frosmoth,Astral Radiance,,frosmoth,tg04
+/cards/expedition/gengar,Gengar,Expedition,,gengar,13|48
+/cards/vivid-voltage/pikachu-vmax,Pikachu VMAX,Vivid Voltage,,pikachu,188|44
+/cards/tapu-koko-gx,Tapu Koko GX,,,tapu koko,
+/cards/rayquaza-vmax-rapid-strike,Rayquaza VMAX Rapid Strike,,,rayquaza,
+/cards/destined-rivals/mistys-lapras,Misty's Lapras,Destined Rivals,,lapras,194|50
+/cards/brilliant-stars/charizard-v,Charizard V,Brilliant Stars,,charizard,153|154|17
+/cards/zapdos-ex-sir,Zapdos ex SIR,,,zapdos,
+/cards/crown-zenith/magmortar,Magmortar,Crown Zenith,,magmortar,gg03
+/cards/charizard-gx-promo-sm60,Charizard GX Promo,,SM60,charizard,
+/cards/brilliant-stars/dedenne,Dedenne,Brilliant Stars,,dedenne,67|tg07
+/cards/neo-genesis/pichu,Pichu,Neo Genesis,,pichu,12
+/cards/twilight-masquerade/perrin,Perrin,Twilight Masquerade,,,160|209|220
+/cards/gyarados-full-art,Gyarados Full Art,,,gyarados,
+/cards/persian-full-art,Persian Full Art,,,persian,
+/cards/armarouge-full-art,Armarouge Full Art,,,armarouge,
+/cards/darkrai-full-art,Darkrai Full Art,,,darkrai,
+/cards/sceptile-ex,Sceptile ex,,,sceptile,
+/cards/glaceon-full-art,Glaceon Full Art,,,glaceon,
+/cards/jynx-full-art,Jynx Full Art,,,jynx,
+/cards/ditto-full-art,Ditto Full Art,,,ditto,
+/cards/bellibolt-full-art,Bellibolt Full Art,,,bellibolt,
+/cards/noivern-full-art,Noivern Full Art,,,noivern,
+/cards/metagross-full-art,Metagross Full Art,,,metagross,
+/cards/leafeon-gx,Leafeon GX,,,leafeon,
+/cards/infernape-full-art,Infernape Full Art,,,infernape,
+/cards/golisopod-gx,Golisopod GX,,,golisopod,
+/cards/tinkaton-full-art,Tinkaton Full Art,,,tinkaton,
+/cards/deoxys-full-art,Deoxys Full Art,,,deoxys,
+/cards/venusaur-ex,Venusaur ex,,,venusaur,
+/cards/toxicroak-ex,Toxicroak ex,,,toxicroak,
+/cards/lost-origin/mew-vmax,Mew VMAX,Lost Origin,,mew,tg30
+/cards/ns-pp-up-full-art,N's Pp Up Full Art,,,,
+/cards/fossil/muk,Muk,Fossil,,muk,13|28
+/cards/mewtwo-gx-39,Mewtwo GX,,39,mewtwo,
+/cards/gyarados-gold-star,Gyarados Gold Star,,,gyarados,
+/cards/astral-radiance/falinks,Falinks,Astral Radiance,,falinks,tg07
+/cards/drowzee-illustration-rare,Drowzee Illustration Rare,,,drowzee,
+/cards/kleavor-vstar,Kleavor VSTAR,,,kleavor,
+/cards/crown-zenith/oricorio,Oricorio,Crown Zenith,,oricorio,gg04
+/cards/primal-groudon-ex-full-art,Primal Groudon ex Full Art,,,groudon,
+/cards/gardevoir-vmax,Gardevoir VMAX,,,gardevoir,
+/cards/gyarados-v,Gyarados V,,,gyarados,
+/cards/scarlet-and-violet/miraidon-ex,Miraidon ex,Scarlet and Violet,,miraidon,
+/cards/generations/m-gardevoir-ex,M Gardevoir ex,Generations,,gardevoir,rc31
+/cards/evolving-skies/glaceon-v,Glaceon V,Evolving Skies,,glaceon,174|175|40
+/cards/hisuian-zorua,Hisuian Zorua,,,zorua,
+/cards/team-rocket/nidoking,Nidoking,Team Rocket,,nidoking,
+/cards/base-set-2/mewtwo,Mewtwo,Base Set 2,,mewtwo,10
+/cards/base-set-2/alakazam,Alakazam,Base Set 2,,alakazam,1
+/cards/power-keepers/charizard,Charizard,Power Keepers,,charizard,6
+/cards/mega-charizard-gx,Mega Charizard GX,,,charizard,
+/cards/kogas-ninja-trick,Koga's Ninja Trick,,,,
+/cards/dark-slowbro-holo,Dark Slowbro Holo,,,slowbro,
+/cards/kyogre-gold-star,Kyogre Gold Star,,,kyogre,
+/cards/shadowless-ninetales,Shadowless Ninetales,,,ninetales,
+/cards/absol-full-art,Absol Full Art,,,absol,
+/cards/mew-ex-shiny,Mew ex Shiny,,,mew,
+/cards/blastoise-ex-promo-xy122,Blastoise ex Promo,,XY122,blastoise,
+/cards/eevee-gx-promo-sm242,Eevee GX Promo,,SM242,eevee,
+/cards/astral-radiance/garchomp-v,Garchomp V,Astral Radiance,,garchomp,117|178|tg23
+/cards/crown-zenith/poochyena,Poochyena,Crown Zenith,,poochyena,gg33
+/cards/destined-rivals/team-rockets-mewtwo-ex,Team Rocket's Mewtwo ex,Destined Rivals,,mewtwo,213|231|240|81
+/cards/espeon-gx-rainbow,Espeon GX Rainbow,,,espeon,
+/cards/brilliant-stars/sylveon-vmax,Sylveon VMAX,Brilliant Stars,,sylveon,tg15
+/cards/lost-origin/hisuian-arcanine,Hisuian Arcanine,Lost Origin,,arcanine,84|tg08
+/cards/evolving-skies/glaceon-vmax,Glaceon VMAX,Evolving Skies,,glaceon,208|209|41
+/cards/xy/charizard,Charizard,XY,,charizard,
+/cards/zygarde-gx,Zygarde GX,,,zygarde,
+/cards/palkia-gx,Palkia GX,,,palkia,
+/cards/lurantis-gx,Lurantis GX,,,lurantis,
+/cards/gyarados-ex-123,Gyarados ex,,123,gyarados,
+/cards/shadowless-squirtle,Shadowless Squirtle,,,squirtle,
+/cards/team-rockets-persian-ex,Team Rocket's Persian ex,,,persian,
+/cards/brilliant-stars/octillery,Octillery,Brilliant Stars,,octillery,tg03
+/cards/talonflame-full-art,Talonflame Full Art,,,talonflame,
+/cards/xerneas-break,Xerneas Break,,,xerneas,
+/cards/umbreon-tg22,Umbreon,,TG22,umbreon,
+/cards/poke-pad,Poké Pad (Full Art),,,,
+/cards/rayquaza-ex-promo-xy73,Rayquaza ex Promo,,XY73,rayquaza,
+/cards/rayquaza-ex,Rayquaza ex,,,rayquaza,
+/cards/base-set/magneton,Magneton,Base Set,,magneton,9
+/cards/base-set/bulbasaur,Bulbasaur,Base Set,,bulbasaur,44|67|94|95
+/cards/zacian-v-gold,Zacian V Gold,,,zacian,
+/cards/dragonite-1st-edition,Dragonite 1st Edition,,,dragonite,
+/cards/m-mewtwo-ex-160,M Mewtwo ex,,160,mewtwo,
+/cards/venusaur-cd-promo,Venusaur CD Promo,,,venusaur,
+/cards/base-set/machamp,Machamp,Base Set,,machamp,16|51|8
+/cards/team-plasma-lugia-ex,Team Plasma Lugia ex,,,lugia,
+/cards/dark-magneton-holo,Dark Magneton Holo,,,magneton,
+/cards/snorlax-cd-promo,Snorlax CD Promo,,,snorlax,
+/cards/gold-plated-pikachu,Gold Plated Pikachu,,,pikachu,
+/cards/meowth-gold-border,Meowth Gold Border,,,meowth,
+/cards/crown-zenith/dialga-vstar,Dialga VSTAR,Crown Zenith,,dialga,
+/cards/clefairy-toys-r-us-promo,Clefairy Toys R Us Promo,,,clefairy,

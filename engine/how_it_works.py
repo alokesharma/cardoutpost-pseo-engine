@@ -19,8 +19,8 @@ GATE = {'Page: index or noindex', 'Page: why noindex', 'Page: canonical URL', 'P
 RULES_BY_STEP = {'s1': [1, 14], 's2': [2, 3, 4, 5], 's3': [6], 's4': [7, 8], 's5': [9, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], 's6': [28, 29, 30, 31, 32], 's7': []}
 
 STEPS = [
-    {'id': 's1', 'name': 'Pick the cards', 'icon': '1', 'source': 'Keyword research sheet (Ahrefs volumes)', 'real': 'Real',
-     'what': 'We take the keyword list from the research and add up every search that points at the same card. Charizard ex #199 has 23 different keywords, for example "charizard 151" and "charizard ex 151 psa 10". Together they are 59,900 searches a month in the US. One card, one page.'},
+    {'id': 's1', 'name': 'Map and pick the cards', 'icon': '1', 'source': 'Keywords and volumes (Ahrefs), card catalogue, saved Google results', 'real': 'Real',
+     'what': 'The only input is keywords with their search volume. For each keyword the engine finds the set, card number and Pokémon it names, matches them to the card catalogue, and checks Google\'s top 10 titles, so "charizard 151" lands on Charizard ex #199 from the 151 set. Then it adds up every search that points at the same card. Charizard ex #199 has 23 different keywords, for example "charizard 151" and "charizard ex 151 psa 10". Together they are 59,900 searches a month in the US. One card, one page.'},
     {'id': 's2', 'name': "Find the card's value", 'icon': '2', 'source': 'PriceCharting public pages', 'real': 'Real',
      'what': 'We look the card up on PriceCharting, a public price site, and copy its market data: the price at every grade, how fast it sells, 38 months of history, and how many PSA 10s exist. The hard part is picking the right card. PriceCharting has 9 different "Charizard ex" cards. The rules below decide which one.'},
     {'id': 's3', 'name': 'See what Google shows', 'icon': '3', 'source': 'Saved Google results (SerpAPI)', 'real': 'Real',
