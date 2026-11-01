@@ -265,10 +265,10 @@ def render(p):
     <div class="hcol">
       <div class="htop"><h1 class="h1">{E(p['h1'])} {nb(4)}</h1><p class="sub">{E(sub)} {nb(7)}</p></div>
       <div class="pricebox">
-        <div class="price {PANEL}"><div class="lbl">PSA 10</div><div class="val hi">{usd(pb['psa10']) or '–'}</div><div class="trend {tcls(pb['trend_psa10'])}">{E(pb['trend_psa10'] or '')}</div></div>
+        <div class="price {PANEL}"><div class="lbl">PSA 10 {nb(5)}</div><div class="val hi">{usd(pb['psa10']) or '–'}</div><div class="trend {tcls(pb['trend_psa10'])}">{E(pb['trend_psa10'] or '')}</div></div>
         <div class="price {PANEL}"><div class="lbl">Ungraded</div><div class="val">{usd(pb['raw']) or '–'}</div><div class="trend {tcls(pb['trend_raw'])}">{E(pb['trend_raw'] or '')}</div></div>
       </div>
-      <p class="updated">Market price from recent eBay and TCGplayer sales. Updated {E(pb['updated'])}.{few} {nb(5)}</p>
+      <p class="updated">Market price from recent eBay and TCGplayer sales. Updated {E(pb['updated'])}.{few}</p>
       <p class="sell">{E(p['selling_line'])} {nb(6)}</p>
       <div class="cta-row">{cosmic(cta['text'], SITE + cta['url'])}<span class="fmv">{usd(cta['price'])} pack · {E(cta['odds'])} odds</span></div>
       <div class="{PANEL} section"><h2 class="{H2}">About this card {nb(8)}</h2><ul class="about">{about}</ul></div>
